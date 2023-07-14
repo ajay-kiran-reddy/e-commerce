@@ -18,7 +18,7 @@ const corsOptions = {
   origin: "https://av-ecommerce-client.onrender.com",
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Connect to the database
 mongoose
