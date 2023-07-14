@@ -14,7 +14,11 @@ const payment = require("./routes/payment");
 
 const cors = require("cors");
 
-app.use(cors());
+const corsOptions = {
+  origin: "https://av-ecommerce-client.onrender.com",
+};
+
+app.use(cors(corsOptions));
 
 // Connect to the database
 mongoose
