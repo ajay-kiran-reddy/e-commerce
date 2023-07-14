@@ -33,6 +33,8 @@ function App() {
     dispatch(HomeSlice.actions.fetchUserInfo());
   }, []);
 
+  console.log("");
+
   return (
     <div className="App">
       <Snackbar
