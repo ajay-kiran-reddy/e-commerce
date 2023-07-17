@@ -62,6 +62,8 @@ function Header() {
       navigate(ROUTING_CONSTANTS.ADMIN_DASHBOARD_ROUTE);
     } else if (value === "logout") {
       dispatch(HomeSlice.actions.handleLogOutUser());
+    } else if (value === "orders") {
+      navigate(ROUTING_CONSTANTS.ROUTE_TO_ORDERS);
     }
   };
 

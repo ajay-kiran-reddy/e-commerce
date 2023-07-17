@@ -17,6 +17,7 @@ import {
   userSignIn,
   userSignUp,
 } from "../components/home/sagas/saga";
+import { createOrderEntry, ordersInfo } from "../components/orders/sagas/saga";
 import {
   addToCart,
   productInfoCart,
@@ -53,5 +54,9 @@ export default function* rootSaga() {
     //user
     userInfo(),
     updateUserInfo(),
+
+    //orders
+    ordersInfo(),
+    createOrderEntry(),
   ]);
 }

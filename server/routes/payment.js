@@ -14,7 +14,7 @@ const calculateOrderAmount = (items) => {
   return 1400;
 };
 
-const YOUR_DOMAIN = "http://localhost:8000/checkout";
+const YOUR_DOMAIN = "https://av-ecommerce-client.onrender.com/checkout";
 
 router.post("/", async (req, res) => {
   const session = await stripe.checkout.sessions.create({

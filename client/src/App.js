@@ -20,6 +20,7 @@ import CheckoutPage from "./components/checkout";
 import UserProfile from "./components/userProfile";
 import SuccessCheckout from "./components/checkout/SuccessCheckout";
 import FailureCheckout from "./components/checkout/FailureCheckout";
+import Orders from "./components/orders";
 
 function App() {
   const dispatch = useDispatch();
@@ -94,6 +95,11 @@ function App() {
             exact
             path={ROUTING_CONSTANTS.CHECKOUT_FAILURE}
             element={<FailureCheckout />}
+          />
+          <Route
+            exact
+            path={ROUTING_CONSTANTS.ROUTE_TO_ORDERS}
+            element={<Orders />}
           />
         </Routes>
       </BrowserRouter>

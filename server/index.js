@@ -11,6 +11,7 @@ const cart = require("./routes/cart");
 const mail = require("./routes/mail");
 const user = require("./routes/user");
 const payment = require("./routes/payment");
+const orders = require("./routes/order");
 
 const cors = require("cors");
 
@@ -51,6 +52,7 @@ app.use("/api/cart", cart);
 app.use("/api/mail", mail);
 app.use("/api/user", user);
 app.use("/api/payment", payment);
+app.use("/api/orders", orders);
 
 app.use((err, req, res, next) => {
   console.log(err);

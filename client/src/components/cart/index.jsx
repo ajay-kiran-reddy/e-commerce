@@ -165,7 +165,7 @@ export default function CartPage() {
             </span>
           </div>
           <div style={{ marginTop: "3rem" }}>
-            <Payment />
+            <Payment products={state?.cartSummary?.products} />
           </div>
         </Paper>
       </Grid>

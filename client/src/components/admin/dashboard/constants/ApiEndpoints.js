@@ -21,6 +21,10 @@ const CART = "/cart";
 const ADD_TO_CART = "/cart/addToCart";
 const CART_SUMMARY = "/cart/summary";
 
+/**Orders api's end points */
+const ORDERS = "/orders";
+const CREATE_ORDER = "/orders/createOrder";
+
 /** User Api end points*/
 
 const USER = "/user";
@@ -40,4 +44,6 @@ export {
   CART,
   CART_SUMMARY,
   USER,
+  ORDERS,
+  CREATE_ORDER,
 };

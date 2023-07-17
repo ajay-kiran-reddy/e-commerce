@@ -19,31 +19,11 @@ export default function CheckoutPage() {
   const classes = useStyles();
   const dispatch = useDispatch();
   const userState = useSelector(User);
-  const [clientSecret, setClientSecret] = useState("");
   const [address, setAddress] = useState();
 
   useEffect(() => {
     dispatch(UserSlice.actions.getUserInfo());
   }, []);
-
-  useEffect(() => {
-    // Create PaymentIntent as soon as the page loads
-    fetch("http://localhost:5000/api/payment", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ items: [{ id: "xl-tshirt" }] }),
-    })
-      .then((res) => res.json())
-      .then((data) => setClientSecret(data.clientSecret));
-  }, []);
-
-  const appearance = {
-    theme: "stripe",
-  };
-  const options = {
-    clientSecret,
-    appearance,
-  };
 
   useEffect(() => {
     if (userState?.userInfo?.user?.address) {
@@ -107,7 +87,7 @@ export default function CheckoutPage() {
         )}
       </Grid>
       <Grid item xs={2}>
-        <Payment />
+        <Payment address={address} />
       </Grid>
     </Grid>
   );

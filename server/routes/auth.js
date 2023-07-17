@@ -57,7 +57,7 @@ router.post("/signIn", (req, res) => {
               isAdmin: user.isAdmin,
             },
             process.env.JWT_SECRET,
-            { expiresIn: "1h" }
+            { expiresIn: "2h" }
           );
 
           res.status(200).json({
@@ -66,7 +66,7 @@ router.post("/signIn", (req, res) => {
             jwtToken: {
               accessToken: token,
               email: user.email,
-              expiresIn: "1h",
+              expiresIn: "2h",
             },
           });
         } else {
