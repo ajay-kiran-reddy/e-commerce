@@ -14,7 +14,7 @@ const calculateOrderAmount = (items) => {
   return 1400;
 };
 
-const YOUR_DOMAIN = "https://av-ecommerce-client.onrender.com/checkout";
+const YOUR_DOMAIN = "http://localhost:8000/checkout";
 
 router.post("/", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
@@ -29,6 +29,9 @@ router.post("/", async (req, res) => {
     success_url: `${YOUR_DOMAIN}/success`,
     cancel_url: `${YOUR_DOMAIN}/canceled`,
   });
+  // .then(() => {
+  //   res.status(200).json({ message: "Your order is created successfully" });
+  // });
 
   res.redirect(303, session.url);
 });

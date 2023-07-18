@@ -16,6 +16,7 @@ import AddIcon from "@mui/icons-material/Add";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 import { useNavigate } from "react-router";
 import Payment from "../checkout/Payment";
+import CustomLoader from "../shared/Loader";
 
 const useStyles = makeStyles({
   root: {
@@ -76,6 +77,7 @@ export default function CartPage() {
 
   return (
     <Grid container spacing={0} marginTop="5rem">
+      <CustomLoader show={state.isLoading} />
       <Grid item xs={1}></Grid>
 
       <Grid item xs={7} className={classes.root}>

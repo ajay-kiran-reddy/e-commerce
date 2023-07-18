@@ -4,7 +4,7 @@ import {
   getSuccessApiResponse,
 } from "../../../constants/GlobalConstants";
 import { updateApiResponse } from "../../home/slices/slice";
-import { createOrder, fetchOrders } from "../services/service";
+import { createOrder, fetchOrders, makePayment } from "../services/service";
 import { Order, OrderSlice } from "../slices/slice";
 
 function* actionGetOrders() {

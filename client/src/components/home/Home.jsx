@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import AdminProductsSlice, { AdminProducts } from "../admin/slices/slice";
+import CustomLoader from "../shared/Loader";
 import CarouselLoader from "./Carousel";
 import ProductCard from "./ProductCard";
 import { homeState } from "./slices/slice";
@@ -18,6 +19,7 @@ function Home() {
   return (
     <>
       <CarouselLoader />
+      <CustomLoader show={adminState.isLoading} />
       <Grid container spacing={3} style={{ margin: "0.5rem" }}>
         {adminState?.products?.map((product) => {
           return (

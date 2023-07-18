@@ -54,4 +54,20 @@ const APP_ACTION_COLORS = {
   red: "#D50000",
 };
 
-export { SIZE_OPTIONS, COLORS_OPTIONS, APP_ACTION_COLORS };
+const ACTIVE = "ACT";
+const INACTIVE = "INA";
+
+const DELIVERY_STATUS_CONSTANTS = {
+  ORDERED: "Ordered",
+  DISPATCHED: "Dispatched",
+  IN_TRANSIT: "In Transit",
+  DELIVERED: "Delivered",
+};
+export {
+  SIZE_OPTIONS,
+  COLORS_OPTIONS,
+  APP_ACTION_COLORS,
+  DELIVERY_STATUS_CONSTANTS,
+  ACTIVE,
+  INACTIVE,
+};
