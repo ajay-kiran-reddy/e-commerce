@@ -3,6 +3,7 @@ const {
   addToCart,
   getCartInfoByProductId,
   getCartSummaryByUserId,
+  deleteUserCart,
 } = require("../controller/cart");
 const { isUserAuthenticated } = require("../middleware/authenticate");
 const router = express.Router();
@@ -17,6 +18,10 @@ router.get("/summary", isUserAuthenticated, (req, res) => {
 
 router.get("/:productId", isUserAuthenticated, (req, res) => {
   return getCartInfoByProductId(req, res);
+});
+
+router.delete("/deleteCart", isUserAuthenticated, (req, res) => {
+  return deleteUserCart(req, res);
 });
 
 module.exports = router;

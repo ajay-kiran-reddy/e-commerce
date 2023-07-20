@@ -19,6 +19,9 @@ const CartSlice = createSlice({
       state.cartSummary = action.payload;
       state.isLoading = false;
     },
+    resetCartData: (state) => {
+      state.isLoading = true;
+    },
   },
 });
 

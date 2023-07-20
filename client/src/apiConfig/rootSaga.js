@@ -11,7 +11,7 @@ import {
   updateCategoryById,
   updateProductInfo,
 } from "../components/admin/sagas/saga";
-import { cartSummary } from "../components/cart/sagas/saga";
+import { cartSummary, resetCartInfo } from "../components/cart/sagas/saga";
 import {
   forgetPassword,
   userSignIn,
@@ -50,6 +50,7 @@ export default function* rootSaga() {
     addToCart(),
     productInfoCart(),
     cartSummary(),
+    resetCartInfo(),
 
     //user
     userInfo(),

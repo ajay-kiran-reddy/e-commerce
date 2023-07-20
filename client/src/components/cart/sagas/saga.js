@@ -1,7 +1,11 @@
 import { all, call, put, select, takeLatest } from "redux-saga/effects";
 import { getFailureApiResponse } from "../../../constants/GlobalConstants";
 import { updateApiResponse } from "../../home/slices/slice";
-import { fetchCartSummary, fetchProductById } from "../services/service";
+import {
+  fetchCartSummary,
+  fetchProductById,
+  resetCartData,
+} from "../services/service";
 import { Cart, CartSlice } from "../slices/slice";
 
 function* actionGetCartSummary() {
@@ -28,8 +32,22 @@ function* actionGetCartSummary() {
   }
 }
 
+function* actionResetCartInformation() {
+  try {
+    yield call(resetCartData);
+    yield put(CartSlice.actions.updateLoadingState(false));
+  } catch (e) {
+    yield put(updateApiResponse(getFailureApiResponse(e)));
+    yield put(CartSlice.actions.updateLoadingState(false));
+  }
+}
+
 function* cartSummary() {
   yield takeLatest(CartSlice.actions.getCartSummary, actionGetCartSummary);
 }
 
-export { cartSummary };
+function* resetCartInfo() {
+  yield takeLatest(CartSlice.actions.resetCartData, actionResetCartInformation);
+}
+
+export { cartSummary, resetCartInfo };

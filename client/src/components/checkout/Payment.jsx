@@ -10,7 +10,6 @@ import {
 } from "../admin/dashboard/constants/DashboardConstants";
 
 export default function Payment({ products }) {
-  const dispatch = useDispatch();
   const globalState = useSelector(homeState);
 
   const handleCheckout = () => {
@@ -27,26 +26,28 @@ export default function Payment({ products }) {
       status: ACTIVE,
       deliveryStatus: DELIVERY_STATUS_CONSTANTS.ORDERED,
     };
-    dispatch(OrderSlice.actions.getCreateOrderData(requestBody));
+    sessionStorage.setItem("cartItems", JSON.stringify(requestBody));
   };
 
   return (
     <section>
       <div className="product"></div>
-      <Button
-        type="submit"
-        variant="contained"
-        style={{
-          backgroundColor: "#FFA41B",
-          width: "50%",
-          color: "black",
-          margin: "1rem",
-        }}
-        startIcon={<ShoppingCartCheckoutIcon />}
-        onClick={handleCheckout}
-      >
-        Secure checkout
-      </Button>
+      <form action="/api/payment" method="POST">
+        <Button
+          type="submit"
+          variant="contained"
+          style={{
+            backgroundColor: "#FFA41B",
+            width: "50%",
+            color: "black",
+            margin: "1rem",
+          }}
+          startIcon={<ShoppingCartCheckoutIcon />}
+          onClick={handleCheckout}
+        >
+          Secure checkout
+        </Button>
+      </form>
     </section>
   );
 }

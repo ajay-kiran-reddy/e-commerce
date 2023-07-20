@@ -20,6 +20,7 @@ const FORGET_PASSWORD = `${MAIL}/forgotPassword`;
 const CART = "/cart";
 const ADD_TO_CART = "/cart/addToCart";
 const CART_SUMMARY = "/cart/summary";
+const CART_RESET = "/cart/deleteCart";
 
 /**Orders api's end points */
 const PAYMENT = "/payment";
@@ -48,4 +49,5 @@ export {
   ORDERS,
   CREATE_ORDER,
   PAYMENT,
+  CART_RESET,
 };

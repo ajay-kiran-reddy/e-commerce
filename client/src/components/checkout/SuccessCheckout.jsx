@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { makeStyles } from "@mui/styles";
 import { useDispatch } from "react-redux";
 import { OrderSlice } from "../orders/slices/slice";
+import { CartSlice } from "../cart/slices/slice";
 
 const useStyles = makeStyles({
   title: {
@@ -37,6 +38,20 @@ const useStyles = makeStyles({
 
 export default function SuccessCheckout() {
   const classes = useStyles();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const cartItems = sessionStorage.getItem("cartItems");
+    const parsedData = cartItems && JSON.parse(cartItems);
+    dispatch(OrderSlice.actions.getCreateOrderData(parsedData));
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      dispatch(CartSlice.actions.resetCartData());
+      sessionStorage.setItem("cartItems", "");
+    };
+  }, []);
 
   return (
     <div>

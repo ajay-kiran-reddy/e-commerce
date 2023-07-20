@@ -117,3 +117,9 @@ exports.getCartSummaryByUserId = (req, res) => {
         .json({ message: "Failed to retrieve your cart information", error })
     );
 };
+
+exports.deleteUserCart = (req, res) => {
+  Cart.findByIdAndDelete({ userId: req.user._id })
+    .then(() => console.log("Cart is reset"))
+    .catch(() => console.log("Failed to reset the cart"));
+};
