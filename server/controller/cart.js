@@ -120,6 +120,6 @@ exports.getCartSummaryByUserId = (req, res) => {
 
 exports.deleteUserCart = (req, res) => {
   Cart.findByIdAndDelete({ userId: req.user._id })
-    .then(() => console.log("Cart is reset"))
-    .catch(() => console.log("Failed to reset the cart"));
+    .then(() => res.status(200).json({ message: "Cart is reset" }))
+    .catch(() => res.status(500).json({ message: "Failed to reset the cart" }));
 };
