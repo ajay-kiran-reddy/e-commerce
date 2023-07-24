@@ -6,12 +6,18 @@ import {
   deleteCategoryById,
   deleteProduct,
   fetchCategoryById,
+  getAllOrders,
   getCloudinaryImageUrl,
   productsList,
   updateCategoryById,
+  updateOrder,
   updateProductInfo,
 } from "../components/admin/sagas/saga";
-import { cartSummary, resetCartInfo } from "../components/cart/sagas/saga";
+import {
+  cartSummary,
+  removeItemFromCart,
+  resetCartInfo,
+} from "../components/cart/sagas/saga";
 import {
   forgetPassword,
   userSignIn,
@@ -36,6 +42,8 @@ export default function* rootSaga() {
     createProduct(),
     updateProductInfo(),
     deleteProduct(),
+    getAllOrders(),
+    updateOrder(),
 
     //admin categories
     categoriesList(),
@@ -51,7 +59,7 @@ export default function* rootSaga() {
     productInfoCart(),
     cartSummary(),
     resetCartInfo(),
-
+    removeItemFromCart(),
     //user
     userInfo(),
     updateUserInfo(),

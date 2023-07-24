@@ -5,6 +5,7 @@ const initialState = {
   addToCartProductInfo: null,
   ATCProductInfo: null,
   selectedProductId: "",
+  navigate: null,
 };
 
 export const ProductSlice = createSlice({
@@ -17,6 +18,7 @@ export const ProductSlice = createSlice({
     addToCart: (state, action) => {
       state.isLoading = true;
       const data = action.payload;
+      state.navigate = data?.navigate;
       const apiReqBody = {
         products: {
           product: data?._id,

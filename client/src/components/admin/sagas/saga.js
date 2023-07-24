@@ -16,11 +16,13 @@ import {
   createProductApi,
   deleteCategory,
   deleteProductApi,
+  fetchAllOrders,
   fetchCategories,
   fetchProducts,
   getCategoryById,
   getImageUrlFromCloudinary,
   updateCategory,
+  updateOrderStatus,
   updateProduct,
 } from "../services/service";
 import AdminProductsSlice, { AdminProducts } from "../slices/slice";
@@ -187,6 +189,32 @@ function* actionDeleteCategoryById() {
   }
 }
 
+function* actionGetAllOrders() {
+  try {
+    const data = yield call(fetchAllOrders);
+    yield put(AdminProductsSlice.actions.storeAllOrders(data.orders));
+  } catch (e) {
+    console.log(e, "[ERROR]");
+    yield put(updateApiResponse(getFailureApiResponse(e)));
+    yield put(AdminProductsSlice.actions.updateLoadingState(false));
+  }
+}
+
+function* actionUpdateOrder() {
+  try {
+    const state = yield select(AdminProducts);
+    const data = yield call(updateOrderStatus, state.updatedOrder);
+    const results = yield call(fetchAllOrders);
+    yield put(AdminProductsSlice.actions.storeAllOrders(results.orders));
+    yield put(updateApiResponse(getSuccessApiResponse(data)));
+    yield put(AdminProductsSlice.actions.updateLoadingState(false));
+  } catch (e) {
+    console.log(e, "[ERROR]");
+    yield put(updateApiResponse(getFailureApiResponse(e)));
+    yield put(AdminProductsSlice.actions.updateLoadingState(false));
+  }
+}
+
 function* productsList() {
   yield takeLatest(AdminProductsSlice.actions.getProducts, actionFetchProducts);
 }
@@ -254,6 +282,17 @@ function* deleteCategoryById() {
   );
 }
 
+function* getAllOrders() {
+  yield takeLatest(
+    AdminProductsSlice.actions.fetchAllOrders,
+    actionGetAllOrders
+  );
+}
+
+function* updateOrder() {
+  yield takeLatest(AdminProductsSlice.actions.updateOrder, actionUpdateOrder);
+}
+
 export {
   productsList,
   createProduct,
@@ -265,4 +304,6 @@ export {
   fetchCategoryById,
   updateCategoryById,
   deleteCategoryById,
+  getAllOrders,
+  updateOrder,
 };

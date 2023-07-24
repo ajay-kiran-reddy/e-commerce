@@ -1,5 +1,6 @@
 const Cart = require("../models/cart");
 const Product = require("../models/product");
+const mongoose = require("mongoose");
 
 exports.addToCart = (req, res) => {
   Cart.findOne({ userId: req.user._id }).then((cart) => {
@@ -7,8 +8,6 @@ exports.addToCart = (req, res) => {
       console.log(cart, "[cart]");
       const product = req.body.products.product;
       const dbProduct = cart.products.find((c) => c.product == product);
-      console.log(dbProduct, "[dbProduct]");
-
       if (dbProduct) {
         Cart.findOneAndUpdate(
           { userId: req.user._id, "products.product": product },
@@ -119,7 +118,38 @@ exports.getCartSummaryByUserId = (req, res) => {
 };
 
 exports.deleteUserCart = (req, res) => {
-  Cart.findByIdAndDelete({ userId: req.user._id })
+  Cart.findOneAndDelete({ userId: req.user._id })
     .then(() => res.status(200).json({ message: "Cart is reset" }))
-    .catch(() => res.status(500).json({ message: "Failed to reset the cart" }));
+    .catch((error) =>
+      res.status(500).json({ message: "Failed to reset the cart", error })
+    );
+};
+
+exports.removeFromCart = (req, res) => {
+  Cart.findOne({ userId: req.user._id }).then((cart) => {
+    if (cart) {
+      const filteredProducts = cart.products.filter(
+        (p) => p.product != req.body.productId
+      );
+      Cart.findOneAndUpdate(
+        { userId: req.user._id },
+        {
+          products: filteredProducts,
+        },
+        { new: true }
+      )
+        .then((products) =>
+          res
+            .status(200)
+            .json({ message: "Removed the item from cart", products })
+        )
+        .catch((error) =>
+          res.status(500).json({ message: "Failed to remove product", error })
+        );
+    } else {
+      res.status(500).json({
+        message: "You don't own a cart yet. Please add items to your cart",
+      });
+    }
+  });
 };

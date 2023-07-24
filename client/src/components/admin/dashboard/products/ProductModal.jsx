@@ -191,6 +191,14 @@ const Content = ({ handleFormDataCb, editData }) => {
         </FormControl>
       </Grid>
 
+      <Grid item xs={12}>
+        <TextField
+          variant="outlined"
+          style={{ width: "100%" }}
+          label="Additional Info"
+        />
+      </Grid>
+
       <Grid item xs={6}>
         <input
           type="file"

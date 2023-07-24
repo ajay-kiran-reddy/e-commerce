@@ -15,6 +15,8 @@ const initialState = {
   openEditCategoryModal: false,
   deleteCategoryId: "",
   openDeleteCategoryModal: false,
+  allOrders: [],
+  updatedOrder: "",
 };
 
 export const AdminProductsSlice = createSlice({
@@ -93,6 +95,16 @@ export const AdminProductsSlice = createSlice({
       state.createProduct = {};
       state.deleteProductId = "";
       state.deleteCategoryId = "";
+    },
+    fetchAllOrders: (state) => {
+      state.isLoading = true;
+    },
+    storeAllOrders: (state, action) => {
+      state.allOrders = action.payload;
+      state.isLoading = false;
+    },
+    updateOrder: (state, action) => {
+      state.updatedOrder = action.payload;
     },
   },
 });

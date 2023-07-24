@@ -1,8 +1,9 @@
-import { deleteData, fetchData } from "../../../apiConfig/api";
+import { deleteData, fetchData, updateData } from "../../../apiConfig/api";
 import {
   CART_RESET,
   CART_SUMMARY,
   PRODUCTS,
+  REMOVE_FROM_CART,
 } from "../../admin/dashboard/constants/ApiEndpoints";
 
 const fetchCartSummary = () => {
@@ -17,4 +18,8 @@ const resetCartData = () => {
   return deleteData(CART_RESET);
 };
 
-export { fetchCartSummary, fetchProductById, resetCartData };
+const removeFromCart = (productId) => {
+  return updateData(REMOVE_FROM_CART, productId);
+};
+
+export { fetchCartSummary, fetchProductById, resetCartData, removeFromCart };

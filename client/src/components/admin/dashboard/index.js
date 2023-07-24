@@ -9,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Categories from "./categories";
 import ProductsContainer from "./products";
+import Orders from "./orders";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -67,7 +68,8 @@ export default function FullWidthTabs() {
         >
           <Tab label="Products" {...a11yProps(0)} />
           <Tab label="Categories" {...a11yProps(1)} />
-          <Tab label="Users" {...a11yProps(2)} />
+          <Tab label="Orders" {...a11yProps(2)} />
+          <Tab label="Users" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <div>
@@ -78,6 +80,9 @@ export default function FullWidthTabs() {
           <Categories />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
+          <Orders />
+        </TabPanel>
+        <TabPanel value={value} index={3} dir={theme.direction}>
           Users
         </TabPanel>
       </div>

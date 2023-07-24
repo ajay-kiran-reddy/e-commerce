@@ -21,11 +21,14 @@ const CART = "/cart";
 const ADD_TO_CART = "/cart/addToCart";
 const CART_SUMMARY = "/cart/summary";
 const CART_RESET = "/cart/deleteCart";
+const REMOVE_FROM_CART = "/cart/removeFromCart";
 
 /**Orders api's end points */
 const PAYMENT = "/payment";
 const ORDERS = "/orders";
 const CREATE_ORDER = "/orders/createOrder";
+const ALL_ORDERS = "/orders/allOrders";
+const UPDATE_ORDER = "/orders/updateOrder";
 
 /** User Api end points*/
 
@@ -50,4 +53,7 @@ export {
   CREATE_ORDER,
   PAYMENT,
   CART_RESET,
+  REMOVE_FROM_CART,
+  ALL_ORDERS,
+  UPDATE_ORDER,
 };

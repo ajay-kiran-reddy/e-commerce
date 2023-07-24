@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   isLoading: true,
   cartSummary: null,
+  removeProductId: "",
 };
 
 const CartSlice = createSlice({
@@ -21,6 +22,10 @@ const CartSlice = createSlice({
     },
     resetCartData: (state) => {
       state.isLoading = true;
+    },
+    removeFromCart: (state, action) => {
+      state.isLoading = true;
+      state.removeProductId = action.payload;
     },
   },
 });

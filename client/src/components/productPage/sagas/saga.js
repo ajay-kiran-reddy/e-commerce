@@ -3,6 +3,7 @@ import {
   getFailureApiResponse,
   getSuccessApiResponse,
 } from "../../../constants/GlobalConstants";
+import { CartSlice } from "../../cart/slices/slice";
 import { updateApiResponse } from "../../home/slices/slice";
 import { getProductInfoFromCart, postAddToCart } from "../service/service";
 import { ProductSlice, ProductState } from "../slices/slice";
@@ -16,8 +17,12 @@ function* actionAddToCart() {
       state?.addToCartProductInfo?.products?.product
     );
     yield put(ProductSlice.actions.storeATCProductInfo(results));
+    yield put(CartSlice.actions.getCartSummary());
     yield put(updateApiResponse(getSuccessApiResponse(data)));
     yield put(ProductSlice.actions.updateLoadingState(false));
+    if (state.navigate) {
+      state.navigate("/cartSummary");
+    }
   } catch (e) {
     yield put(updateApiResponse(getFailureApiResponse(e)));
     yield put(ProductSlice.actions.updateLoadingState(false));

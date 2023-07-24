@@ -31,6 +31,7 @@ import {
   ADMIN_USER_SETTINGS_MENU,
   USER_SETTINGS_MENU,
 } from "../../constants/GlobalConstants";
+import { Cart, CartSlice } from "../cart/slices/slice";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -53,6 +54,8 @@ function Header() {
   const state = useSelector(homeState);
   const [disablePrimary, setDisablePrimary] = useState(true);
   const [disableSecondary, setDisableSecondary] = useState(true);
+  const cartState = useSelector(Cart);
+  const [cartQty, setCartQty] = useState(0);
 
   const handleItemClick = (setting) => {
     const value = setting?.value;
@@ -68,6 +71,15 @@ function Header() {
   };
 
   useEffect(() => {
+    const products = cartState?.cartSummary?.products;
+    if (products?.length > 1) {
+      setCartQty(products.reduce((a, b) => a.quantity + b.quantity));
+    } else if (products?.length === 1) {
+      setCartQty(products[0].quantity);
+    }
+  }, [cartState]);
+
+  useEffect(() => {
     const isAdmin = isAdminUser();
     if (isAdmin) {
       setSettings(ADMIN_USER_SETTINGS_MENU);
@@ -75,6 +87,10 @@ function Header() {
       setSettings(USER_SETTINGS_MENU);
     }
   }, [state?.userInfo]);
+
+  useEffect(() => {
+    dispatch(CartSlice.actions.getCartSummary());
+  }, []);
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -159,7 +175,6 @@ function Header() {
         setDisablePrimary(!(userName && password && email));
       } else {
         /**if sign in screen is there, check for at least email field to enable forget password and check for email and password to enable login button */
-        console.log(formData, "Inside else");
         const { password, email } = formData;
         setDisablePrimary(!(password && email));
         setDisableSecondary(!email);
@@ -195,7 +210,7 @@ function Header() {
               variant="h6"
               noWrap
               component="a"
-              href="/"
+              onClick={() => navigate("/")}
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
@@ -204,6 +219,7 @@ function Header() {
                 letterSpacing: ".3rem",
                 color: "inherit",
                 textDecoration: "none",
+                cursor: "pointer",
               }}
             >
               AV Stores
@@ -250,7 +266,7 @@ function Header() {
               variant="h5"
               noWrap
               component="a"
-              href=""
+              onClick={() => navigate("/")}
               sx={{
                 mr: 2,
                 display: { xs: "flex", md: "none" },
@@ -260,6 +276,7 @@ function Header() {
                 letterSpacing: ".3rem",
                 color: "inherit",
                 textDecoration: "none",
+                cursor: "pointer",
               }}
             >
               AV Stores
@@ -305,7 +322,7 @@ function Header() {
                 <Grid item xs={1}>
                   <Tooltip title="Go To Cart">
                     <IconButton onClick={() => navigate("/cartSummary")}>
-                      <StyledBadge badgeContent={4} color="primary">
+                      <StyledBadge badgeContent={cartQty} color="primary">
                         <ShoppingCartIcon style={{ color: "#fff" }} />
                       </StyledBadge>
                     </IconButton>

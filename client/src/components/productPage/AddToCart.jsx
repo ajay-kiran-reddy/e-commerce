@@ -15,10 +15,11 @@ export default function AddToCart({ productInfo }) {
   const [price, setPrice] = useState(productInfo?.price);
   const dispatch = useDispatch();
   const state = useSelector(ProductState);
+  console.log(price, "[price]");
 
   useEffect(() => {
     setQuantity(state?.ATCProductInfo?.quantity || 1);
-    setPrice(state?.ATCProductInfo?.amount);
+    setPrice(state?.ATCProductInfo?.amount || price);
   }, [state.ATCProductInfo]);
 
   useEffect(() => {
@@ -29,6 +30,12 @@ export default function AddToCart({ productInfo }) {
 
   const handleAddToCart = () => {
     dispatch(ProductSlice.actions.addToCart({ ...productInfo, quantity }));
+  };
+
+  const handleBuyNow = () => {
+    dispatch(
+      ProductSlice.actions.addToCart({ ...productInfo, quantity, navigate })
+    );
   };
 
   const handleQuantity = (operation) => {
@@ -77,7 +84,7 @@ export default function AddToCart({ productInfo }) {
           variant="contained"
           style={{ backgroundColor: "#FFA41B", width: "100%", color: "black" }}
           startIcon={<ShoppingCartCheckoutIcon />}
-          onClick={() => navigate("/cartSummary")}
+          onClick={handleBuyNow}
         >
           Buy Now
         </Button>

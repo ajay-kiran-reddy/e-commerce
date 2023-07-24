@@ -46,7 +46,7 @@ export default function AddressSection({ handleCBData }) {
 
   useEffect(() => {
     const userData = userInfo?.userInfo?.user;
-    if (userData) {
+    if (userData?.address) {
       const {
         country,
         fullName,

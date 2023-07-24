@@ -43,7 +43,9 @@ export default function SuccessCheckout() {
   useEffect(() => {
     const cartItems = sessionStorage.getItem("cartItems");
     const parsedData = cartItems && JSON.parse(cartItems);
-    dispatch(OrderSlice.actions.getCreateOrderData(parsedData));
+    if (parsedData) {
+      dispatch(OrderSlice.actions.getCreateOrderData(parsedData));
+    }
   }, []);
 
   useEffect(() => {
@@ -70,7 +72,10 @@ export default function SuccessCheckout() {
         <h1 className={classes.title}>Success</h1>
         <p className={classes.description}>
           We received your purchase request;
-          <br /> we'll be in touch shortly!
+          <br /> You can track your order{" "}
+          <a href="/orders" color="red">
+            here
+          </a>
         </p>
       </div>
     </div>

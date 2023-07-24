@@ -1,15 +1,23 @@
 const express = require("express");
 const {
   getAllOrders,
+  getUserOrders,
   createOrder,
   updateOrder,
   deleteOrder,
 } = require("../controller/order");
-const { isUserAuthenticated } = require("../middleware/authenticate");
+const {
+  isUserAuthenticated,
+  isAdminAuthenticated,
+} = require("../middleware/authenticate");
 const router = express.Router();
 const Order = require("../models/order");
 
 router.get("/", isUserAuthenticated, (req, res) => {
+  return getUserOrders(req, res);
+});
+
+router.get("/allOrders", isAdminAuthenticated, (req, res) => {
   return getAllOrders(req, res);
 });
 

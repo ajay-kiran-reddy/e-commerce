@@ -5,12 +5,14 @@ import {
   updateData,
 } from "../../../apiConfig/api";
 import {
+  ALL_ORDERS,
   CATEGORY,
   CREATE_CATEGORY,
   CREATE_PRODUCT,
   DELETE_CATEGORY,
   PRODUCTS,
   UPDATE_CATEGORY,
+  UPDATE_ORDER,
 } from "../dashboard/constants/ApiEndpoints";
 
 const getImageUrlFromCloudinary = (data) => {
@@ -56,6 +58,14 @@ const deleteCategory = (id) => {
   return deleteData(`${DELETE_CATEGORY}/${id}`, id);
 };
 
+const fetchAllOrders = () => {
+  return fetchData(ALL_ORDERS);
+};
+
+const updateOrderStatus = (data) => {
+  return updateData(UPDATE_ORDER, data);
+};
+
 export {
   fetchProducts,
   createProductApi,
@@ -67,4 +77,6 @@ export {
   getCategoryById,
   updateCategory,
   deleteCategory,
+  fetchAllOrders,
+  updateOrderStatus,
 };
