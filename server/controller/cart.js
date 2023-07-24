@@ -36,11 +36,14 @@ exports.addToCart = (req, res) => {
               .json({ message: "Failed to update the cart ", error })
           );
       } else {
+        const amount =
+          (req.body.products.quantity ? req.body.products.quantity : 1) *
+          req.body.products.price;
         Cart.findOneAndUpdate(
           { userId: req.user._id },
           {
             $push: {
-              products: req.body.products,
+              products: { ...req.body.products, amount },
             },
           },
           { new: true }
