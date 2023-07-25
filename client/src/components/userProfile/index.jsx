@@ -4,7 +4,6 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import UserDetails from "./UserDetails";
-import Orders from "./Orders";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -59,13 +58,9 @@ export default function UserProfile() {
         sx={{ borderRight: 1, borderColor: "divider" }}
       >
         <Tab label="Profile" {...a11yProps(0)} />
-        <Tab label="Orders" {...a11yProps(1)} />
       </Tabs>
       <TabPanel value={value} index={0} style={{ width: "100%" }}>
         <UserDetails />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <Orders />
       </TabPanel>
     </Box>
   );

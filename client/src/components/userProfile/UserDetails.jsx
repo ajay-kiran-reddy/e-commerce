@@ -23,6 +23,7 @@ export default function UserDetails() {
   });
   const AdminState = useSelector(AdminProducts);
   const userInfo = useSelector(User);
+  const [changePassword, setChangePassword] = useState(false);
 
   useEffect(() => {
     dispatch(UserSlice.actions.getUserInfo());
@@ -68,6 +69,11 @@ export default function UserDetails() {
     dispatch(UserSlice.actions.updateUserInfo(formData));
   };
 
+  const handleChangePassword = () => {
+    setChangePassword(true);
+    setFormData({ ...formData, currentPassword: "", password: "" });
+  };
+
   console.log(formData, "[FORM DATA]");
 
   return (
@@ -99,8 +105,32 @@ export default function UserDetails() {
       </Grid>
 
       <Grid item xs={6} md={3}>
-        <Button variant="outlined">Change Password</Button>
+        <Button variant="outlined" onClick={() => handleChangePassword()}>
+          Change Password
+        </Button>
       </Grid>
+
+      {changePassword && (
+        <Grid item xs={6} md={3}>
+          <TextField
+            className={classes.root}
+            label="Current Password"
+            value={formData.currentPassword}
+            onChange={(e) => handleFormData(e, "currentPassword")}
+          />
+        </Grid>
+      )}
+
+      {changePassword && (
+        <Grid item xs={6} md={3}>
+          <TextField
+            className={classes.root}
+            label="New Password"
+            value={formData.password}
+            onChange={(e) => handleFormData(e, "password")}
+          />
+        </Grid>
+      )}
 
       <Grid item xs={8}>
         <AddressSection handleCBData={handleCBData} />
@@ -108,13 +138,15 @@ export default function UserDetails() {
       <Grid item xs={4} style={{ textAlign: "right" }}>
         <input type="file" onChange={(e) => handleChange(e)} />
         <div style={{ marginTop: "1rem" }}>
-          <img
-            src={formData.image}
-            alt="user_pofile_image"
-            width="300px"
-            height="300px"
-            style={{ borderRadius: "50%" }}
-          />
+          {formData.image && (
+            <img
+              src={formData.image}
+              alt="user_pofile_image"
+              width="300px"
+              height="300px"
+              style={{ borderRadius: "50%" }}
+            />
+          )}
         </div>
       </Grid>
       <Grid item xs={12}>

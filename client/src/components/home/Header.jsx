@@ -23,7 +23,7 @@ import SignUp from "../login/SignUp";
 import { useDispatch, useSelector } from "react-redux";
 import { HomeSlice, homeState } from "./slices/slice";
 import CustomLoader from "../shared/Loader";
-import { isAdminUser } from "../../utils/globalUtils";
+import { isAdminUser, isUserLoggedIn } from "../../utils/globalUtils";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
@@ -89,7 +89,7 @@ function Header() {
   }, [state?.userInfo]);
 
   useEffect(() => {
-    dispatch(CartSlice.actions.getCartSummary());
+    isUserLoggedIn() && dispatch(CartSlice.actions.getCartSummary());
   }, []);
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);

@@ -4,7 +4,10 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
-import { formatCurrencyToIndianRupees } from "../../utils/globalUtils";
+import {
+  formatCurrencyToIndianRupees,
+  isUserLoggedIn,
+} from "../../utils/globalUtils";
 import { useDispatch, useSelector } from "react-redux";
 import { ProductSlice, ProductState } from "./slices/slice";
 import { useNavigate } from "react-router";
@@ -23,7 +26,8 @@ export default function AddToCart({ productInfo }) {
   }, [state.ATCProductInfo]);
 
   useEffect(() => {
-    productInfo?._id &&
+    isUserLoggedIn() &&
+      productInfo?._id &&
       dispatch(ProductSlice.actions.getProductDataFromCart(productInfo?._id));
     setPrice(productInfo?.price);
   }, [productInfo]);

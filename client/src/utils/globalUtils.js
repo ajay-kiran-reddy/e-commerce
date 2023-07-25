@@ -39,4 +39,33 @@ const formatCurrencyToIndianRupees = (price, priceFontSize, isMrp) => {
   );
 };
 
-export { isUserAuthenticated, isAdminUser, formatCurrencyToIndianRupees };
+const isUserLoggedIn = () => {
+  const userInfoJsonObject = sessionStorage.getItem("userInfo")
+    ? sessionStorage.getItem("userInfo")
+    : "";
+
+  const userInfoParsedObject = userInfoJsonObject
+    ? JSON.parse(userInfoJsonObject)
+    : null;
+
+  const accessToken = userInfoParsedObject?.jwtToken?.accessToken;
+  return accessToken ? true : false;
+};
+
+const validateEmail = (email) => {
+  var re = /\S+@\S+\.\S+/;
+  return re.test(email);
+};
+
+const validatePassword = (password) => {
+  return password.length < 6 ? false : true;
+};
+
+export {
+  isUserAuthenticated,
+  isAdminUser,
+  formatCurrencyToIndianRupees,
+  isUserLoggedIn,
+  validateEmail,
+  validatePassword,
+};

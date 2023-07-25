@@ -31,7 +31,7 @@ export default function CustomTable({
 
   return (
     <Paper sx={{ width: "100%" }}>
-      {data?.length > 0 ? (
+      {data.length > 0 ? (
         <div>
           <TableContainer>
             <Table stickyHeader aria-label="sticky table">
