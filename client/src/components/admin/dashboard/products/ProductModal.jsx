@@ -1,10 +1,15 @@
 import {
   FormControl,
   Grid,
+  IconButton,
+  ImageList,
+  ImageListItem,
   InputLabel,
   MenuItem,
   Select,
   TextField,
+  Tooltip,
+  Typography,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,15 +17,35 @@ import CustomAutoComplete from "../../../shared/CustomAutoComplete";
 import CustomDialog from "../../../shared/CustomDialog";
 import CustomLoader from "../../../shared/Loader";
 import AdminProductsSlice, { AdminProducts } from "../../slices/slice";
-import { COLORS_OPTIONS, SIZE_OPTIONS } from "../constants/DashboardConstants";
+import {
+  APP_ACTION_COLORS,
+  COLORS_OPTIONS,
+  SIZE_OPTIONS,
+} from "../constants/DashboardConstants";
 import ReactImageMagnify from "react-image-magnify";
+import DownloadDoneIcon from "@mui/icons-material/DownloadDone";
+import AddIcon from "@mui/icons-material/Add";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 
 const Content = ({ handleFormDataCb, editData }) => {
-  const [formData, setFormData] = useState();
+  const [formData, setFormData] = useState({
+    name: "",
+    description: "",
+    price: 0,
+    color: "",
+    size: "",
+    images: [],
+    additionalInfo: [],
+  });
   const adminState = useSelector(AdminProducts);
   const [allCategories, setAllCategories] = useState([]);
   const dispatch = useDispatch();
   const [defaultCategory, setDefaultCategory] = useState({});
+  const [tempAdditionalInfo, setTempAdditionalInfo] = useState({
+    feature: "",
+    value: "",
+  });
+  const [showTempAddInfo, setShowTempAddInfo] = useState(false);
 
   useEffect(() => {
     if (editData) {
@@ -91,13 +116,65 @@ const Content = ({ handleFormDataCb, editData }) => {
     setFormData({ ...formData, category: data._id });
   };
 
+  const handleAdditionalInfo = (event, field, index) => {
+    const value = event.target.value;
+    /**If if index is not available, then consider it as temp data that user is adding */
+    if (index === undefined) {
+      if (field === "feature") {
+        setTempAdditionalInfo({ ...tempAdditionalInfo, feature: value });
+      } else {
+        setTempAdditionalInfo({ ...tempAdditionalInfo, value: value });
+      }
+    }
+    /**If index is available user is trying to update already existing data */
+    if (index >= 0) {
+      const addInfo = [...formData.additionalInfo];
+      const object = { ...formData.additionalInfo[index] };
+      if (field === "feature") {
+        object.feature = value;
+        addInfo[index] = object;
+        setFormData({
+          ...formData,
+          additionalInfo: addInfo,
+        });
+      } else {
+        object.value = value;
+        addInfo[index] = object;
+        const additionalInfo = addInfo;
+        setFormData({
+          ...formData,
+          additionalInfo,
+        });
+      }
+    }
+  };
+
+  const handleSaveAddInfo = () => {
+    setFormData({
+      ...formData,
+      additionalInfo: [...formData.additionalInfo, tempAdditionalInfo],
+    });
+    setTempAdditionalInfo({ feature: "", value: "" });
+    setShowTempAddInfo(false);
+  };
+
+  const handleRemoveInfo = (index) => {
+    let addInfo = [...formData.additionalInfo];
+    console.log(index, "[INDEX]");
+    const updatedInfo = addInfo.filter((data, i) => i !== index);
+    console.log(updatedInfo, "[updatedInfo]");
+    setFormData({ ...formData, additionalInfo: updatedInfo });
+  };
+
+  console.log(formData, "FORM DATA");
+
   return (
     <Grid container spacing={3}>
       <CustomLoader show={adminState.isLoading} />
       <Grid item xs={6}>
         <TextField
           label="Name"
-          value={formData?.name}
+          value={formData.name}
           placeholder="Enter product name"
           onChange={(e) => handleFormData(e, "name")}
           style={{ width: "100%" }}
@@ -107,7 +184,7 @@ const Content = ({ handleFormDataCb, editData }) => {
       <Grid item xs={6}>
         <TextField
           label="Description"
-          value={formData?.description}
+          value={formData.description}
           placeholder="Enter product description"
           onChange={(e) => handleFormData(e, "description")}
           style={{ width: "100%" }}
@@ -128,7 +205,7 @@ const Content = ({ handleFormDataCb, editData }) => {
         <TextField
           label="Price"
           placeholder="Enter product's price"
-          value={formData?.price}
+          value={formData.price}
           onChange={(e) => handleFormData(e, "price")}
           style={{ width: "100%" }}
         />
@@ -140,8 +217,8 @@ const Content = ({ handleFormDataCb, editData }) => {
             displayEmpty
             labelId="demo-simple-select-helper-label"
             id="demo-simple-select-helper"
-            value={formData?.color || ""}
-            defaultValue={formData?.color || ""}
+            value={formData.color || ""}
+            defaultValue={formData.color || ""}
             label="Color"
             placeholder="Enter product's color"
             onChange={(e) => handleFormData(e, "color")}
@@ -154,9 +231,9 @@ const Content = ({ handleFormDataCb, editData }) => {
                 <MenuItem
                   key={index}
                   style={{ color: `${option.code}` }}
-                  value={option?.value}
+                  value={option.value}
                 >
-                  {option?.label}
+                  {option.label}
                 </MenuItem>
               );
             })}
@@ -170,8 +247,8 @@ const Content = ({ handleFormDataCb, editData }) => {
           <Select
             labelId="demo-simple-select-helper-label"
             id="demo-simple-select-helper"
-            value={formData?.size || ""}
-            defaultValue={formData?.size || ""}
+            value={formData.size || ""}
+            defaultValue={formData.size || ""}
             label="Size"
             placeholder="Enter product's size"
             onChange={(e) => handleFormData(e, "size")}
@@ -192,11 +269,105 @@ const Content = ({ handleFormDataCb, editData }) => {
       </Grid>
 
       <Grid item xs={12}>
-        <TextField
-          variant="outlined"
-          style={{ width: "100%" }}
-          label="Additional Info"
-        />
+        <Typography
+          variant="title"
+          style={{ fontWeight: 600 }}
+          gutterBottom
+          color="primary"
+        >
+          Additional Information
+        </Typography>
+
+        {formData.additionalInfo.map((info, index) => {
+          return (
+            <Grid container spacing={3}>
+              <Grid item xs={5}>
+                <TextField
+                  style={{ width: "100%" }}
+                  variant="standard"
+                  label="Feature"
+                  value={formData.additionalInfo[index].feature}
+                  onChange={(e) => handleAdditionalInfo(e, "feature", index)}
+                />
+              </Grid>
+              <Grid item xs={5}>
+                <TextField
+                  style={{ width: "100%" }}
+                  variant="standard"
+                  label="Value"
+                  value={formData.additionalInfo[index].value}
+                  onChange={(e) =>
+                    handleAdditionalInfo(e, "featureValue", index)
+                  }
+                />
+              </Grid>
+              <Grid item xs={1}>
+                <Tooltip title="Remove this feature">
+                  <IconButton
+                    style={{ marginTop: "1rem" }}
+                    onClick={() => handleRemoveInfo(index)}
+                  >
+                    <HighlightOffIcon
+                      style={{ color: APP_ACTION_COLORS.red }}
+                    />
+                  </IconButton>
+                </Tooltip>
+              </Grid>
+              {index === formData.additionalInfo.length - 1 && (
+                <Grid item xs={1}>
+                  <Tooltip title="Add new feature">
+                    <IconButton
+                      style={{ marginTop: "1rem" }}
+                      onClick={() => setShowTempAddInfo(true)}
+                    >
+                      <AddIcon color="primary" />
+                    </IconButton>
+                  </Tooltip>
+                </Grid>
+              )}
+            </Grid>
+          );
+        })}
+        {/**  Temporary Additional Info */}
+        {(showTempAddInfo || formData.additionalInfo.length === 0) && (
+          <Grid container spacing={3}>
+            <Grid item xs={5}>
+              <TextField
+                style={{ width: "100%" }}
+                variant="standard"
+                label="Feature"
+                value={tempAdditionalInfo.feature}
+                onChange={(e) => handleAdditionalInfo(e, "feature")}
+              />
+            </Grid>
+            <Grid item xs={5}>
+              <TextField
+                style={{ width: "100%" }}
+                variant="standard"
+                label="Value"
+                value={tempAdditionalInfo.value}
+                onChange={(e) => handleAdditionalInfo(e, "featureValue")}
+              />
+            </Grid>
+            <Grid item xs={1}>
+              <Tooltip title="Save">
+                <IconButton
+                  style={{ marginTop: "1rem" }}
+                  onClick={handleSaveAddInfo}
+                >
+                  <DownloadDoneIcon color="primary" />
+                </IconButton>
+              </Tooltip>
+            </Grid>
+            <Grid item xs={1}>
+              <Tooltip title="Add new feature">
+                <IconButton style={{ marginTop: "1rem" }}>
+                  <AddIcon color="primary" />
+                </IconButton>
+              </Tooltip>
+            </Grid>
+          </Grid>
+        )}
       </Grid>
 
       <Grid item xs={6}>
@@ -208,24 +379,17 @@ const Content = ({ handleFormDataCb, editData }) => {
       </Grid>
 
       <Grid item xs={12}>
-        {formData?.images?.map((image) => {
-          return (
-            <ReactImageMagnify
-              {...{
-                smallImage: {
-                  alt: "Wristwatch by Ted Baker London",
-                  isFluidWidth: true,
-                  src: image,
-                },
-                largeImage: {
-                  src: image,
-                  width: 1200,
-                  height: 1800,
-                },
-              }}
-            />
-          );
-        })}
+        <ImageList
+          sx={{ width: "100%", height: "100%" }}
+          cols={2}
+          rowHeight={"100%"}
+        >
+          {formData.images.map((image) => (
+            <ImageListItem>
+              <img src={image} alt={"Product"} loading="lazy" />
+            </ImageListItem>
+          ))}
+        </ImageList>
       </Grid>
     </Grid>
   );

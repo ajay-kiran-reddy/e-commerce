@@ -50,7 +50,7 @@ router.delete("/:id", isAdminAuthenticated, (req, res) => {
     );
 });
 
-router.get("/:id", isUserAuthenticated, (req, res) => {
+router.get("/:id", (req, res) => {
   Product.findOne({ _id: req.params.id })
     .then((product) => res.status(200).json({ product }))
     .catch((error) =>
