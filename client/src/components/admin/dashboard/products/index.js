@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  Grid,
-  IconButton,
-  Tooltip,
-  Typography,
-} from "@mui/material";
+import { Button, Grid, IconButton, Tooltip, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { formatDate } from "../../../../utils/dateUtils";
@@ -32,6 +25,7 @@ function ProductsContainer() {
   }, []);
 
   const handleModal = (value) => {
+    console.log(value, "[VALUE]");
     setOpenModal(value);
   };
 
@@ -65,7 +59,7 @@ function ProductsContainer() {
     {
       field: "description",
       fieldLabel: "Description",
-      render: (row) => row.description,
+      render: (row) => row?.description?.split("\n")[0],
       align: "left",
     },
     {
@@ -130,7 +124,6 @@ function ProductsContainer() {
   ];
 
   const handleEdit = (data) => {
-    console.log("clicking edit");
     setMode("edit");
     setOpenModal(true);
     setEditData(data);
@@ -174,7 +167,7 @@ function ProductsContainer() {
             <>
               <Typography>
                 You have selected to delete this product{" "}
-                <b>{selectedProduct?.name}</b>
+                <b>{selectedProduct.name}</b>
                 <br></br>
                 <br></br>
                 If this is the action you wanted to do, please confirm your
@@ -199,7 +192,7 @@ function ProductsContainer() {
         subHeader={""}
         content={
           <CustomTable
-            data={state?.products}
+            data={state.products}
             columns={columns}
             buttonLabel="Add Product"
             handleButtonClick={handleButtonClick}

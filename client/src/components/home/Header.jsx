@@ -68,6 +68,7 @@ function Header() {
     } else if (value === "orders") {
       navigate(ROUTING_CONSTANTS.ROUTE_TO_ORDERS);
     }
+    handleCloseUserMenu();
   };
 
   useEffect(() => {
@@ -331,7 +332,10 @@ function Header() {
                 <Grid item xs={1}>
                   <Tooltip title="Open settings">
                     <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                      <Avatar alt={state?.userInfo?.userName} />
+                      <Avatar
+                        alt={state?.userInfo?.userName}
+                        src={state?.userInfo?.image}
+                      />
                     </IconButton>
                   </Tooltip>
                   <Menu

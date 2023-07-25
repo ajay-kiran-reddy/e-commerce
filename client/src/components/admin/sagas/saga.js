@@ -48,6 +48,7 @@ function* actionCreateProduct() {
     yield put(AdminProductsSlice.actions.storeProducts(products));
     yield put(AdminProductsSlice.actions.updateLoadingState(false));
     yield put(AdminProductsSlice.actions.storeImageFileUrls([]));
+    yield put(AdminProductsSlice.actions.resetData());
   } catch (e) {
     console.log(e, "[EROR]");
     yield put(updateApiResponse(getFailureApiResponse(e)));
@@ -67,6 +68,7 @@ function* actionUpdateProduct() {
     yield put(AdminProductsSlice.actions.storeProducts(products));
     yield put(AdminProductsSlice.actions.updateLoadingState(false));
     yield put(AdminProductsSlice.actions.storeImageFileUrls([]));
+    yield put(AdminProductsSlice.actions.resetData());
   } catch (e) {
     console.log(e, "[EROR]");
     yield put(updateApiResponse(getFailureApiResponse(e)));

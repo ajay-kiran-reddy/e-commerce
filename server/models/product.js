@@ -41,6 +41,9 @@ const ProductSchema = new Schema(
       type: Object,
       required: false,
     },
+    thumbnail: {
+      type: String,
+    },
   },
   { timestamps: true }
 );

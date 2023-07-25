@@ -123,7 +123,7 @@ export default function CartPage() {
                         <Grid item xs={3}>
                           <img
                             alt="product_image"
-                            src={product?.productInfo?.product?.images[0]}
+                            src={product?.productInfo?.product?.thumbnail}
                             width="100%"
                             maxHeight="300px"
                             height="250px"

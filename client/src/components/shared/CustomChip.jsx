@@ -15,7 +15,7 @@ export default function CustomChip({ label }) {
     } else if (label === "In Transit") {
       setColor("#fff");
       setBackgroundColor("#6d1b7b");
-    } else if (label === "Delivered") {
+    } else if (label === "Delivered" || label === "Thumbnail") {
       setColor("#fff");
       setBackgroundColor("#00695f");
     }

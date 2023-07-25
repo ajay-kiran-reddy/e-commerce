@@ -94,7 +94,7 @@ export default function Orders() {
                               }
                             >
                               <img
-                                src={product.product.images[0]}
+                                src={product.product.thumbnail}
                                 alt="product_thumbnail"
                                 height="100px"
                                 width="100px"

@@ -11,6 +11,7 @@ const useStyles = makeStyles({
   },
   specificationsValue: {
     fontSize: "14px",
+    padding: "5px",
   },
   description: {
     fontSize: "14px",
@@ -19,39 +20,24 @@ const useStyles = makeStyles({
 
 export default function Specifications({ productInfo }) {
   const classes = useStyles();
-  const descriptionPoints = productInfo?.description.split("||");
+  const descriptionPoints = productInfo?.description.split("\n");
 
   return (
     <div>
       <Grid container>
-        <Grid item xs={3} className={classes.specificationsLabel}>
-          Brand
-        </Grid>
-        <Grid item xs={3} className={classes.specificationsValue}>
-          One Plus
-        </Grid>
-        <Grid item xs={6}></Grid>
-        <Grid item xs={3} className={classes.specificationsLabel}>
-          Model Name
-        </Grid>
-        <Grid item xs={3} className={classes.specificationsValue}>
-          OnePlus Nord CE 2
-        </Grid>
-        <Grid item xs={6}></Grid>
-        <Grid item xs={3} className={classes.specificationsLabel}>
-          Storage
-        </Grid>
-        <Grid item xs={3} className={classes.specificationsValue}>
-          64GB
-        </Grid>
-        <Grid item xs={6}></Grid>
-        <Grid item xs={3} className={classes.specificationsLabel}>
-          RAM Size
-        </Grid>
-        <Grid item xs={3} className={classes.specificationsValue}>
-          4GB
-        </Grid>
-        <Grid item xs={6}></Grid>
+        {productInfo?.additionalInfo.map((info, index) => {
+          return (
+            <>
+              <Grid item xs={3} className={classes.specificationsLabel}>
+                {info.feature}
+              </Grid>
+              <Grid item xs={3} className={classes.specificationsValue}>
+                {info.value}
+              </Grid>
+              <Grid item xs={6}></Grid>
+            </>
+          );
+        })}
 
         <Grid item xs={3} className={classes.specificationsLabel}>
           About this item :-

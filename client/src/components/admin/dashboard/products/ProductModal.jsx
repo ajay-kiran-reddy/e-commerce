@@ -1,4 +1,5 @@
 import {
+  Button,
   FormControl,
   Grid,
   IconButton,
@@ -7,6 +8,7 @@ import {
   InputLabel,
   MenuItem,
   Select,
+  Slide,
   TextField,
   Tooltip,
   Typography,
@@ -22,10 +24,30 @@ import {
   COLORS_OPTIONS,
   SIZE_OPTIONS,
 } from "../constants/DashboardConstants";
-import ReactImageMagnify from "react-image-magnify";
 import DownloadDoneIcon from "@mui/icons-material/DownloadDone";
 import AddIcon from "@mui/icons-material/Add";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
+import TextareaAutosize from "@mui/base/TextareaAutosize";
+import ImageIcon from "@mui/icons-material/Image";
+import { makeStyles } from "@mui/styles";
+import CustomChip from "../../../shared/CustomChip";
+
+const useStyles = makeStyles({
+  root: {
+    position: "relative",
+  },
+  markAsThumbnail: {
+    position: "absolute",
+    bottom: "2rem",
+    width: "100%",
+    transition: "width 2s height 4s",
+  },
+  activeThumbnail: {
+    position: "absolute",
+    top: "2rem",
+    width: "100%",
+  },
+});
 
 const Content = ({ handleFormDataCb, editData }) => {
   const [formData, setFormData] = useState({
@@ -46,6 +68,10 @@ const Content = ({ handleFormDataCb, editData }) => {
     value: "",
   });
   const [showTempAddInfo, setShowTempAddInfo] = useState(false);
+  const [showThumbnail, setShowThumbnail] = useState(false);
+  const [activeImageIndex, setActiveImageIndex] = useState();
+
+  const classes = useStyles();
 
   useEffect(() => {
     if (editData) {
@@ -160,14 +186,19 @@ const Content = ({ handleFormDataCb, editData }) => {
 
   const handleRemoveInfo = (index) => {
     let addInfo = [...formData.additionalInfo];
-    console.log(index, "[INDEX]");
     const updatedInfo = addInfo.filter((data, i) => i !== index);
-    console.log(updatedInfo, "[updatedInfo]");
     setFormData({ ...formData, additionalInfo: updatedInfo });
   };
 
-  console.log(formData, "FORM DATA");
+  const handleMouseOver = (index) => {
+    setShowThumbnail(true);
+    setActiveImageIndex(index);
+  };
 
+  const handleThumbnail = (image) => {
+    setFormData({ ...formData, thumbnail: image });
+  };
+  console.log(formData, "FORM DATA");
   return (
     <Grid container spacing={3}>
       <CustomLoader show={adminState.isLoading} />
@@ -177,16 +208,6 @@ const Content = ({ handleFormDataCb, editData }) => {
           value={formData.name}
           placeholder="Enter product name"
           onChange={(e) => handleFormData(e, "name")}
-          style={{ width: "100%" }}
-        />
-      </Grid>
-
-      <Grid item xs={6}>
-        <TextField
-          label="Description"
-          value={formData.description}
-          placeholder="Enter product description"
-          onChange={(e) => handleFormData(e, "description")}
           style={{ width: "100%" }}
         />
       </Grid>
@@ -370,6 +391,17 @@ const Content = ({ handleFormDataCb, editData }) => {
         )}
       </Grid>
 
+      <Grid item xs={12}>
+        <TextareaAutosize
+          label="Description"
+          value={formData.description}
+          placeholder="Enter product description"
+          onChange={(e) => handleFormData(e, "description")}
+          style={{ width: "100%" }}
+          minRows={3}
+        />
+      </Grid>
+
       <Grid item xs={6}>
         <input
           type="file"
@@ -378,15 +410,43 @@ const Content = ({ handleFormDataCb, editData }) => {
         ></input>
       </Grid>
 
-      <Grid item xs={12}>
+      <Grid item xs={12} className={classes.root}>
         <ImageList
           sx={{ width: "100%", height: "100%" }}
           cols={2}
           rowHeight={"100%"}
         >
-          {formData.images.map((image) => (
+          {formData.images.map((image, index) => (
             <ImageListItem>
-              <img src={image} alt={"Product"} loading="lazy" />
+              <img
+                src={image}
+                style={{ cursor: "pointer" }}
+                alt={"Product"}
+                loading="lazy"
+                onMouseOver={() => handleMouseOver(index)}
+              />
+
+              <div className={classes.activeThumbnail}>
+                {formData.thumbnail === image && (
+                  <CustomChip label="Thumbnail" />
+                )}
+              </div>
+              <Slide
+                direction="up"
+                in={showThumbnail && index === activeImageIndex}
+                mountOnEnter
+                unmountOnExit
+              >
+                <div className={classes.markAsThumbnail}>
+                  <Button
+                    startIcon={<ImageIcon />}
+                    variant="contained"
+                    onClick={() => handleThumbnail(image)}
+                  >
+                    Select as Thumbnail
+                  </Button>
+                </div>
+              </Slide>
             </ImageListItem>
           ))}
         </ImageList>
@@ -415,9 +475,9 @@ function ProductModal(props) {
   const handleActionButton = (data) => {
     if (data.buttonType === "primary") {
       handleUpload();
+    } else {
+      props.handleModal(data.value);
     }
-    props.handleModal(data.value);
-    dispatch(AdminProductsSlice.actions.resetData());
   };
 
   useEffect(() => {
@@ -435,7 +495,7 @@ function ProductModal(props) {
         <Content handleFormDataCb={handleFormData} editData={props.editData} />
       }
       title="Add Product"
-      maxWidth="md"
+      maxWidth="lg"
     />
   );
 }

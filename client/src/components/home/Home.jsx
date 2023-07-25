@@ -20,10 +20,10 @@ function Home() {
     <>
       <CarouselLoader />
       <CustomLoader show={adminState.isLoading} />
-      <Grid container spacing={3} style={{ margin: "0.5rem" }}>
+      <Grid container spacing={3} style={{ marginTop: "0.5rem" }}>
         {adminState?.products?.map((product) => {
           return (
-            <Grid item xs={3}>
+            <Grid item xs={12} md={6} lg={3}>
               <ProductCard product={product} />
             </Grid>
           );

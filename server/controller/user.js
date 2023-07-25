@@ -25,6 +25,7 @@ exports.updateUserInfo = (req, res) => {
         bcrypt
           .compare(req.body.currentPassword, userDbPassword)
           .then(function (result, error) {
+            console.log(result, "[RESULT]");
             if (result === true) {
               bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
                 console.log(hash, "[hash]");
@@ -50,7 +51,7 @@ exports.updateUserInfo = (req, res) => {
             } else {
               res.status(500).json({
                 message: "Your current password didn't match with our records",
-                error,
+                error: error,
               });
             }
           });

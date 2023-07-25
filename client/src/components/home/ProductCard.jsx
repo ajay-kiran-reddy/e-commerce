@@ -1,16 +1,6 @@
-import {
-  Box,
-  Button,
-  Grid,
-  IconButton,
-  Paper,
-  Slide,
-  Typography,
-} from "@mui/material";
+import { Button, Grid, Paper, Slide, Typography } from "@mui/material";
 import React, { useState } from "react";
-import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import { formatCurrencyToIndianRupees } from "../../utils/globalUtils";
-import { APP_ACTION_COLORS } from "../admin/dashboard/constants/DashboardConstants";
 import { makeStyles } from "@mui/styles";
 import { useNavigate } from "react-router";
 import AddShoppingCart from "@mui/icons-material/AddShoppingCart";
@@ -19,6 +9,8 @@ const useStyles = makeStyles({
   root: {
     minHeight: "450px",
     maxHeight: "450px",
+    minWidth: "300px",
+    maxWidth: "300px",
     position: "relative",
   },
   cardHovered: {
@@ -54,19 +46,20 @@ export default function ProductCard({ product }) {
         <Grid item xs={12}>
           <img
             alt="product_image"
-            src={product?.images[4]}
+            src={product.thumbnail}
             width="100%"
             maxHeight="300px"
             height="300px"
             backgroundSize="contain"
             backgroundRepeat="no-repeat"
             border="none"
+            minWidth="100%"
           ></img>
           <Typography className={classes.productName}>
-            {product?.name}
+            {product.name}
           </Typography>
 
-          {formatCurrencyToIndianRupees(product?.price)}
+          {formatCurrencyToIndianRupees(product.price)}
 
           <Slide direction="up" in={showAddToCart} mountOnEnter unmountOnExit>
             <div className={classes.addToCartContainer}>
