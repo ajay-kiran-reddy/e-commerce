@@ -35,7 +35,6 @@ exports.addToCart = (req, res) => {
               .json({ message: "Failed to update the cart ", error })
           );
       } else {
-        console.log("executing in else block");
         const amount =
           (req.body.products.quantity ? req.body.products.quantity : 1) *
           req.body.products.price;

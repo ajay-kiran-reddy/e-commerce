@@ -76,7 +76,7 @@ const Content = ({ handleFormDataCb, editData }) => {
   useEffect(() => {
     if (editData) {
       const category = allCategories.filter(
-        (data) => data._id === editData.category
+        (data) => data._id === editData.category._id
       );
       setFormData({
         ...editData,
@@ -198,7 +198,7 @@ const Content = ({ handleFormDataCb, editData }) => {
   const handleThumbnail = (image) => {
     setFormData({ ...formData, thumbnail: image });
   };
-  console.log(formData, "FORM DATA");
+  console.log(allCategories, "allCategories DATA");
   return (
     <Grid container spacing={3}>
       <CustomLoader show={adminState.isLoading} />

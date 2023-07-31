@@ -46,6 +46,7 @@ const COLORS_OPTIONS = [
   { label: "Blue Grey", value: "blueGrey", code: "#072839" },
   { label: "Dark Blue Grey", value: "darkBlueGrey", code: "#000B26" },
   { label: "Grey", value: "grey", code: "#303030" },
+  { label: "White", value: "white", code: "#fff" },
 ];
 
 const APP_ACTION_COLORS = {

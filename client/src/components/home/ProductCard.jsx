@@ -13,10 +13,8 @@ import { APP_ACTION_COLORS } from "../admin/dashboard/constants/DashboardConstan
 
 const useStyles = makeStyles({
   root: {
-    minHeight: "400px",
-    maxHeight: "400px",
-    // minWidth: "300px",
-    // maxWidth: "300px",
+    minHeight: "350px",
+    maxHeight: "350px",
     position: "relative",
   },
   cardHovered: {
@@ -42,14 +40,14 @@ export default function ProductCard({ product }) {
   };
 
   return (
-    <Grid container className={classes.root}>
-      <Paper
-        elevation={2}
-        style={{ cursor: "pointer" }}
-        onMouseOver={() => setShowAddToCart(true)}
-        onMouseOut={() => setShowAddToCart(false)}
-        onClick={routeToProductPage}
-      >
+    <Paper
+      elevation={2}
+      style={{ cursor: "pointer" }}
+      onMouseOver={() => setShowAddToCart(true)}
+      onMouseOut={() => setShowAddToCart(false)}
+      onClick={routeToProductPage}
+    >
+      <Grid container className={classes.root}>
         <Grid item xs={12}>
           <div
             style={{
@@ -70,7 +68,7 @@ export default function ProductCard({ product }) {
           {formatCurrencyToIndianRupees(product.mrp, null, true)}
 
           <Chip
-            label={calculateDiscountPercentage(product) + "%"}
+            label={calculateDiscountPercentage(product) + "% off"}
             style={{
               color: "white",
               backgroundColor: APP_ACTION_COLORS.green,
@@ -95,7 +93,7 @@ export default function ProductCard({ product }) {
             </div>
           </Slide>
         </Grid>
-      </Paper>
-    </Grid>
+      </Grid>
+    </Paper>
   );
 }

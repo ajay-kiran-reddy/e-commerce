@@ -62,7 +62,6 @@ function Header() {
   const [cartQty, setCartQty] = useState(0);
 
   const sessionExpired = isSessionExpired();
-  console.log(sessionExpired, "[sessionExpired]");
 
   const handleItemClick = (setting) => {
     const value = setting?.value;

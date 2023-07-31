@@ -15,10 +15,6 @@ const orders = require("./routes/order");
 
 const cors = require("cors");
 
-const corsOptions = {
-  origin: "https://av-ecommerce-client.onrender.com",
-};
-
 app.use(cors());
 
 // Connect to the database
