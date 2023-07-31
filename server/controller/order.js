@@ -3,15 +3,18 @@ const router = express.Router();
 const Order = require("../models/order");
 
 exports.getUserOrders = (req, res) => {
-  Order.find({ userId: req.user._id }).then((orders) => {
-    if (orders) {
-      res
-        .status(200)
-        .json({ message: "Fetched the orders successfully", orders });
-    } else {
-      res.status(500).json({ message: "Failed to fetch your orders" });
-    }
-  });
+  Order.find({ userId: req.user._id })
+    .populate("userId")
+    .populate("products.product")
+    .then((orders) => {
+      if (orders) {
+        res
+          .status(200)
+          .json({ message: "Fetched the orders successfully", orders });
+      } else {
+        res.status(500).json({ message: "Failed to fetch your orders" });
+      }
+    });
 };
 
 exports.createOrder = (req, res) => {
@@ -58,6 +61,8 @@ exports.deleteOrder = (req, res) => {
 
 exports.getAllOrders = (req, res) => {
   Order.find()
+    .populate("userId", "userName _id")
+    .populate("products.product", "name thumbnail _id")
     .then((orders) => res.status(200).json({ orders }))
     .catch((error) => res.status(500).json({ error }));
 };

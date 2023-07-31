@@ -18,25 +18,34 @@ const isAdminUser = () => {
 const formatCurrencyToIndianRupees = (price, priceFontSize, isMrp) => {
   const formattedPrice = new Intl.NumberFormat().format(price);
   return (
-    <Typography
-      style={{
-        color: !isMrp && APP_ACTION_COLORS.blue,
-        fontWeight: !isMrp && "bold",
-        fontSize: isMrp ? 12 : priceFontSize,
-        textDecoration: isMrp && "line-through",
-      }}
-    >
-      <IconButton style={{ padding: 0 }}>
-        <CurrencyRupeeIcon
-          style={{
-            fontSize: isMrp ? 12 : 16,
-            color: !isMrp && APP_ACTION_COLORS.blue,
-          }}
-        />
-      </IconButton>
-      {isMrp ? `M.R.P. :- ${formattedPrice}` : formattedPrice}
-    </Typography>
+    <div>
+      <Typography
+        style={{
+          color: !isMrp && APP_ACTION_COLORS.blue,
+          fontWeight: !isMrp && "bold",
+          fontSize: isMrp ? 12 : priceFontSize,
+          textDecoration: isMrp && "line-through",
+        }}
+      >
+        <IconButton style={{ padding: 0 }}>
+          <CurrencyRupeeIcon
+            style={{
+              fontSize: isMrp ? 12 : 16,
+              color: !isMrp && APP_ACTION_COLORS.blue,
+            }}
+          />
+        </IconButton>
+        {isMrp ? `M.R.P. :- ${formattedPrice}` : formattedPrice}
+      </Typography>
+    </div>
   );
+};
+
+const calculateDiscountPercentage = (productInfo) => {
+  const { price, mrp } = productInfo || {};
+  console.log(price, mrp, "[MRP]");
+  const priceDiff = Number(mrp) - Number(price);
+  return ((priceDiff / mrp) * 100).toFixed(0);
 };
 
 const isUserLoggedIn = () => {
@@ -61,6 +70,13 @@ const validatePassword = (password) => {
   return password.length < 6 ? false : true;
 };
 
+const isSessionExpired = () => {
+  const appState = store.getState();
+  const expiredTime = appState?.home?.userInfo?.jwtToken?.expiredAt;
+  const currentTime = new Date().getTime();
+  return expiredTime < currentTime;
+};
+
 export {
   isUserAuthenticated,
   isAdminUser,
@@ -68,4 +84,6 @@ export {
   isUserLoggedIn,
   validateEmail,
   validatePassword,
+  isSessionExpired,
+  calculateDiscountPercentage,
 };

@@ -5,7 +5,6 @@ const mongoose = require("mongoose");
 exports.addToCart = (req, res) => {
   Cart.findOne({ userId: req.user._id }).then((cart) => {
     if (cart) {
-      console.log(cart, "[cart]");
       const product = req.body.products.product;
       const dbProduct = cart.products.find((c) => c.product == product);
       if (dbProduct) {
@@ -36,6 +35,7 @@ exports.addToCart = (req, res) => {
               .json({ message: "Failed to update the cart ", error })
           );
       } else {
+        console.log("executing in else block");
         const amount =
           (req.body.products.quantity ? req.body.products.quantity : 1) *
           req.body.products.price;
@@ -58,6 +58,7 @@ exports.addToCart = (req, res) => {
           );
       }
     } else {
+      console.log("executing in adding to cart block");
       const products = [req.body.products];
       const cart = new Cart({
         userId: req.user._id,
@@ -103,6 +104,7 @@ exports.getCartSummaryByUserId = (req, res) => {
    * 1) Get individual product details, not just the product id.
    */
   Cart.findOne({ userId: req.user?._id })
+    .populate("products.product")
     .then((cart) => {
       if (cart) {
         res.status(200).json({ cart });

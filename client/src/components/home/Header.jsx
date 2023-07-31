@@ -23,7 +23,11 @@ import SignUp from "../login/SignUp";
 import { useDispatch, useSelector } from "react-redux";
 import { HomeSlice, homeState } from "./slices/slice";
 import CustomLoader from "../shared/Loader";
-import { isAdminUser, isUserLoggedIn } from "../../utils/globalUtils";
+import {
+  isAdminUser,
+  isSessionExpired,
+  isUserLoggedIn,
+} from "../../utils/globalUtils";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
@@ -57,6 +61,9 @@ function Header() {
   const cartState = useSelector(Cart);
   const [cartQty, setCartQty] = useState(0);
 
+  const sessionExpired = isSessionExpired();
+  console.log(sessionExpired, "[sessionExpired]");
+
   const handleItemClick = (setting) => {
     const value = setting?.value;
     if (value === "profile") {
@@ -73,11 +80,7 @@ function Header() {
 
   useEffect(() => {
     const products = cartState?.cartSummary?.products;
-    if (products?.length > 1) {
-      setCartQty(products.reduce((a, b) => a.quantity + b.quantity));
-    } else if (products?.length === 1) {
-      setCartQty(products[0].quantity);
-    }
+    setCartQty(products?.reduce((a, b) => a + b.quantity, 0));
   }, [cartState]);
 
   useEffect(() => {
@@ -302,7 +305,7 @@ function Header() {
               >
                 <Grid item xs={7}></Grid>
                 <Grid item xs={3}>
-                  {state?.userInfo ? (
+                  {state?.userInfo && !sessionExpired ? (
                     <Typography
                       style={{ fontWeight: "bold", marginTop: "0.5rem" }}
                     >

@@ -45,12 +45,6 @@ function ProductsContainer() {
 
   const columns = [
     {
-      field: "_id",
-      fieldLabel: "Id",
-      render: (row) => row._id,
-      align: "left",
-    },
-    {
       field: "name",
       fieldLabel: "Name",
       render: (row) => row.name,
@@ -65,7 +59,7 @@ function ProductsContainer() {
     {
       field: "category",
       fieldLabel: "Category",
-      render: (row) => row.category,
+      render: (row) => row.category.name,
       align: "left",
     },
     {

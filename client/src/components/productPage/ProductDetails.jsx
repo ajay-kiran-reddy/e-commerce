@@ -1,7 +1,11 @@
-import { Box, Grid, Link, Rating, Typography } from "@mui/material";
+import { Box, Grid, IconButton, Link, Rating, Typography } from "@mui/material";
 import React from "react";
-import { formatCurrencyToIndianRupees } from "../../utils/globalUtils";
+import {
+  calculateDiscountPercentage,
+  formatCurrencyToIndianRupees,
+} from "../../utils/globalUtils";
 import Specifications from "./Specifications";
+import { APP_ACTION_COLORS } from "../admin/dashboard/constants/DashboardConstants";
 
 export default function ProductDetails({ productInfo }) {
   return (
@@ -10,7 +14,7 @@ export default function ProductDetails({ productInfo }) {
         {productInfo?.name}
       </Typography>
 
-      <Grid container>
+      <Grid container style={{ margin: "0.5rem 0" }}>
         <Grid style={{ marginTop: "3px" }}>
           <Typography
             style={{
@@ -31,12 +35,28 @@ export default function ProductDetails({ productInfo }) {
         </Grid>
       </Grid>
       <div style={{ textAlign: "left" }}>
-        {formatCurrencyToIndianRupees(productInfo?.price, 28)}
+        <Grid container>
+          <Grid item>
+            {formatCurrencyToIndianRupees(productInfo?.price, 28)}
+          </Grid>
+          <Grid item style={{ marginTop: "10px" }}>
+            <span
+              style={{
+                fontSize: "20px",
+                marginLeft: "1rem",
+                fontWeight: "bold",
+                color: APP_ACTION_COLORS.green,
+              }}
+            >
+              {calculateDiscountPercentage(productInfo) + "% off"}
+            </span>
+          </Grid>
+        </Grid>
       </div>
       <Grid container>
         <Grid item>
           <span style={{ textDecoration: "line-through" }}>
-            {formatCurrencyToIndianRupees(23999, 12, true)}
+            {formatCurrencyToIndianRupees(productInfo?.mrp, 12, true)}
           </span>
         </Grid>
         <div style={{ textAlign: "left", width: "100%" }}>
@@ -55,7 +75,7 @@ export default function ProductDetails({ productInfo }) {
                 gutterBottom
                 style={{ textTransform: "capitalize" }}
               >
-                Available Colour :{productInfo?.color}
+                Available colour :{productInfo?.color}
               </Typography>
             </Grid>
             <Grid item>

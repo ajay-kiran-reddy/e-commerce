@@ -6,13 +6,16 @@ import {
 } from "../../../apiConfig/api";
 import {
   ALL_ORDERS,
+  ALL_USERS,
   CATEGORY,
   CREATE_CATEGORY,
   CREATE_PRODUCT,
   DELETE_CATEGORY,
+  ORDERS,
   PRODUCTS,
   UPDATE_CATEGORY,
   UPDATE_ORDER,
+  USER,
 } from "../dashboard/constants/ApiEndpoints";
 
 const getImageUrlFromCloudinary = (data) => {
@@ -66,6 +69,22 @@ const updateOrderStatus = (data) => {
   return updateData(UPDATE_ORDER, data);
 };
 
+const deleteOrderApi = (id) => {
+  return deleteData(`${ORDERS}/${id}`);
+};
+
+const fetchUsers = () => {
+  return fetchData(ALL_USERS);
+};
+
+const updateUser = (data) => {
+  return updateData(`${USER}/${data.id}`, data);
+};
+
+const deleteUserApi = (id) => {
+  return deleteData(`${USER}/${id}`);
+};
+
 export {
   fetchProducts,
   createProductApi,
@@ -79,4 +98,8 @@ export {
   deleteCategory,
   fetchAllOrders,
   updateOrderStatus,
+  deleteOrderApi,
+  fetchUsers,
+  updateUser,
+  deleteUserApi,
 };

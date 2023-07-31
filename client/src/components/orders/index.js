@@ -90,11 +90,11 @@ export default function Orders() {
                                 borderRadius: "1rem",
                               }}
                               onClick={() =>
-                                navigate(`/products/${product.product._id}`)
+                                navigate(`/products/${product?.product._id}`)
                               }
                             >
                               <img
-                                src={product.product.thumbnail}
+                                src={product?.product?.thumbnail}
                                 alt="product_thumbnail"
                                 height="100px"
                                 width="100px"
@@ -102,7 +102,7 @@ export default function Orders() {
                             </Grid>
                             <Grid item xs={8}>
                               <Typography variant="subtitle1" gutterBottom>
-                                {product.product.name}
+                                {product?.product?.name}
                               </Typography>
                               <Typography
                                 display="block"
@@ -110,15 +110,15 @@ export default function Orders() {
                                 gutterBottom
                                 style={{ textAlign: "left", width: "100%" }}
                               >
-                                Color:- {product.product.color}
+                                Color:- {product?.product?.color}
                               </Typography>
                             </Grid>
                             <Grid item xs={2}>
                               {formatCurrencyToIndianRupees(
-                                product.product.price
+                                product?.product?.price
                               )}
                               <Typography variant="caption" gutterBottom>
-                                Qty:- {product.quantity}
+                                Qty:- {product?.quantity}
                               </Typography>
                             </Grid>
                           </Grid>
@@ -168,7 +168,7 @@ export default function Orders() {
                           Total
                         </Grid>
                         <Grid item xs={6}>
-                          {formatCurrencyToIndianRupees(order.amount)}
+                          {formatCurrencyToIndianRupees(order?.amount)}
                         </Grid>
 
                         <Grid item xs={12} style={{ marginTop: "1rem" }}>

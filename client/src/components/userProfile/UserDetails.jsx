@@ -32,7 +32,7 @@ export default function UserDetails() {
   useEffect(() => {
     const userData = userInfo?.userInfo?.user;
     if (userData) {
-      const { userName, email, image, phoneNumber, _id } = userData;
+      const { userName, email, image, phoneNumber, _id } = userData || {};
       setFormData({
         ...formData,
         userName,

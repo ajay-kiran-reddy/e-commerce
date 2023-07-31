@@ -35,7 +35,6 @@ const isUserAuthenticated = (req, res, next) => {
 
 const isAdminAuthenticated = (req, res, next) => {
   verifyToken(req, res, () => {
-    console.log(req, "[REQ]");
     if (req.user.isAdmin) {
       next();
     } else {

@@ -49,6 +49,9 @@ router.post("/signIn", (req, res) => {
       const userDbPassword = user.password;
       bcrypt.compare(password, userDbPassword).then(function (result) {
         if (result === true) {
+          let currentTime = new Date().getTime();
+          let updatedTIme = new Date(currentTime + 2 * 60 * 60 * 1000);
+
           var token = jwt.sign(
             {
               _id: user._id,
@@ -67,6 +70,7 @@ router.post("/signIn", (req, res) => {
               accessToken: token,
               email: user.email,
               expiresIn: "2h",
+              expiredAt: new Date(updatedTIme).getTime(),
             },
           });
         } else {

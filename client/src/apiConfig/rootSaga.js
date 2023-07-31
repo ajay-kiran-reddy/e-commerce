@@ -4,14 +4,18 @@ import {
   createCategory,
   createProduct,
   deleteCategoryById,
+  deleteOrder,
   deleteProduct,
+  deleteUser,
   fetchCategoryById,
   getAllOrders,
   getCloudinaryImageUrl,
+  getUsersList,
   productsList,
   updateCategoryById,
   updateOrder,
   updateProductInfo,
+  updateUserRole,
 } from "../components/admin/sagas/saga";
 import {
   cartSummary,
@@ -44,6 +48,10 @@ export default function* rootSaga() {
     deleteProduct(),
     getAllOrders(),
     updateOrder(),
+    deleteOrder(),
+    getUsersList(),
+    updateUserRole(),
+    deleteUser(),
 
     //admin categories
     categoriesList(),

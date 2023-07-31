@@ -73,3 +73,41 @@ exports.updateUserInfo = (req, res) => {
       );
   }
 };
+
+exports.getAllUsers = (req, res) => {
+  User.find()
+    // .populate("user", "-password")
+    .then((users) => res.status(200).json({ users }))
+    .catch((error) =>
+      res.status(500).json({ message: "Failed to retrieve users", error })
+    );
+};
+
+exports.removeUser = (req, res) => {
+  User.findByIdAndDelete({ _id: req.params.id })
+    .then((users) =>
+      res.status(200).json({ message: "Successfully deleted the user", users })
+    )
+    .catch((error) =>
+      res.status(500).json({ message: "Failed to delete user", error })
+    );
+};
+
+exports.updateUserAccess = (req, res) => {
+  User.updateOne(
+    { _id: req.params.id },
+    {
+      $set: {
+        isAdmin: req.body.isAdmin,
+      },
+    }
+  )
+    .then((response) =>
+      res
+        .status(200)
+        .json({ message: "Admin access has been updated", response })
+    )
+    .catch((error) =>
+      res.status(500).json({ message: "Failed to update Admin access", error })
+    );
+};

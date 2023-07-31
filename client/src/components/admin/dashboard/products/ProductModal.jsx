@@ -229,8 +229,21 @@ const Content = ({ handleFormDataCb, editData }) => {
           value={formData.price}
           onChange={(e) => handleFormData(e, "price")}
           style={{ width: "100%" }}
+          type="number"
         />
       </Grid>
+
+      <Grid item xs={6}>
+        <TextField
+          label="MRP"
+          placeholder="Enter MRP"
+          value={formData.mrp}
+          onChange={(e) => handleFormData(e, "mrp")}
+          style={{ width: "100%" }}
+          type="number"
+        />
+      </Grid>
+
       <Grid item xs={6}>
         <FormControl sx={{ m: 1, minWidth: "100%" }}>
           <InputLabel id="demo-simple-select-helper-label">Color</InputLabel>

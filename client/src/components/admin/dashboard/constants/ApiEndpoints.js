@@ -33,6 +33,7 @@ const UPDATE_ORDER = "/orders/updateOrder";
 /** User Api end points*/
 
 const USER = "/user";
+const ALL_USERS = "/user/allUsers";
 
 export {
   PRODUCTS,
@@ -56,4 +57,5 @@ export {
   REMOVE_FROM_CART,
   ALL_ORDERS,
   UPDATE_ORDER,
+  ALL_USERS,
 };

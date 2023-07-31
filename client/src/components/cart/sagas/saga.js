@@ -15,21 +15,7 @@ import { Cart, CartSlice } from "../slices/slice";
 function* actionGetCartSummary() {
   try {
     const data = yield call(fetchCartSummary);
-    const productsData = data?.cart?.products;
-    const products = yield all(
-      productsData.map((product) => {
-        return call(fetchProductById, product?.product);
-      })
-    );
-    const cart = data?.cart;
-    const productData = cart.products.map((data, index) => {
-      return {
-        ...data,
-        productInfo: products[index],
-      };
-    });
-    const formattedData = { ...cart, products: productData };
-    yield put(CartSlice.actions.storeCartSummary(formattedData));
+    yield put(CartSlice.actions.storeCartSummary(data?.cart));
   } catch (e) {
     yield put(updateApiResponse(getFailureApiResponse(e)));
     yield put(CartSlice.actions.updateLoadingState(false));
@@ -53,21 +39,7 @@ function* actionRemoveItemFromCart() {
       productId: state?.removeProductId,
     });
     const data = yield call(fetchCartSummary);
-    const productsData = data?.cart?.products;
-    const products = yield all(
-      productsData.map((product) => {
-        return call(fetchProductById, product?.product);
-      })
-    );
-    const cart = data?.cart;
-    const productData = cart.products.map((data, index) => {
-      return {
-        ...data,
-        productInfo: products[index],
-      };
-    });
-    const formattedData = { ...cart, products: productData };
-    yield put(CartSlice.actions.storeCartSummary(formattedData));
+    yield put(CartSlice.actions.storeCartSummary(data?.cart));
     yield put(updateApiResponse(getSuccessApiResponse(result)));
     yield put(CartSlice.actions.updateLoadingState(false));
   } catch (e) {

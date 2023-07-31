@@ -12,11 +12,6 @@ function* actionAddToCart() {
   try {
     const state = yield select(ProductState);
     const data = yield call(postAddToCart, state?.addToCartProductInfo);
-    const results = yield call(
-      getProductInfoFromCart,
-      state?.addToCartProductInfo?.products?.product
-    );
-    yield put(ProductSlice.actions.storeATCProductInfo(results));
     yield put(CartSlice.actions.getCartSummary());
     yield put(updateApiResponse(getSuccessApiResponse(data)));
     yield put(ProductSlice.actions.updateLoadingState(false));

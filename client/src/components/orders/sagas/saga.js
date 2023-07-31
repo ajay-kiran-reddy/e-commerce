@@ -4,6 +4,7 @@ import {
   getSuccessApiResponse,
 } from "../../../constants/GlobalConstants";
 import { fetchProductById } from "../../cart/services/service";
+import { CartSlice } from "../../cart/slices/slice";
 import { updateApiResponse } from "../../home/slices/slice";
 import { createOrder, fetchOrders, makePayment } from "../services/service";
 import { Order, OrderSlice } from "../slices/slice";
@@ -12,24 +13,8 @@ function* actionGetOrders() {
   try {
     const data = yield call(fetchOrders);
     /** TODO :- make product data coming from backend with out making another api call for product details */
-    const products = yield all(
-      data?.orders[0].products.map((product) => {
-        return call(fetchProductById, product?.productId);
-      })
-    );
-    const formattedData = data?.orders?.map((order) => {
-      return {
-        ...order,
-        products: order.products.map((product, index) => {
-          return {
-            ...product,
-            ...products[index],
-          };
-        }),
-      };
-    });
 
-    yield put(OrderSlice.actions.storeOrders(formattedData));
+    yield put(OrderSlice.actions.storeOrders(data.orders));
   } catch (e) {
     yield put(updateApiResponse(getFailureApiResponse(e)));
     yield put(OrderSlice.actions.updateLoadingState(false));
@@ -40,6 +25,8 @@ function* actionCreateOrder() {
   try {
     const state = yield select(Order);
     const data = yield call(createOrder, state.createOrder);
+    yield put(CartSlice.actions.resetCartData());
+    yield put(CartSlice.actions.getCartSummary());
     yield put(updateApiResponse(getSuccessApiResponse(data)));
   } catch (e) {
     yield put(updateApiResponse(getFailureApiResponse(e)));

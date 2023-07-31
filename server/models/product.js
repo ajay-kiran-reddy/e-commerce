@@ -44,6 +44,9 @@ const ProductSchema = new Schema(
     thumbnail: {
       type: String,
     },
+    mrp: {
+      type: Number,
+    },
   },
   { timestamps: true }
 );

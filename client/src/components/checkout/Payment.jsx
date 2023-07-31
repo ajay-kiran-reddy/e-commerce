@@ -12,25 +12,21 @@ import {
 export default function Payment({ products }) {
   const globalState = useSelector(homeState);
 
-  console.log(products, "[products]");
-
   const handleCheckout = () => {
     const requestBody = {
       address: globalState?.userInfo?.address,
       userId: globalState?.userInfo?._id,
       products: products.map((product) => {
         return {
-          productId: product?.productInfo?.product?._id,
+          product: product?.product?._id,
           quantity: product.quantity,
         };
       }),
-      amount:
-        products.length > 1
-          ? products.reduce((a, b) => a.amount + b.amount, 0)
-          : products[0].price * products[0].quantity,
+      amount: products.reduce((a, b) => a + b.amount, 0),
       status: ACTIVE,
       deliveryStatus: DELIVERY_STATUS_CONSTANTS.ORDERED,
     };
+    console.log(requestBody, "[REQUEST]");
     sessionStorage.setItem("cartItems", JSON.stringify(requestBody));
   };
 

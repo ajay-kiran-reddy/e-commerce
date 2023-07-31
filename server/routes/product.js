@@ -72,36 +72,7 @@ router.get("/", async (req, res) => {
       });
       xw;
     } else {
-      products = await Product.find();
-      // return new Promise(async (resolve, reject) => {
-      //   const promises = [];
-      //   products.forEach((product) => {
-      //     promises.push(Category.findOne({ _id: product.category }));
-      //   });
-      //   const categories = [];
-      //   return await Promise.all(promises)
-      //     .then((category) => {
-      //       categories.push(category);
-      //       resolve(products);
-      //     })
-      //     .catch((err) => {
-      //       reject(err);
-      //     });
-      //   // console.log(products, "[products]");
-      //   // console.log(categories, "[categories]");
-      //   // const formattedProducts = [];
-      //   // products.forEach((product) => {
-      //   //   categories.forEach((category) => {
-      //   //     if (product?.category.equals(category?._id)) {
-      //   //       let data = { ...product, categoryName: category?.name };
-      //   //       formattedProducts.push(data);
-      //   //     }
-      //   //   });
-      //   // });
-      //   // console.log(formattedProducts, "[formattedProducts]");
-
-      //   // products = formattedProducts;
-      // });
+      products = await Product.find().populate("category", "name _id parentId");
     }
 
     res.status(200).json(products);

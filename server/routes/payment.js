@@ -7,14 +7,7 @@ const stripe = require("stripe")(
   "sk_test_51MRT0wSBNqBjGAaRoYTxjCmgQ6OSSL5ykRqCC1OsHmWr1JJCiR9FPR0reMSHHaNCSj8r6LXpxg43nuLKvrJVO9AP00tomcoAcs"
 );
 
-const calculateOrderAmount = (items) => {
-  // Replace this constant with a calculation of the order's amount
-  // Calculate the order total on the server to prevent
-  // people from directly manipulating the amount on the client
-  return 1400;
-};
-
-const YOUR_DOMAIN = "http://localhost:8000/checkout";
+const YOUR_DOMAIN = `${process.env.UI_ENDPOINT}/checkout`;
 
 router.post("/", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
@@ -29,10 +22,6 @@ router.post("/", async (req, res) => {
     success_url: `${YOUR_DOMAIN}/success`,
     cancel_url: `${YOUR_DOMAIN}/canceled`,
   });
-  // .then(() => {
-  //   res.status(200).json({ message: "Your order is created successfully" });
-  // });
-
   res.redirect(303, session.url);
 });
 

@@ -57,7 +57,7 @@ export default function CartPage() {
   const dispatch = useDispatch();
   const state = useSelector(Cart);
   const [totalProductQty, setTotalProductsQty] = useState(0);
-  const [totalAmount, setTotalAmount] = useState();
+  const [totalAmount, setTotalAmount] = useState(0);
   const products = state?.cartSummary?.products;
   const navigate = useNavigate();
 
@@ -66,17 +66,18 @@ export default function CartPage() {
   }, []);
 
   const handleQuantity = (operation, product) => {
+    console.log(product, "in add to cart event");
     if (operation === "minus") {
       dispatch(
         ProductSlice.actions.addToCart({
-          ...product?.productInfo?.product,
+          ...product.product,
           quantity: product.quantity - 1,
         })
       );
     } else {
       dispatch(
         ProductSlice.actions.addToCart({
-          ...product?.productInfo?.product,
+          ...product.product,
           quantity: product.quantity + 1,
         })
       );
@@ -85,12 +86,10 @@ export default function CartPage() {
 
   useEffect(() => {
     const products = state?.cartSummary?.products;
-    if (products?.length > 1) {
-      setTotalProductsQty(products.reduce((a, b) => a.quantity + b.quantity));
-      setTotalAmount(products.reduce((a, b) => a?.amount + b?.amount));
-    } else if (products?.length === 1) {
-      setTotalProductsQty(products[0].quantity);
-      setTotalAmount(products[0].quantity * products[0].price);
+    console.log(products, "[PRODUCTS]");
+    if (products) {
+      setTotalProductsQty(products?.reduce((a, b) => a + b.quantity, 0));
+      setTotalAmount(products?.reduce((a, b) => a + b.amount, 0));
     }
   }, [state?.cartSummary?.products]);
 
@@ -101,8 +100,6 @@ export default function CartPage() {
   const handleProductClick = (product) => {
     navigate(`/products/${product._id}`);
   };
-
-  console.log(products, "[PRODUCTS]");
 
   return (
     <Grid container spacing={0} marginTop="5rem">
@@ -123,7 +120,7 @@ export default function CartPage() {
                         <Grid item xs={3}>
                           <img
                             alt="product_image"
-                            src={product?.productInfo?.product?.thumbnail}
+                            src={product?.product?.thumbnail}
                             width="100%"
                             maxHeight="300px"
                             height="250px"
@@ -131,18 +128,16 @@ export default function CartPage() {
                             backgroundRepeat="no-repeat"
                             border="none"
                             style={{ cursor: "pointer" }}
-                            onClick={() =>
-                              handleProductClick(product?.productInfo?.product)
-                            }
+                            onClick={() => handleProductClick(product?.product)}
                           />
                         </Grid>
                         <Grid item xs={9}>
                           <Typography variant="h6" gutterBottom>
-                            {product?.productInfo?.product?.name}
+                            {product?.product?.name}
                           </Typography>
 
                           {formatCurrencyToIndianRupees(
-                            product?.productInfo?.product?.price
+                            product?.product?.price
                           )}
                           <Tooltip title="Remove Item">
                             <IconButton
@@ -152,9 +147,7 @@ export default function CartPage() {
                                 top: 0,
                               }}
                               onClick={() =>
-                                handleRemoveFromCart(
-                                  product?.productInfo?.product?._id
-                                )
+                                handleRemoveFromCart(product?.product?._id)
                               }
                             >
                               <CloseIcon color="primary" />
@@ -183,7 +176,6 @@ export default function CartPage() {
                             </Button>
                           </ButtonGroup>
                         </Grid>
-
                         <Grid item xs={12}>
                           <Divider />
                         </Grid>

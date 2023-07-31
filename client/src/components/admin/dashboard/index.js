@@ -10,6 +10,7 @@ import Box from "@mui/material/Box";
 import Categories from "./categories";
 import ProductsContainer from "./products";
 import Orders from "./orders";
+import UsersLandingPage from "./users";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -83,7 +84,7 @@ export default function FullWidthTabs() {
           <Orders />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-          Users
+          <UsersLandingPage />
         </TabPanel>
       </div>
     </Box>

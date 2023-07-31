@@ -1,17 +1,18 @@
-import { Chip, Grid } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { formatDate } from "../../../../utils/dateUtils";
 import { formatCurrencyToIndianRupees } from "../../../../utils/globalUtils";
 import CustomCard from "../../../shared/CustomCard";
 import CustomTable from "../../../shared/CustomTable";
 import AdminProductsSlice, { AdminProducts } from "../../slices/slice";
-import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import CustomLoader from "../../../shared/Loader";
 import CustomChip from "../../../shared/CustomChip";
+import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
+import { APP_ACTION_COLORS } from "../constants/DashboardConstants";
+import { IconButton, Tooltip } from "@mui/material";
 
 export default function Orders() {
   const dispatch = useDispatch();
@@ -37,8 +38,26 @@ export default function Orders() {
     },
     {
       field: "userId",
-      fieldLabel: "User Id",
-      render: (row) => row.userId,
+      fieldLabel: "Order by",
+      render: (row) => row.userId.userName,
+      align: "left",
+    },
+
+    {
+      field: "products",
+      fieldLabel: "Products",
+      render: (row) => {
+        return row.products.map((product) => {
+          return (
+            <img
+              src={product.product.thumbnail}
+              height="50px"
+              width="50px"
+              alt="product_thumbnail"
+            />
+          );
+        });
+      },
       align: "left",
     },
 
@@ -92,6 +111,22 @@ export default function Orders() {
             </Select>
           </FormControl>
         </div>
+      ),
+      align: "left",
+    },
+    {
+      field: "delete",
+      fieldLabel: "Delete Order",
+      render: (row) => (
+        <Tooltip title="Delete">
+          <IconButton
+            onClick={() =>
+              dispatch(AdminProductsSlice.actions.deleteOrder(row._id))
+            }
+          >
+            <DeleteOutlineIcon style={{ color: APP_ACTION_COLORS.red }} />
+          </IconButton>
+        </Tooltip>
       ),
       align: "left",
     },

@@ -17,6 +17,10 @@ const initialState = {
   openDeleteCategoryModal: false,
   allOrders: [],
   updatedOrder: "",
+  deleteOrderId: "",
+  usersList: [],
+  updateUser: null,
+  deleteUserId: "",
 };
 
 export const AdminProductsSlice = createSlice({
@@ -88,13 +92,14 @@ export const AdminProductsSlice = createSlice({
     closeDeleteCategoryModal: (state) => {
       state.openDeleteCategoryModal = false;
     },
-    resetData: (state, action) => {
+    resetData: (state) => {
       state.imageFilesData = null;
       state.updateProduct = {};
       state.imageUrls = [];
       state.createProduct = {};
       state.deleteProductId = "";
       state.deleteCategoryId = "";
+      state.deleteOrderId = "";
     },
     fetchAllOrders: (state) => {
       state.isLoading = true;
@@ -104,7 +109,27 @@ export const AdminProductsSlice = createSlice({
       state.isLoading = false;
     },
     updateOrder: (state, action) => {
+      state.isLoading = true;
       state.updatedOrder = action.payload;
+    },
+    deleteOrder: (state, action) => {
+      state.isLoading = true;
+      state.deleteOrderId = action.payload;
+    },
+    getUsers: (state) => {
+      state.isLoading = true;
+    },
+    storeUsers: (state, action) => {
+      state.usersList = action.payload;
+      state.isLoading = false;
+    },
+    updateAdminAccess: (state, action) => {
+      state.isLoading = true;
+      state.updateUser = action.payload;
+    },
+    deleteUser: (state, action) => {
+      state.isLoading = true;
+      state.deleteUserId = action.payload;
     },
   },
 });
