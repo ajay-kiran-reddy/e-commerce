@@ -7,7 +7,7 @@ const stripe = require("stripe")(
   "sk_test_51MRT0wSBNqBjGAaRoYTxjCmgQ6OSSL5ykRqCC1OsHmWr1JJCiR9FPR0reMSHHaNCSj8r6LXpxg43nuLKvrJVO9AP00tomcoAcs"
 );
 
-const YOUR_DOMAIN = `http://localhost:8000/checkout`;
+const YOUR_DOMAIN = `${process.env.UI_ENDPOINT}/checkout`;
 
 router.post("/", async (req, res) => {
   console.log(YOUR_DOMAIN, "{DOMAIN}");
