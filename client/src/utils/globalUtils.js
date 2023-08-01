@@ -43,7 +43,6 @@ const formatCurrencyToIndianRupees = (price, priceFontSize, isMrp) => {
 
 const calculateDiscountPercentage = (productInfo) => {
   const { price, mrp } = productInfo || {};
-  console.log(price, mrp, "[MRP]");
   const priceDiff = Number(mrp) - Number(price);
   return ((priceDiff / mrp) * 100).toFixed(0);
 };

@@ -8,7 +8,7 @@ const stripe = require("stripe")(
 );
 
 const YOUR_DOMAIN = `${process.env.UI_ENDPOINT}/checkout`;
-
+console.log("Entering payment api");
 router.post("/", async (req, res) => {
   console.log(YOUR_DOMAIN, "{DOMAIN}");
   const session = await stripe.checkout.sessions.create({
