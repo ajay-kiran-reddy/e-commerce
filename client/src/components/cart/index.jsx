@@ -1,6 +1,7 @@
 import {
   Button,
   ButtonGroup,
+  Chip,
   Divider,
   Grid,
   IconButton,
@@ -12,7 +13,10 @@ import React, { useEffect, useState } from "react";
 import { makeStyles } from "@mui/styles";
 import { useDispatch, useSelector } from "react-redux";
 import { CartSlice, Cart } from "./slices/slice";
-import { formatCurrencyToIndianRupees } from "../../utils/globalUtils";
+import {
+  calculateDiscountPercentage,
+  formatCurrencyToIndianRupees,
+} from "../../utils/globalUtils";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
@@ -22,7 +26,9 @@ import CustomLoader from "../shared/Loader";
 import CloseIcon from "@mui/icons-material/Close";
 import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
-import { ProductSlice } from "../productPage/slices/slice";
+import { ProductSlice, ProductState } from "../productPage/slices/slice";
+import CustomChip from "../shared/CustomChip";
+import { APP_ACTION_COLORS } from "../admin/dashboard/constants/DashboardConstants";
 
 const useStyles = makeStyles({
   root: {
@@ -60,6 +66,7 @@ export default function CartPage() {
   const [totalAmount, setTotalAmount] = useState(0);
   const products = state?.cartSummary?.products;
   const navigate = useNavigate();
+  const productState = useSelector(ProductState);
 
   useEffect(() => {
     dispatch(CartSlice.actions.getCartSummary());
@@ -86,7 +93,6 @@ export default function CartPage() {
 
   useEffect(() => {
     const products = state?.cartSummary?.products;
-    console.log(products, "[PRODUCTS]");
     if (products) {
       setTotalProductsQty(products?.reduce((a, b) => a + b.quantity, 0));
       setTotalAmount(products?.reduce((a, b) => a + b.amount, 0));
@@ -103,9 +109,9 @@ export default function CartPage() {
 
   return (
     <Grid container spacing={0} marginTop="5rem">
+      <CustomLoader show={state.isLoading || productState.isLoading} />
       {state?.cartSummary?.products.length > 0 ? (
         <>
-          <CustomLoader show={state.isLoading} />
           <Grid item xs={1}></Grid>
 
           <Grid item xs={7} className={classes.root}>
@@ -116,13 +122,15 @@ export default function CartPage() {
                 <Grid item xs={12}>
                   {products?.map((product) => {
                     return (
-                      <Grid container style={{ position: "relative" }}>
+                      <Grid
+                        container
+                        style={{ position: "relative", marginTop: "10px" }}
+                      >
                         <Grid item xs={3}>
                           <img
                             alt="product_image"
                             src={product?.product?.thumbnail}
                             width="100%"
-                            maxHeight="300px"
                             height="250px"
                             backgroundSize="contain"
                             backgroundRepeat="no-repeat"
@@ -131,7 +139,7 @@ export default function CartPage() {
                             onClick={() => handleProductClick(product?.product)}
                           />
                         </Grid>
-                        <Grid item xs={9}>
+                        <Grid item xs={8}>
                           <Typography variant="h6" gutterBottom>
                             {product?.product?.name}
                           </Typography>
@@ -139,6 +147,23 @@ export default function CartPage() {
                           {formatCurrencyToIndianRupees(
                             product?.product?.price
                           )}
+
+                          {formatCurrencyToIndianRupees(
+                            product?.product?.mrp,
+                            28,
+                            true
+                          )}
+                          <Chip
+                            label={
+                              calculateDiscountPercentage(product?.product) +
+                              "% off"
+                            }
+                            style={{
+                              color: "white",
+                              backgroundColor: APP_ACTION_COLORS.green,
+                              marginTop: "10px",
+                            }}
+                          />
                           <Tooltip title="Remove Item">
                             <IconButton
                               style={{
@@ -153,7 +178,6 @@ export default function CartPage() {
                               <CloseIcon color="primary" />
                             </IconButton>
                           </Tooltip>
-
                           <ButtonGroup
                             variant="outlined"
                             aria-label="outlined button group"

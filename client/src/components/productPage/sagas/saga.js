@@ -13,6 +13,10 @@ function* actionAddToCart() {
     const state = yield select(ProductState);
     const data = yield call(postAddToCart, state?.addToCartProductInfo);
     yield put(CartSlice.actions.getCartSummary());
+    if (state.fetchProductInfo) {
+      const resp = yield call(getProductInfoFromCart, state?.selectedProductId);
+      yield put(ProductSlice.actions.storeATCProductInfo(resp));
+    }
     yield put(updateApiResponse(getSuccessApiResponse(data)));
     yield put(ProductSlice.actions.updateLoadingState(false));
     if (state.navigate) {

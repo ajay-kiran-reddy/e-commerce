@@ -6,6 +6,7 @@ const initialState = {
   ATCProductInfo: null,
   selectedProductId: "",
   navigate: null,
+  fetchProductInfo: false,
 };
 
 export const ProductSlice = createSlice({
@@ -27,6 +28,7 @@ export const ProductSlice = createSlice({
           operation: data?.operation,
         },
       };
+      state.fetchProductInfo = data.fetchProductInfo;
       state.addToCartProductInfo = apiReqBody;
     },
     getProductDataFromCart: (state, action) => {
@@ -36,6 +38,9 @@ export const ProductSlice = createSlice({
     storeATCProductInfo: (state, action) => {
       state.ATCProductInfo = action.payload.product;
       state.isLoading = false;
+    },
+    resetProductInfo: (state, action) => {
+      state.fetchProductInfo = false;
     },
   },
 });

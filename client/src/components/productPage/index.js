@@ -8,6 +8,7 @@ import ReactImageMagnify from "react-image-magnify";
 import { Grid } from "@mui/material";
 import AddToCart from "./AddToCart";
 import ProductDetails from "./ProductDetails";
+import CustomLoader from "../shared/Loader";
 
 export default function ProductPage() {
   const { productId } = useParams();
@@ -33,13 +34,10 @@ export default function ProductPage() {
     }
   }, [productInfo]);
 
-  function handleClick(event) {
-    event.preventDefault();
-    console.info("You clicked a breadcrumb.");
-  }
   return (
     <div style={{ margin: "1rem" }}>
-      <div role="presentation" onClick={handleClick}>
+      <CustomLoader show={state.isLoading} />
+      <div role="presentation">
         <Breadcrumbs aria-label="breadcrumb">
           <Link underline="hover" color="inherit" href="/">
             Electronics

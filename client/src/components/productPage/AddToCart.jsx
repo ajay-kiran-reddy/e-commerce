@@ -1,4 +1,10 @@
-import { ButtonGroup, Button, Grid, IconButton } from "@mui/material";
+import {
+  ButtonGroup,
+  Button,
+  Grid,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import React, { useEffect, useState } from "react";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
@@ -33,7 +39,13 @@ export default function AddToCart({ productInfo }) {
   }, [productInfo]);
 
   const handleAddToCart = () => {
-    dispatch(ProductSlice.actions.addToCart({ ...productInfo, quantity }));
+    dispatch(
+      ProductSlice.actions.addToCart({
+        ...productInfo,
+        quantity,
+        fetchProductInfo: true,
+      })
+    );
   };
 
   const handleBuyNow = () => {
@@ -53,8 +65,24 @@ export default function AddToCart({ productInfo }) {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} style={{ textAlign: "left" }}>
-        {formatCurrencyToIndianRupees(price, 28)}
-        {formatCurrencyToIndianRupees(27999, 28, true)}
+        <div style={{ display: "flex" }}>
+          <div
+            style={{
+              float: "left",
+              marginTop: "0.5rem",
+              marginRight: "0.5rem",
+            }}
+          >
+            <Typography variant="subtitle2" gutterBottom>
+              Sub Total:-
+            </Typography>
+          </div>
+
+          <div style={{ float: "right" }}>
+            {formatCurrencyToIndianRupees(price, 28)}
+          </div>
+        </div>
+        {formatCurrencyToIndianRupees(productInfo?.mrp, 28, true)}
       </Grid>
       <Grid item xs={12} style={{ textAlign: "left" }}>
         <ButtonGroup variant="outlined" aria-label="outlined button group">

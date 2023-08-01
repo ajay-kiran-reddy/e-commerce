@@ -51,6 +51,19 @@ function ProductsContainer() {
       align: "left",
     },
     {
+      field: "thumbnail",
+      fieldLabel: "Image",
+      render: (row) => (
+        <img
+          src={row.thumbnail}
+          height="50px"
+          width="50px"
+          alt="product_thumbnail"
+        />
+      ),
+      align: "left",
+    },
+    {
       field: "description",
       fieldLabel: "Description",
       render: (row) => row?.description?.split("\n")[0],
