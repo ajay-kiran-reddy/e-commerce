@@ -47,7 +47,7 @@ app.use("/api/category", category);
 app.use("/api/cart", cart);
 app.use("/api/mail", mail);
 app.use("/api/user", user);
-app.use("/api/payment", payment);
+app.use("/api/stripe", payment);
 app.use("/api/orders", orders);
 
 app.use((err, req, res, next) => {

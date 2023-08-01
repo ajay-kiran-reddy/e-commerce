@@ -70,14 +70,13 @@ router.get("/", async (req, res) => {
           $in: [req.query.category],
         },
       });
-      xw;
     } else {
       products = await Product.find().populate("category", "name _id parentId");
     }
 
     res.status(200).json(products);
   } catch (error) {
-    res.status(500).json({ error: "Failed to fetch products", error });
+    res.status(500).json({ message: "Failed to fetch products", error });
   }
 });
 

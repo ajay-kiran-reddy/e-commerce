@@ -19,6 +19,7 @@ import {
 } from "../components/admin/sagas/saga";
 import {
   cartSummary,
+  makeStripePayment,
   removeItemFromCart,
   resetCartInfo,
 } from "../components/cart/sagas/saga";
@@ -75,5 +76,6 @@ export default function* rootSaga() {
     //orders
     ordersInfo(),
     createOrderEntry(),
+    makeStripePayment(),
   ]);
 }

@@ -1,7 +1,13 @@
-import { deleteData, fetchData, updateData } from "../../../apiConfig/api";
+import {
+  deleteData,
+  fetchData,
+  postData,
+  updateData,
+} from "../../../apiConfig/api";
 import {
   CART_RESET,
   CART_SUMMARY,
+  PAYMENT,
   PRODUCTS,
   REMOVE_FROM_CART,
 } from "../../admin/dashboard/constants/ApiEndpoints";
@@ -22,4 +28,22 @@ const removeFromCart = (productId) => {
   return updateData(REMOVE_FROM_CART, productId);
 };
 
-export { fetchCartSummary, fetchProductById, resetCartData, removeFromCart };
+const makePayment = async (data) => {
+  const res = await fetch(`http://localhost:5000/api/stripe/payment`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  const body = await res.json();
+  window.location.href = body.url;
+  return body;
+};
+
+export {
+  fetchCartSummary,
+  fetchProductById,
+  resetCartData,
+  removeFromCart,
+  makePayment,
+};

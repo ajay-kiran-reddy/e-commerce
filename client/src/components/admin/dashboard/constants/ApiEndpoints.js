@@ -24,7 +24,7 @@ const CART_RESET = "/cart/deleteCart";
 const REMOVE_FROM_CART = "/cart/removeFromCart";
 
 /**Orders api's end points */
-const PAYMENT = "/payment";
+const PAYMENT = "/stripe/payment";
 const ORDERS = "/orders";
 const CREATE_ORDER = "/orders/createOrder";
 const ALL_ORDERS = "/orders/allOrders";

@@ -7,6 +7,7 @@ import { updateApiResponse } from "../../home/slices/slice";
 import {
   fetchCartSummary,
   fetchProductById,
+  makePayment,
   removeFromCart,
   resetCartData,
 } from "../services/service";
@@ -48,6 +49,17 @@ function* actionRemoveItemFromCart() {
   }
 }
 
+function* actionMakePayment() {
+  try {
+    const state = yield select(Cart);
+    yield call(makePayment, state.lineItems);
+    yield put(CartSlice.actions.updateLoadingState(false));
+  } catch (e) {
+    yield put(updateApiResponse(getFailureApiResponse(e)));
+    yield put(CartSlice.actions.updateLoadingState(false));
+  }
+}
+
 function* cartSummary() {
   yield takeLatest(CartSlice.actions.getCartSummary, actionGetCartSummary);
 }
@@ -60,4 +72,8 @@ function* removeItemFromCart() {
   yield takeLatest(CartSlice.actions.removeFromCart, actionRemoveItemFromCart);
 }
 
-export { cartSummary, resetCartInfo, removeItemFromCart };
+function* makeStripePayment() {
+  yield takeLatest(CartSlice.actions.makePayment, actionMakePayment);
+}
+
+export { cartSummary, resetCartInfo, removeItemFromCart, makeStripePayment };

@@ -4,6 +4,7 @@ const initialState = {
   isLoading: true,
   cartSummary: null,
   removeProductId: "",
+  lineItems: [],
 };
 
 const CartSlice = createSlice({
@@ -26,6 +27,10 @@ const CartSlice = createSlice({
     removeFromCart: (state, action) => {
       state.isLoading = true;
       state.removeProductId = action.payload;
+    },
+    makePayment: (state, action) => {
+      state.isLoading = true;
+      state.lineItems = action.payload;
     },
   },
 });

@@ -57,8 +57,13 @@ exports.addToCart = (req, res) => {
           );
       }
     } else {
-      console.log("executing in adding to cart block");
-      const products = [req.body.products];
+      const request = req.body.products;
+      const formattedProduct = {
+        ...request,
+        amount: request.price * request.quantity,
+      };
+
+      const products = [formattedProduct];
       const cart = new Cart({
         userId: req.user._id,
         products,

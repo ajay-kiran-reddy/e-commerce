@@ -8,9 +8,11 @@ import {
   ACTIVE,
   DELIVERY_STATUS_CONSTANTS,
 } from "../admin/dashboard/constants/DashboardConstants";
+import { CartSlice } from "../cart/slices/slice";
 
 export default function Payment({ products }) {
   const globalState = useSelector(homeState);
+  const dispatch = useDispatch();
 
   const handleCheckout = () => {
     const requestBody = {
@@ -28,27 +30,26 @@ export default function Payment({ products }) {
     };
     console.log(requestBody, "[REQUEST]");
     sessionStorage.setItem("cartItems", JSON.stringify(requestBody));
+    dispatch(CartSlice.actions.makePayment(requestBody));
   };
 
   return (
     <section>
       <div className="product"></div>
-      <form action="/api/payment" method="POST">
-        <Button
-          type="submit"
-          variant="contained"
-          style={{
-            backgroundColor: "#FFA41B",
-            width: "50%",
-            color: "black",
-            margin: "1rem",
-          }}
-          startIcon={<ShoppingCartCheckoutIcon />}
-          onClick={handleCheckout}
-        >
-          Secure checkout
-        </Button>
-      </form>
+      <Button
+        type="submit"
+        variant="contained"
+        style={{
+          backgroundColor: "#FFA41B",
+          width: "50%",
+          color: "black",
+          margin: "1rem",
+        }}
+        startIcon={<ShoppingCartCheckoutIcon />}
+        onClick={handleCheckout}
+      >
+        Secure checkout
+      </Button>
     </section>
   );
 }
