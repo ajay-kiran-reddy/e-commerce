@@ -7,16 +7,20 @@ const stripe = require("stripe")(
   "sk_test_51MRT0wSBNqBjGAaRoYTxjCmgQ6OSSL5ykRqCC1OsHmWr1JJCiR9FPR0reMSHHaNCSj8r6LXpxg43nuLKvrJVO9AP00tomcoAcs"
 );
 
-const YOUR_DOMAIN = `${process.env.UI_ENDPOINT}/checkout`;
+const YOUR_DOMAIN = `http://localhost:8000/checkout`;
 console.log("Entering payment api");
 router.post("/", async (req, res) => {
   console.log(YOUR_DOMAIN, "{DOMAIN}");
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
-        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-        price: "price_1NRFtwSBNqBjGAaRZfL94C9s",
-        quantity: 1,
+        price_data: {
+          currency: "inr",
+          product_data: {
+            name: "T-Shirt",
+          },
+          unit_amount: 2000,
+        },
       },
     ],
     mode: "payment",
