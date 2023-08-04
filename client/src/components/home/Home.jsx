@@ -5,7 +5,6 @@ import { AdminProducts } from "../admin/slices/slice";
 import CustomLoader from "../shared/Loader";
 import CarouselLoader from "./Carousel";
 import ProductCard from "./ProductCard";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Home() {
   const adminState = useSelector(AdminProducts);
@@ -22,13 +21,12 @@ function Home() {
             key={category._id}
             style={{ paddingLeft: "1rem", marginTop: "0.5rem" }}
           >
-            <Grid item xs={12} style={{ textAlign: "left" }}>
+            <Grid item xs={12}>
               <Typography variant="h6" gutterBottom color="primary">
                 Best Of {category.name}
               </Typography>
             </Grid>
             {/** Find category children id where it matches with product parent id */}
-
             {adminState?.products
               .filter(
                 (product) =>

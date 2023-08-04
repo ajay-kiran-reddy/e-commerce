@@ -14,6 +14,10 @@ export default function CustomAutoComplete({
   defaultValue,
   customOption,
   clearInput,
+  variant,
+  style,
+  size,
+  placeholder,
 }) {
   const [value, setValue] = React.useState(null);
 
@@ -31,6 +35,8 @@ export default function CustomAutoComplete({
 
   return (
     <Autocomplete
+      size={size}
+      style={style}
       value={value}
       disabled={disabled}
       defaultValue={value}
@@ -83,7 +89,14 @@ export default function CustomAutoComplete({
       renderOption={(props, option) => <li {...props}>{option.name}</li>}
       //   sx={{ width: 300 }}
       freeSolo
-      renderInput={(params) => <TextField {...params} label={label} />}
+      renderInput={(params) => (
+        <TextField
+          variant={variant}
+          {...params}
+          placeholder={placeholder}
+          label={label}
+        />
+      )}
     />
   );
 }

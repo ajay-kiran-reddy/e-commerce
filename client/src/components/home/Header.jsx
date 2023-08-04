@@ -42,6 +42,7 @@ import AdminProductsSlice, { AdminProducts } from "../admin/slices/slice";
 import SearchIcon from "@mui/icons-material/Search";
 import { THEME_COLORS } from "../admin/dashboard/constants/DashboardConstants";
 import ColorLensIcon from "@mui/icons-material/ColorLens";
+import CustomAutoComplete from "../shared/CustomAutoComplete";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -205,6 +206,12 @@ function Header() {
     }
   }, [formData]);
 
+  const handleCallBack = (data) => {
+    if (data?._id) {
+      navigate(`/products/${data._id}`);
+    }
+  };
+
   return (
     <>
       <AppBar position="static">
@@ -314,25 +321,19 @@ function Header() {
                   {page.name}
                 </Button>
               ))}
-              <div>
-                <TextField
-                  size="small"
+              <div style={{ marginLeft: "1rem" }}>
+                <CustomAutoComplete
+                  data={productsInfo.products}
                   style={{
-                    width: "30rem",
-                    backgroundColor: "white",
-                    borderRadius: "0.5rem",
-                    marginTop: "1rem",
-                    marginLeft: "1rem",
-                    border: "none",
+                    backgroundColor: "#fff",
+                    width: "500px",
+                    borderRadius: "5px",
+                    marginTop: "1.2rem",
                   }}
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <SearchIcon />
-                      </InputAdornment>
-                    ),
-                  }}
-                  placeholder="Search Products"
+                  variant="standard"
+                  size={"large"}
+                  handleCallBack={handleCallBack}
+                  placeholder={"Search Products"}
                 />
               </div>
             </Box>
@@ -349,7 +350,7 @@ function Header() {
                     </IconButton>
                   </Tooltip>
                 </Grid>
-                <Grid item xs={5} style={{ textAlign: "right" }}>
+                <Grid item xs={7} style={{ textAlign: "right" }}>
                   {state?.userInfo && !sessionExpired ? (
                     <Typography
                       style={{ fontWeight: "bold", marginTop: "0.5rem" }}
