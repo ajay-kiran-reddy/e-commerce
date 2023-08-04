@@ -198,7 +198,7 @@ const Content = ({ handleFormDataCb, editData }) => {
   const handleThumbnail = (image) => {
     setFormData({ ...formData, thumbnail: image });
   };
-  console.log(allCategories, "allCategories DATA");
+
   return (
     <Grid container spacing={3}>
       <CustomLoader show={adminState.isLoading} />

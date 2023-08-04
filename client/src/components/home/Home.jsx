@@ -1,19 +1,14 @@
 import { Grid, Typography } from "@mui/material";
-import React, { useEffect, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import AdminProductsSlice, { AdminProducts } from "../admin/slices/slice";
+import React from "react";
+import { useSelector } from "react-redux";
+import { AdminProducts } from "../admin/slices/slice";
 import CustomLoader from "../shared/Loader";
 import CarouselLoader from "./Carousel";
 import ProductCard from "./ProductCard";
+import { homeState } from "./slices/slice";
 
 function Home() {
-  const dispatch = useDispatch();
   const adminState = useSelector(AdminProducts);
-
-  useEffect(() => {
-    dispatch(AdminProductsSlice.actions.getProducts());
-    dispatch(AdminProductsSlice.actions.fetchCategories());
-  }, []);
 
   return (
     <div>

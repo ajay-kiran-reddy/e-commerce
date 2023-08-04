@@ -1,4 +1,13 @@
-import { Button, Chip, Grid, Paper, Slide, Typography } from "@mui/material";
+import {
+  Button,
+  Chip,
+  Fade,
+  Grid,
+  Paper,
+  Slide,
+  Typography,
+  Zoom,
+} from "@mui/material";
 import React, { useState } from "react";
 import {
   calculateDiscountPercentage,
@@ -18,7 +27,7 @@ const useStyles = makeStyles({
     position: "relative",
   },
   cardHovered: {
-    transform: "scale3d(1.05, 1.05, 1)",
+    transform: "scale3d(3.05, 3.05, 3)",
   },
   productName: { marginLeft: "10%", marginRight: "10%", fontSize: 14 },
   addToCartContainer: {
@@ -78,7 +87,12 @@ export default function ProductCard({ product }) {
             }}
           />
 
-          <Slide direction="up" in={showAddToCart} mountOnEnter unmountOnExit>
+          <Zoom
+            style={{ transitionDelay: showAddToCart ? "200ms" : "0ms" }}
+            in={showAddToCart}
+            mountOnEnter
+            unmountOnExit
+          >
             <div className={classes.addToCartContainer}>
               <Button
                 startIcon={<AddShoppingCart />}
@@ -91,7 +105,7 @@ export default function ProductCard({ product }) {
                 Add To Cart
               </Button>
             </div>
-          </Slide>
+          </Zoom>
         </Grid>
       </Grid>
     </Paper>

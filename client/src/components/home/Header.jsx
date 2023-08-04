@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router";
 import * as ROUTING_CONSTANTS from "../../constants/Routing";
 import AppBar from "@mui/material/AppBar";
@@ -13,6 +13,8 @@ import {
   Button,
   Tooltip,
   MenuItem,
+  TextField,
+  InputAdornment,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import AdbIcon from "@mui/icons-material/Adb";
@@ -21,7 +23,7 @@ import CustomDialog from "../shared/CustomDialog";
 import { Grid, Link } from "@mui/material";
 import SignUp from "../login/SignUp";
 import { useDispatch, useSelector } from "react-redux";
-import { HomeSlice, homeState } from "./slices/slice";
+import { HomeSlice, homeState, updateCurrentRef } from "./slices/slice";
 import CustomLoader from "../shared/Loader";
 import {
   isAdminUser,
@@ -36,6 +38,8 @@ import {
   USER_SETTINGS_MENU,
 } from "../../constants/GlobalConstants";
 import { Cart, CartSlice } from "../cart/slices/slice";
+import AdminProductsSlice, { AdminProducts } from "../admin/slices/slice";
+import SearchIcon from "@mui/icons-material/Search";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -50,7 +54,6 @@ function Header() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const pages = ["Electronics", "Clothes", "Footwear"];
   const [settings, setSettings] = useState([]);
   const [openLogin, setOpenLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
@@ -60,6 +63,9 @@ function Header() {
   const [disableSecondary, setDisableSecondary] = useState(true);
   const cartState = useSelector(Cart);
   const [cartQty, setCartQty] = useState(0);
+  const productsInfo = useSelector(AdminProducts);
+
+  const pages = productsInfo.categories;
 
   const sessionExpired = isSessionExpired();
 
@@ -81,6 +87,11 @@ function Header() {
     const products = cartState?.cartSummary?.products;
     setCartQty(products?.reduce((a, b) => a + b.quantity, 0));
   }, [cartState]);
+
+  useEffect(() => {
+    dispatch(AdminProductsSlice.actions.getProducts());
+    dispatch(AdminProductsSlice.actions.fetchCategories());
+  }, []);
 
   useEffect(() => {
     const isAdmin = isAdminUser();
@@ -105,8 +116,11 @@ function Header() {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = (page) => {
     setAnchorElNav(null);
+    dispatch(updateCurrentRef(page));
+    navigate(`/browse/${page.name}`);
+    sessionStorage.setItem("activeCategory", JSON.stringify(page));
   };
 
   const handleCloseUserMenu = () => {
@@ -252,14 +266,14 @@ function Header() {
                   horizontal: "left",
                 }}
                 open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
+                onClose={() => handleCloseNavMenu()}
                 sx={{
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                {pages.map((page, i) => (
+                  <MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
+                    <Typography textAlign="center">{page.name}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -285,25 +299,42 @@ function Header() {
               AV Stores
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              {pages.map((page) => (
+              {pages.map((page, i) => (
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
+                  onClick={() => handleCloseNavMenu(page)}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  {page}
+                  {page.name}
                 </Button>
               ))}
+              <div>
+                <TextField
+                  size="small"
+                  style={{
+                    width: "30rem",
+                    backgroundColor: "white",
+                    borderRadius: "0.5rem",
+                    marginTop: "1rem",
+                    marginLeft: "1rem",
+                    border: "none",
+                  }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <SearchIcon />
+                      </InputAdornment>
+                    ),
+                  }}
+                  placeholder="Search Products"
+                />
+              </div>
             </Box>
 
             <Box sx={{ flexGrow: 1 }}>
-              <Grid
-                container
-                spacing={0}
-                style={{ marginRight: "1rem", textAlign: "right" }}
-              >
-                <Grid item xs={7}></Grid>
-                <Grid item xs={3}>
+              <Grid container spacing={0} style={{ textAlign: "right" }}>
+                <Grid item xs={2}></Grid>
+                <Grid item xs={7} style={{ textAlign: "right" }}>
                   {state?.userInfo && !sessionExpired ? (
                     <Typography
                       style={{ fontWeight: "bold", marginTop: "0.5rem" }}
@@ -331,7 +362,7 @@ function Header() {
                     </IconButton>
                   </Tooltip>
                 </Grid>
-                <Grid item xs={1}>
+                <Grid item xs={2}>
                   <Tooltip title="Open settings">
                     <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                       <Avatar

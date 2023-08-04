@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { store } from "../../../store";
 
 const initialState = {
   message: "AJ Stores",
@@ -15,15 +16,14 @@ const initialState = {
   forgetPassWord: {
     email: "",
   },
+  currentRef: {},
+  checkedCategories: [],
 };
 
 export const HomeSlice = createSlice({
   name: "home",
   initialState,
   reducers: {
-    displayWelcomeMessage: (state, action) => {
-      state.message = "Welcome to AJ Stores Home Page";
-    },
     updateLoadingState: (state, action) => {
       state.isLoading = action.payload;
     },
@@ -71,11 +71,22 @@ export const HomeSlice = createSlice({
       state.isLoading = true;
       state.forgetPassWord = action.payload;
     },
+    updateCurrentRef: (state, action) => {
+      state.currentRef = action.payload;
+      state.checkedCategories = [];
+    },
+    updateCheckedCategories: (state, action) => {
+      state.checkedCategories = action.payload;
+    },
   },
 });
 
-export const { displayWelcomeMessage, storeSampleData, updateApiResponse } =
-  HomeSlice.actions;
+export const {
+  storeSampleData,
+  updateApiResponse,
+  updateCurrentRef,
+  updateCheckedCategories,
+} = HomeSlice.actions;
 
 export const homeState = (state) => state.home;
 

@@ -6,6 +6,7 @@ const {
 const Product = require("../models/product");
 const router = express.Router();
 const Category = require("../models/category");
+const ObjectId = require("mongoose").Types.ObjectId;
 
 router.post("/createProduct", isAdminAuthenticated, (req, res) => {
   const product = new Product(req.body);
@@ -18,6 +19,21 @@ router.post("/createProduct", isAdminAuthenticated, (req, res) => {
     )
     .catch((error) =>
       res.status(500).json({ message: "Failed to create a product", error })
+    );
+});
+
+router.get("/categoryId", async (req, res) => {
+  String.prototype.toObjectId = function () {
+    return new ObjectId(this.toString());
+  };
+
+  console.log(req.body.categoryId, "[]CAT ID");
+  Product.find({ category: req.body.categoryId.toObjectId() })
+    .then((products) => res.status(200).json({ products }))
+    .catch((error) =>
+      res
+        .status(500)
+        .json({ message: "Failed to fetch products information", error })
     );
 });
 
@@ -78,6 +94,12 @@ router.get("/", async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Failed to fetch products", error });
   }
+});
+
+router.get("/searchProducts/searchText", async (req, res) => {
+  Product.find({ $text: { $search: "Electronics" } })
+    .then((response) => res.status(200).json({ products: response }))
+    .catch((error) => res.status(200).json({ error }));
 });
 
 module.exports = router;

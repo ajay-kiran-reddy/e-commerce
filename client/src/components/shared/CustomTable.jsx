@@ -39,7 +39,7 @@ export default function CustomTable({
                 <TableRow>
                   {columnsData.map((column, i) => (
                     <TableCell
-                      key={i}
+                      key={column._id}
                       align={column.align}
                       style={{ padding: "10px" }}
                     >
@@ -53,7 +53,12 @@ export default function CustomTable({
                   .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                   .map((row, index) => {
                     return (
-                      <TableRow hover role="checkbox" tabIndex={-1} key={index}>
+                      <TableRow
+                        hover
+                        role="checkbox"
+                        tabIndex={-1}
+                        key={row._id}
+                      >
                         {columns.map((column, index) => {
                           return (
                             <TableCell

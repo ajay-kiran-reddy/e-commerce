@@ -21,6 +21,7 @@ import UserProfile from "./components/userProfile";
 import SuccessCheckout from "./components/checkout/SuccessCheckout";
 import FailureCheckout from "./components/checkout/FailureCheckout";
 import Orders from "./components/orders";
+import SearchBrowse from "./components/searchBrowse";
 
 function App() {
   const dispatch = useDispatch();
@@ -100,6 +101,11 @@ function App() {
             exact
             path={ROUTING_CONSTANTS.ROUTE_TO_ORDERS}
             element={<Orders />}
+          />
+          <Route
+            exact
+            path={ROUTING_CONSTANTS.ROUTE_TO_BROWSE}
+            element={<SearchBrowse />}
           />
         </Routes>
       </BrowserRouter>
