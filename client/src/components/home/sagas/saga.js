@@ -15,7 +15,7 @@ function* actionSignIn() {
     const state = yield select(homeState);
     const data = yield call(handleSignIn, state?.signInData);
     yield put(HomeSlice.actions.storeUserInfo(data));
-    sessionStorage.setItem("userInfo", JSON.stringify(data));
+    localStorage.setItem("userInfo", JSON.stringify(data));
     yield put(updateApiResponse(getSuccessApiResponse(data)));
     window.location.reload();
   } catch (e) {

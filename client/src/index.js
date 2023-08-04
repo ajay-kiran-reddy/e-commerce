@@ -5,20 +5,26 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { sagaMiddleware, store } from "./store";
 import { Provider } from "react-redux";
-import rootSaga from "./apiConfig/rootSaga";
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
+
 import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
 
 // sagaMiddleware.run(rootSaga);
 
+const themeColor = localStorage.getItem("themeColor") || "";
+console.log(themeColor, "[themeColor]");
+
 const theme = createTheme({
+  typography: {
+    fontFamily: `"Oxygen", sans-serif`,
+    fontWeightLight: 300,
+    fontWeightRegular: 500,
+    fontWeightMedium: 600,
+    fontWeightBold: 700,
+  },
   palette: {
     primary: {
-      main: "#01579b",
+      main: themeColor || "#1769aa",
       color: "#fff !important",
     },
     secondary: {

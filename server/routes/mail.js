@@ -17,9 +17,11 @@ router.post("/forgotPassword", (req, res) => {
           from: "ajaykiranreddy999@gmail.com",
           to: req?.body?.email,
           subject: "Password reset for e-commerce",
-          // text: "Hi,please login into our e commerce app with this password and try to reset it to new password once u login.",
-          html: `<p>Hi,  please login into our e commerce app with the password below.</p>
-         <b>${randomPassword}</b>`,
+          html: `<p>Hi,  You have requested for a password change. <br/>
+           Please login into our e commerce app with the password below.</p>
+         <b>${randomPassword}</b>
+          <p>Please change the password in your profile page , once you logged in to the site </p>
+         `,
         };
 
         User.findByIdAndUpdate(

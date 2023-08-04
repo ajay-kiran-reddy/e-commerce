@@ -45,6 +45,10 @@ const USER_SETTINGS_MENU = [
     label: "Logout",
     value: "logout",
   },
+  {
+    label: "Switch Theme",
+    value: "switchTheme",
+  },
 ];
 
 const ADMIN_USER_SETTINGS_MENU = [
@@ -67,6 +71,10 @@ const ADMIN_USER_SETTINGS_MENU = [
   {
     label: "Logout",
     value: "logout",
+  },
+  {
+    label: "Switch Theme",
+    value: "switchTheme",
   },
 ];
 

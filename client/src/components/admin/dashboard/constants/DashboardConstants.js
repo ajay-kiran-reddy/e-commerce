@@ -53,7 +53,10 @@ const APP_ACTION_COLORS = {
   green: "#00BFA5",
   blue: "#1769aa",
   red: "#D50000",
+  pink: "#C51162",
 };
+
+const THEME_COLORS = ["#00BFA5", "#1769aa", "#FF3F6B", "#8300EA", "#F56C08"];
 
 const ACTIVE = "ACT";
 const INACTIVE = "INA";
@@ -71,4 +74,5 @@ export {
   DELIVERY_STATUS_CONSTANTS,
   ACTIVE,
   INACTIVE,
+  THEME_COLORS,
 };

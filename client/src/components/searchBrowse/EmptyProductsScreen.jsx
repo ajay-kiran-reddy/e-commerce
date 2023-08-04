@@ -2,18 +2,15 @@ import React from "react";
 import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
 import { Paper, Typography } from "@mui/material";
 
-export default function EmptyProductsScreen() {
+export default function EmptyProductsScreen({ name }) {
   return (
-    <Paper
-      elevation={2}
-      style={{ textAlign: "center", width: "100%", marginTop: "10rem" }}
-    >
+    <Paper elevation={0} style={{ textAlign: "center", width: "100%" }}>
       <SentimentVeryDissatisfiedIcon
         color="primary"
         style={{ fontSize: "10rem" }}
       />
       <Typography variant="h3" gutterBottom style={{ color: "grey" }}>
-        Sorry , no products found
+        Sorry , no {name} found
       </Typography>
     </Paper>
   );

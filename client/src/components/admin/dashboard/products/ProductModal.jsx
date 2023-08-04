@@ -49,7 +49,11 @@ const useStyles = makeStyles({
   },
 });
 
-const Content = ({ handleFormDataCb, editData }) => {
+const Content = ({
+  handleFormDataCb,
+  editData,
+  getSaveButtonDisabledStatus,
+}) => {
   const [formData, setFormData] = useState({
     name: "",
     description: "",
@@ -109,7 +113,11 @@ const Content = ({ handleFormDataCb, editData }) => {
               const isCategoryExist = categoryList.find(
                 (data) => data._id === subSubCat._id
               );
-              !isCategoryExist && categoryList.push(subSubCat);
+              !isCategoryExist &&
+                categoryList.push({
+                  ...subSubCat,
+                  name: `${subSubCat.name} - ${subCat.name}`,
+                });
             });
           }
           // const isCategoryExist = categoryList.find(
@@ -131,6 +139,7 @@ const Content = ({ handleFormDataCb, editData }) => {
 
   useEffect(() => {
     handleFormDataCb(formData);
+    return getSaveButtonDisabledStatus(saveButtonDisabledStatus);
   }, [formData]);
 
   const handleFormData = (e, field) => {
@@ -197,6 +206,22 @@ const Content = ({ handleFormDataCb, editData }) => {
 
   const handleThumbnail = (image) => {
     setFormData({ ...formData, thumbnail: image });
+  };
+
+  console.log(formData);
+
+  const saveButtonDisabledStatus = () => {
+    const { category, description, images, mrp, name, price, thumbnail } =
+      formData;
+    return !(
+      category &&
+      description &&
+      images &&
+      mrp &&
+      name &&
+      price &&
+      thumbnail
+    );
   };
 
   return (
@@ -471,6 +496,7 @@ const Content = ({ handleFormDataCb, editData }) => {
 function ProductModal(props) {
   const dispatch = useDispatch();
   const [formData, setFormData] = useState();
+  const [disabledSave, setDisableSave] = useState(false);
 
   const handleUpload = () => {
     if (props.editData) {
@@ -499,13 +525,23 @@ function ProductModal(props) {
     };
   }, []);
 
+  const getSaveButtonDisabledStatus = (value) => {
+    console.log(value, "{VALUE]");
+    setDisableSave(value);
+  };
+
   return (
     <CustomDialog
       open={props.open}
       primaryButtonLabel={"Save"}
       onClose={handleActionButton}
+      disablePrimary={disabledSave}
       content={
-        <Content handleFormDataCb={handleFormData} editData={props.editData} />
+        <Content
+          handleFormDataCb={handleFormData}
+          getSaveButtonDisabledStatus={getSaveButtonDisabledStatus}
+          editData={props.editData}
+        />
       }
       title="Add Product"
       maxWidth="lg"

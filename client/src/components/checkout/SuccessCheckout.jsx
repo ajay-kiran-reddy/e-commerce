@@ -41,7 +41,7 @@ export default function SuccessCheckout() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const cartItems = sessionStorage.getItem("cartItems");
+    const cartItems = localStorage.getItem("cartItems");
     const parsedData = cartItems && JSON.parse(cartItems);
     if (parsedData) {
       dispatch(OrderSlice.actions.getCreateOrderData(parsedData));
@@ -51,7 +51,7 @@ export default function SuccessCheckout() {
   useEffect(() => {
     return () => {
       dispatch(CartSlice.actions.resetCartData());
-      sessionStorage.setItem("cartItems", "");
+      localStorage.setItem("cartItems", "");
     };
   }, []);
 

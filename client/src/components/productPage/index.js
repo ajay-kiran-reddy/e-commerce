@@ -16,6 +16,7 @@ export default function ProductPage() {
   const [activeImage, setActiveImage] = useState();
   const [productInfo, setProductInfo] = useState();
   const dispatch = useDispatch();
+  const [hideFeatures, setHideFeatures] = useState(false);
 
   useEffect(() => {
     if (!state?.products.length > 0) {
@@ -92,7 +93,10 @@ export default function ProductPage() {
 
           {/** Maginifying the selected image */}
           <Grid item xs={4}>
-            <div>
+            <div
+              onMouseEnter={() => setHideFeatures(true)}
+              onMouseLeave={() => setHideFeatures(false)}
+            >
               <ReactImageMagnify
                 {...{
                   smallImage: {
@@ -104,6 +108,8 @@ export default function ProductPage() {
                     src: activeImage,
                     width: 1200,
                     height: 1800,
+                    backgroundColor: "white",
+                    position: "relative",
                   },
                 }}
               />
@@ -112,7 +118,7 @@ export default function ProductPage() {
 
           {/** Product Details  */}
           <Grid item xs={4}>
-            <ProductDetails productInfo={productInfo} />
+            {!hideFeatures && <ProductDetails productInfo={productInfo} />}
           </Grid>
 
           <Grid item xs={3}>

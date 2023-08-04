@@ -8,6 +8,7 @@ import CustomCard from "../shared/CustomCard";
 import CustomLoader from "../shared/Loader";
 import { Order, OrderSlice } from "./slices/slice";
 import CustomChip from "../shared/CustomChip";
+import EmptyProductsScreen from "../searchBrowse/EmptyProductsScreen";
 
 export default function Orders() {
   const dispatch = useDispatch();
@@ -230,7 +231,7 @@ export default function Orders() {
             })}
           </div>
         ) : (
-          <Typography>No orders found</Typography>
+          <EmptyProductsScreen name={"orders"} />
         )}
       </div>
     );

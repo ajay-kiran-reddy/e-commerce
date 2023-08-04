@@ -1,6 +1,9 @@
 import { Grid, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { validateEmail, validatePassword } from "../../utils/globalUtils";
+import { homeState } from "../home/slices/slice";
+import CustomLoader from "../shared/Loader";
 
 function Login({ handleFormDataCb }) {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -8,6 +11,7 @@ function Login({ handleFormDataCb }) {
   const [emailHelperText, setEmailHelperText] = useState("");
   const [passwordHelperText, setPasswordHelperText] = useState("");
   const [isPasswordValid, setIsPasswordValid] = useState(true);
+  const state = useSelector(homeState);
 
   const handleFormData = (e, field) => {
     setFormData({ ...formData, [field]: e?.target?.value });
@@ -40,6 +44,7 @@ function Login({ handleFormDataCb }) {
 
   return (
     <>
+      <CustomLoader show={state?.isLoading} />
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <TextField

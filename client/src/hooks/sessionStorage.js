@@ -1,14 +1,14 @@
 import React from "react";
 
-const useSessionStorage = (keyName, defaultValue) => {
+const useLocalStorage = (keyName, defaultValue) => {
   const [storedValue, setStoredValue] = React.useState(() => {
     try {
-      const value = window.sessionStorage.getItem(keyName);
+      const value = window.localStorage.getItem(keyName);
 
       if (value) {
         return JSON.parse(value);
       } else {
-        window.sessionStorage.setItem(keyName, JSON.stringify(defaultValue));
+        window.localStorage.setItem(keyName, JSON.stringify(defaultValue));
         return defaultValue;
       }
     } catch (err) {
@@ -18,7 +18,7 @@ const useSessionStorage = (keyName, defaultValue) => {
 
   const setValue = (newValue) => {
     try {
-      window.sessionStorage.setItem(keyName, JSON.stringify(newValue));
+      window.localStorage.setItem(keyName, JSON.stringify(newValue));
     } catch (err) {}
     setStoredValue(newValue);
   };
@@ -26,4 +26,4 @@ const useSessionStorage = (keyName, defaultValue) => {
   return [storedValue, setValue];
 };
 
-export default useSessionStorage;
+export default useLocalStorage;

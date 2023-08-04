@@ -23,13 +23,20 @@ import { APP_ACTION_COLORS } from "../admin/dashboard/constants/DashboardConstan
 const useStyles = makeStyles({
   root: {
     minHeight: "350px",
-    maxHeight: "350px",
     position: "relative",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
   },
   cardHovered: {
     transform: "scale3d(3.05, 3.05, 3)",
   },
-  productName: { marginLeft: "10%", marginRight: "10%", fontSize: 14 },
+  productName: {
+    marginLeft: "10%",
+    marginRight: "10%",
+    fontSize: 14,
+    marginTop: "1rem",
+  },
   addToCartContainer: {
     position: "absolute",
     bottom: "10px",
@@ -46,6 +53,14 @@ export default function ProductCard({ product }) {
 
   const routeToProductPage = () => {
     navigate(`/products/${product._id}`);
+  };
+
+  const getBackGroundColor = (discount) => {
+    if (discount <= 10) {
+      return APP_ACTION_COLORS.blue;
+    } else if (discount > 10 && discount <= 40) {
+      return APP_ACTION_COLORS.green;
+    } else return APP_ACTION_COLORS.pink;
   };
 
   return (
@@ -80,7 +95,9 @@ export default function ProductCard({ product }) {
             label={calculateDiscountPercentage(product) + "% off"}
             style={{
               color: "white",
-              backgroundColor: APP_ACTION_COLORS.green,
+              backgroundColor: getBackGroundColor(
+                calculateDiscountPercentage(product)
+              ),
               position: "absolute",
               top: "10px",
               right: "10px",

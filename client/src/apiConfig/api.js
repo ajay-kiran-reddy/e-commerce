@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const userInfoJsonObject = sessionStorage.getItem("userInfo")
-  ? sessionStorage.getItem("userInfo")
+const userInfoJsonObject = localStorage.getItem("userInfo")
+  ? localStorage.getItem("userInfo")
   : "";
 
 const userInfoParsedObject = userInfoJsonObject

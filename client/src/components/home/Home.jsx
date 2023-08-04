@@ -1,11 +1,11 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, IconButton, Typography } from "@mui/material";
 import React from "react";
 import { useSelector } from "react-redux";
 import { AdminProducts } from "../admin/slices/slice";
 import CustomLoader from "../shared/Loader";
 import CarouselLoader from "./Carousel";
 import ProductCard from "./ProductCard";
-import { homeState } from "./slices/slice";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Home() {
   const adminState = useSelector(AdminProducts);
@@ -28,6 +28,7 @@ function Home() {
               </Typography>
             </Grid>
             {/** Find category children id where it matches with product parent id */}
+
             {adminState?.products
               .filter(
                 (product) =>

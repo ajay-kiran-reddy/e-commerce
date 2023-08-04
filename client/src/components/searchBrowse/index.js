@@ -17,7 +17,7 @@ export default function SearchBrowse() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    const items = sessionStorage.getItem("activeCategory") || [];
+    const items = localStorage.getItem("activeCategory") || [];
     setCategories(JSON.parse(items));
   }, [home.currentRef]);
 
@@ -64,7 +64,7 @@ export default function SearchBrowse() {
               );
             })
           ) : (
-            <EmptyProductsScreen />
+            <EmptyProductsScreen name={"products"} />
           )}
         </Grid>
       </Grid>

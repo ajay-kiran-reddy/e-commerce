@@ -20,8 +20,8 @@ const formatCurrencyToIndianRupees = (price, priceFontSize, isMrp) => {
   return (
     <div>
       <Typography
+        color={isMrp ? "secondary" : "primary"}
         style={{
-          color: !isMrp && APP_ACTION_COLORS.blue,
           fontWeight: !isMrp && "bold",
           fontSize: isMrp ? 12 : priceFontSize,
           textDecoration: isMrp && "line-through",
@@ -29,9 +29,9 @@ const formatCurrencyToIndianRupees = (price, priceFontSize, isMrp) => {
       >
         <IconButton style={{ padding: 0 }}>
           <CurrencyRupeeIcon
+            color={isMrp ? "secondary" : "primary"}
             style={{
               fontSize: isMrp ? 12 : 16,
-              color: !isMrp && APP_ACTION_COLORS.blue,
             }}
           />
         </IconButton>
@@ -48,8 +48,8 @@ const calculateDiscountPercentage = (productInfo) => {
 };
 
 const isUserLoggedIn = () => {
-  const userInfoJsonObject = sessionStorage.getItem("userInfo")
-    ? sessionStorage.getItem("userInfo")
+  const userInfoJsonObject = localStorage.getItem("userInfo")
+    ? localStorage.getItem("userInfo")
     : "";
 
   const userInfoParsedObject = userInfoJsonObject

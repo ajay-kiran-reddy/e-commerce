@@ -29,7 +29,7 @@ export default function Payment({ products }) {
       deliveryStatus: DELIVERY_STATUS_CONSTANTS.ORDERED,
     };
     console.log(requestBody, "[REQUEST]");
-    sessionStorage.setItem("cartItems", JSON.stringify(requestBody));
+    localStorage.setItem("cartItems", JSON.stringify(requestBody));
     dispatch(CartSlice.actions.makePayment(requestBody));
   };
 
@@ -40,11 +40,12 @@ export default function Payment({ products }) {
         type="submit"
         variant="contained"
         style={{
-          backgroundColor: "#FFA41B",
+          // backgroundColor: "#FFA41B",
           width: "50%",
-          color: "black",
+          // color: "black",
           margin: "1rem",
         }}
+        color="primary"
         startIcon={<ShoppingCartCheckoutIcon />}
         onClick={handleCheckout}
       >

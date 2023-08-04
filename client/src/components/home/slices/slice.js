@@ -44,8 +44,8 @@ export const HomeSlice = createSlice({
     },
     fetchUserInfo: (state) => {
       state.isLoading = true;
-      const userInfoJsonObject = sessionStorage.getItem("userInfo")
-        ? sessionStorage.getItem("userInfo")
+      const userInfoJsonObject = localStorage.getItem("userInfo")
+        ? localStorage.getItem("userInfo")
         : "";
 
       const userInfoParsedObject = userInfoJsonObject
@@ -57,7 +57,7 @@ export const HomeSlice = createSlice({
     },
     handleLogOutUser: (state) => {
       state.isLoading = true;
-      sessionStorage.setItem("userInfo", JSON.stringify(null));
+      localStorage.setItem("userInfo", JSON.stringify(null));
       state.apiResponse = {
         message: "You have been logged out successfully",
         severity: "success",

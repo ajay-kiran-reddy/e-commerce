@@ -67,6 +67,7 @@ export default function CartPage() {
   const products = state?.cartSummary?.products;
   const navigate = useNavigate();
   const productState = useSelector(ProductState);
+  const [mrp, setMrp] = useState(0);
 
   useEffect(() => {
     dispatch(CartSlice.actions.getCartSummary());
@@ -96,6 +97,7 @@ export default function CartPage() {
     if (products) {
       setTotalProductsQty(products?.reduce((a, b) => a + b.quantity, 0));
       setTotalAmount(products?.reduce((a, b) => a + b.amount, 0));
+      setMrp(products?.reduce((a, b) => a + b.product.mrp * b.quantity, 0));
     }
   }, [state?.cartSummary?.products]);
 
@@ -124,23 +126,28 @@ export default function CartPage() {
                     return (
                       <Grid
                         container
-                        style={{ position: "relative", marginTop: "10px" }}
+                        style={{
+                          position: "relative",
+                          marginTop: "10px",
+                        }}
                       >
                         <Grid item xs={3}>
-                          <img
-                            alt="product_image"
-                            src={product?.product?.thumbnail}
-                            width="100%"
-                            height="250px"
-                            backgroundSize="contain"
-                            backgroundRepeat="no-repeat"
-                            border="none"
-                            style={{ cursor: "pointer" }}
+                          <div
+                            style={{
+                              backgroundImage: `url(${product?.product?.thumbnail})`,
+                              width: "200px",
+                              height: "200px",
+                              backgroundSize: "contain",
+                              backgroundRepeat: "no-repeat",
+                              border: "none",
+                              cursor: "pointer",
+                              marginBottom: "1rem",
+                            }}
                             onClick={() => handleProductClick(product?.product)}
-                          />
+                          ></div>
                         </Grid>
                         <Grid item xs={8}>
-                          <Typography variant="h6" gutterBottom>
+                          <Typography style={{ fontSize: "20px" }} gutterBottom>
                             {product?.product?.name}
                           </Typography>
 
@@ -178,13 +185,14 @@ export default function CartPage() {
                               <CloseIcon color="primary" />
                             </IconButton>
                           </Tooltip>
+
                           <ButtonGroup
                             variant="outlined"
                             aria-label="outlined button group"
                             style={{
                               position: "absolute",
                               bottom: "10px",
-                              width: "100%",
+                              left: 200,
                             }}
                           >
                             <Button
@@ -200,6 +208,7 @@ export default function CartPage() {
                             </Button>
                           </ButtonGroup>
                         </Grid>
+
                         <Grid item xs={12}>
                           <Divider />
                         </Grid>
@@ -223,13 +232,34 @@ export default function CartPage() {
                   Item Total ({totalProductQty}) :
                 </span>
                 <span style={{ float: "right" }}>
-                  {formatCurrencyToIndianRupees(totalAmount)}
+                  {formatCurrencyToIndianRupees(mrp)}
+                </span>
+              </div>
+
+              <div style={{ padding: "1rem" }}>
+                <span style={{ float: "left" }}>Discount :</span>
+                <span
+                  style={{
+                    float: "right",
+                    color: APP_ACTION_COLORS.green,
+                    fontWeight: 600,
+                  }}
+                >
+                  {calculateDiscountPercentage({ price: totalAmount, mrp })} %
                 </span>
               </div>
 
               <div style={{ padding: "1rem" }}>
                 <span style={{ float: "left" }}>Shipping :</span>
-                <span style={{ float: "right" }}>FREE</span>
+                <span
+                  style={{
+                    float: "right",
+                    color: APP_ACTION_COLORS.green,
+                    fontWeight: 600,
+                  }}
+                >
+                  FREE
+                </span>
               </div>
 
               <Divider style={{ width: "100%", margin: "1rem 0 1rem 0" }} />

@@ -99,11 +99,8 @@ export default function AddToCart({ productInfo }) {
       <Grid item xs={12} md={6}>
         <Button
           variant="contained"
-          style={{
-            backgroundColor: "#FFD811",
-            width: "100%",
-            color: "black",
-          }}
+          style={{ width: "100%" }}
+          color="primary"
           startIcon={<AddShoppingCartIcon />}
           onClick={handleAddToCart}
         >
@@ -113,8 +110,9 @@ export default function AddToCart({ productInfo }) {
 
       <Grid item xs={12} md={6}>
         <Button
-          variant="contained"
-          style={{ backgroundColor: "#FFA41B", width: "100%", color: "black" }}
+          variant="outlined"
+          style={{ width: "100%" }}
+          color="primary"
           startIcon={<ShoppingCartCheckoutIcon />}
           onClick={handleBuyNow}
         >

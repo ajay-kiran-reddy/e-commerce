@@ -40,6 +40,8 @@ import {
 import { Cart, CartSlice } from "../cart/slices/slice";
 import AdminProductsSlice, { AdminProducts } from "../admin/slices/slice";
 import SearchIcon from "@mui/icons-material/Search";
+import { THEME_COLORS } from "../admin/dashboard/constants/DashboardConstants";
+import ColorLensIcon from "@mui/icons-material/ColorLens";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -79,6 +81,10 @@ function Header() {
       dispatch(HomeSlice.actions.handleLogOutUser());
     } else if (value === "orders") {
       navigate(ROUTING_CONSTANTS.ROUTE_TO_ORDERS);
+    } else if (value === "switchTheme") {
+      var item = THEME_COLORS[Math.floor(Math.random() * THEME_COLORS.length)];
+      localStorage.setItem("themeColor", item);
+      window.location.reload();
     }
     handleCloseUserMenu();
   };
@@ -120,7 +126,7 @@ function Header() {
     setAnchorElNav(null);
     dispatch(updateCurrentRef(page));
     navigate(`/browse/${page.name}`);
-    sessionStorage.setItem("activeCategory", JSON.stringify(page));
+    localStorage.setItem("activeCategory", JSON.stringify(page));
   };
 
   const handleCloseUserMenu = () => {
@@ -333,8 +339,17 @@ function Header() {
 
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={0} style={{ textAlign: "right" }}>
-                <Grid item xs={2}></Grid>
-                <Grid item xs={7} style={{ textAlign: "right" }}>
+                <Grid item xs={1}></Grid>
+                <Grid item xs={1} style={{ textAlign: "right" }}>
+                  <Tooltip title="Surprise me with new theme">
+                    <IconButton
+                      onClick={() => handleItemClick({ value: "switchTheme" })}
+                    >
+                      <ColorLensIcon style={{ color: "white" }} />
+                    </IconButton>
+                  </Tooltip>
+                </Grid>
+                <Grid item xs={5} style={{ textAlign: "right" }}>
                   {state?.userInfo && !sessionExpired ? (
                     <Typography
                       style={{ fontWeight: "bold", marginTop: "0.5rem" }}

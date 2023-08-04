@@ -11,7 +11,7 @@ export default function FilterCard({ products }) {
   const state = useSelector(homeState);
 
   useEffect(() => {
-    const items = sessionStorage.getItem("activeCategory") || [];
+    const items = localStorage.getItem("activeCategory") || [];
     setCategories(JSON.parse(items));
   }, [state.currentRef]);
 
