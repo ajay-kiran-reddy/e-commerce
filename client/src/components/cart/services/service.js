@@ -29,12 +29,15 @@ const removeFromCart = (productId) => {
 };
 
 const makePayment = async (data) => {
-  const res = await fetch(`http://localhost:5000/api/stripe/payment`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+  const res = await fetch(
+    `${process.env.REACT_APP_API_BASE_URL}/stripe/payment`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
   const body = await res.json();
   window.location.href = body.url;
   return body;
