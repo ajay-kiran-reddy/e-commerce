@@ -110,4 +110,5 @@ exports.updateUserAccess = (req, res) => {
     .catch((error) =>
       res.status(500).json({ message: "Failed to update Admin access", error })
     );
+  console.log("");
 };
