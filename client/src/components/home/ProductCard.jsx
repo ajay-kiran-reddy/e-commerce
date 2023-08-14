@@ -72,7 +72,8 @@ export default function ProductCard({ product }) {
       onClick={routeToProductPage}
     >
       <Grid container className={classes.root}>
-        <Grid item xs={12}>
+        <Grid item xs={2} md={12}></Grid>
+        <Grid item xs={6} md={12}>
           <div
             style={{
               backgroundImage: `url(${product.thumbnail})`,
@@ -124,6 +125,7 @@ export default function ProductCard({ product }) {
             </div>
           </Zoom>
         </Grid>
+        <Grid item xs={2} md={12}></Grid>
       </Grid>
     </Paper>
   );

@@ -13,8 +13,7 @@ import {
   Button,
   Tooltip,
   MenuItem,
-  TextField,
-  InputAdornment,
+  InputBase,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import AdbIcon from "@mui/icons-material/Adb";
@@ -32,7 +31,7 @@ import {
 } from "../../utils/globalUtils";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Badge from "@mui/material/Badge";
-import { styled } from "@mui/material/styles";
+import { alpha, styled } from "@mui/material/styles";
 import {
   ADMIN_USER_SETTINGS_MENU,
   USER_SETTINGS_MENU,
@@ -41,8 +40,48 @@ import { Cart, CartSlice } from "../cart/slices/slice";
 import AdminProductsSlice, { AdminProducts } from "../admin/slices/slice";
 import SearchIcon from "@mui/icons-material/Search";
 import { THEME_COLORS } from "../admin/dashboard/constants/DashboardConstants";
-import ColorLensIcon from "@mui/icons-material/ColorLens";
-import CustomAutoComplete from "../shared/CustomAutoComplete";
+import MoreIcon from "@mui/icons-material/MoreVert";
+import { ProductSlice } from "../productPage/slices/slice";
+
+const Search = styled("div")(({ theme }) => ({
+  position: "relative",
+  borderRadius: theme.shape.borderRadius,
+  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  "&:hover": {
+    backgroundColor: alpha(theme.palette.common.white, 0.25),
+  },
+  marginRight: theme.spacing(2),
+  marginLeft: 0,
+  width: "100%",
+  [theme.breakpoints.up("sm")]: {
+    marginLeft: theme.spacing(3),
+    width: "auto",
+  },
+}));
+
+const SearchIconWrapper = styled("div")(({ theme }) => ({
+  padding: theme.spacing(0, 2),
+  height: "100%",
+  position: "absolute",
+  pointerEvents: "none",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+}));
+
+const StyledInputBase = styled(InputBase)(({ theme }) => ({
+  color: "inherit",
+  "& .MuiInputBase-input": {
+    padding: theme.spacing(1, 1, 1, 0),
+    // vertical padding + font size from searchIcon
+    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    transition: theme.transitions.create("width"),
+    width: "100%",
+    [theme.breakpoints.up("md")]: {
+      width: "20ch",
+    },
+  },
+}));
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -67,7 +106,11 @@ function Header() {
   const cartState = useSelector(Cart);
   const [cartQty, setCartQty] = useState(0);
   const productsInfo = useSelector(AdminProducts);
-
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  const isMenuOpen = Boolean(anchorEl);
+  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+  const [searchText, setSearchText] = useState("");
   const pages = productsInfo.categories;
 
   const sessionExpired = isSessionExpired();
@@ -86,6 +129,8 @@ function Header() {
       var item = THEME_COLORS[Math.floor(Math.random() * THEME_COLORS.length)];
       localStorage.setItem("themeColor", item);
       window.location.reload();
+    } else if (value === "cart") {
+      navigate(ROUTING_CONSTANTS.ROUTE_TO_CART_SUMMARY);
     }
     handleCloseUserMenu();
   };
@@ -121,6 +166,11 @@ function Header() {
   };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
+    handleMobileMenuClose();
+  };
+
+  const handleMobileMenuClose = () => {
+    setMobileMoreAnchorEl(null);
   };
 
   const handleCloseNavMenu = (page) => {
@@ -206,9 +256,84 @@ function Header() {
     }
   }, [formData]);
 
-  const handleCallBack = (data) => {
-    if (data?._id) {
-      navigate(`/products/${data._id}`);
+  const handleMobileMenuOpen = (event) => {
+    setMobileMoreAnchorEl(event.currentTarget);
+  };
+
+  const mobileMenuId = "primary-search-account-menu-mobile";
+  const renderMobileMenu = (
+    <Menu
+      anchorEl={mobileMoreAnchorEl}
+      anchorOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      id={mobileMenuId}
+      keepMounted
+      transformOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      open={isMobileMenuOpen}
+      onClose={handleMobileMenuClose}
+    >
+      <MenuItem>
+        {sessionExpired && (
+          <Button variant="outlined" onClick={() => setOpenLogin(true)}>
+            Login
+          </Button>
+        )}
+      </MenuItem>
+      <MenuItem>
+        <Tooltip title="Go To Cart">
+          <IconButton onClick={() => navigate("/cartSummary")}>
+            <StyledBadge badgeContent={cartQty} color="primary">
+              <ShoppingCartIcon color="primary" />
+            </StyledBadge>
+          </IconButton>
+        </Tooltip>
+      </MenuItem>
+      <MenuItem>
+        <div>
+          <Tooltip title="Open settings">
+            <IconButton onClick={handleOpenUserMenu}>
+              <Avatar
+                alt={state?.userInfo?.userName}
+                src={state?.userInfo?.image}
+              />
+            </IconButton>
+          </Tooltip>
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorElUser}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            open={Boolean(anchorElUser)}
+            onClose={handleCloseUserMenu}
+          >
+            {settings.map((setting) => (
+              <MenuItem key={setting} onClick={() => handleItemClick(setting)}>
+                {isAdminUser && (
+                  <Typography textAlign="center">{setting?.label}</Typography>
+                )}
+              </MenuItem>
+            ))}
+          </Menu>
+        </div>
+      </MenuItem>
+    </Menu>
+  );
+
+  const handleSearch = (e) => {
+    if (e.key === "Enter") {
+      console.log(searchText, "[SEARCH TEXT]");
+      dispatch(ProductSlice.actions.searchProducts(searchText));
     }
   };
 
@@ -321,36 +446,23 @@ function Header() {
                   {page.name}
                 </Button>
               ))}
-              <div style={{ marginLeft: "1rem" }}>
-                <CustomAutoComplete
-                  data={productsInfo.products}
-                  style={{
-                    backgroundColor: "#fff",
-                    width: "500px",
-                    borderRadius: "5px",
-                    marginTop: "1.2rem",
-                  }}
-                  variant="standard"
-                  size={"large"}
-                  handleCallBack={handleCallBack}
-                  placeholder={"Search Products"}
-                />
-              </div>
             </Box>
 
-            <Box sx={{ flexGrow: 1 }}>
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ "aria-label": "search" }}
+                onKeyDown={handleSearch}
+                onChange={(e) => setSearchText(e.target.value)}
+              />
+            </Search>
+
+            <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <Grid container spacing={0} style={{ textAlign: "right" }}>
-                <Grid item xs={1}></Grid>
-                <Grid item xs={1} style={{ textAlign: "right" }}>
-                  <Tooltip title="Surprise me with new theme">
-                    <IconButton
-                      onClick={() => handleItemClick({ value: "switchTheme" })}
-                    >
-                      <ColorLensIcon style={{ color: "white" }} />
-                    </IconButton>
-                  </Tooltip>
-                </Grid>
-                <Grid item xs={7} style={{ textAlign: "right" }}>
+                <Grid item>
                   {state?.userInfo && !sessionExpired ? (
                     <Typography
                       style={{ fontWeight: "bold", marginTop: "0.5rem" }}
@@ -369,7 +481,7 @@ function Header() {
                     </Button>
                   )}
                 </Grid>
-                <Grid item xs={1}>
+                <Grid item>
                   <Tooltip title="Go To Cart">
                     <IconButton onClick={() => navigate("/cartSummary")}>
                       <StyledBadge badgeContent={cartQty} color="primary">
@@ -378,9 +490,13 @@ function Header() {
                     </IconButton>
                   </Tooltip>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item>
                   <Tooltip title="Open settings">
-                    <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                    <IconButton
+                      style={{ marginLeft: "0.5rem" }}
+                      onClick={handleOpenUserMenu}
+                      sx={{ p: 0 }}
+                    >
                       <Avatar
                         alt={state?.userInfo?.userName}
                         src={state?.userInfo?.image}
@@ -418,6 +534,19 @@ function Header() {
                 </Grid>
               </Grid>
             </Box>
+            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+              <IconButton
+                size="large"
+                aria-label="show more"
+                aria-controls={mobileMenuId}
+                aria-haspopup="true"
+                onClick={handleMobileMenuOpen}
+                color="inherit"
+              >
+                <MoreIcon />
+              </IconButton>
+            </Box>
+            {renderMobileMenu}
           </Toolbar>
         </Container>
       </AppBar>

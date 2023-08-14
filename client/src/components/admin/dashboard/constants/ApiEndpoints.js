@@ -1,6 +1,7 @@
 /**product api's end points */
 const PRODUCTS = "/products";
 const CREATE_PRODUCT = "/products/createProduct";
+const SEARCH_PRODUCT = "/products/searchProducts";
 
 /**Category api's end points */
 const CATEGORY = "/category";
@@ -58,4 +59,5 @@ export {
   ALL_ORDERS,
   UPDATE_ORDER,
   ALL_USERS,
+  SEARCH_PRODUCT,
 };

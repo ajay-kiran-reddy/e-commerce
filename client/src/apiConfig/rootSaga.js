@@ -32,6 +32,7 @@ import { createOrderEntry, ordersInfo } from "../components/orders/sagas/saga";
 import {
   addToCart,
   productInfoCart,
+  searchProducts,
 } from "../components/productPage/sagas/saga";
 import { updateUserInfo, userInfo } from "../components/userProfile/sagas/saga";
 
@@ -69,6 +70,7 @@ export default function* rootSaga() {
     cartSummary(),
     resetCartInfo(),
     removeItemFromCart(),
+    searchProducts(),
     //user
     userInfo(),
     updateUserInfo(),

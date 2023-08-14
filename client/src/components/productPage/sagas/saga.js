@@ -5,7 +5,11 @@ import {
 } from "../../../constants/GlobalConstants";
 import { CartSlice } from "../../cart/slices/slice";
 import { updateApiResponse } from "../../home/slices/slice";
-import { getProductInfoFromCart, postAddToCart } from "../service/service";
+import {
+  getProductInfoFromCart,
+  postAddToCart,
+  searchForProducts,
+} from "../service/service";
 import { ProductSlice, ProductState } from "../slices/slice";
 
 function* actionAddToCart() {
@@ -40,6 +44,17 @@ function* actionGetProductInfoFromCart() {
   }
 }
 
+function* actionSearchProduct() {
+  try {
+    const state = yield select(ProductState);
+    const data = yield call(searchForProducts, state?.searchText);
+    yield put(updateApiResponse(getSuccessApiResponse(data)));
+  } catch (e) {
+    yield put(updateApiResponse(getFailureApiResponse(e)));
+    yield put(ProductSlice.actions.updateLoadingState(false));
+  }
+}
+
 function* addToCart() {
   yield takeLatest(ProductSlice.actions.addToCart, actionAddToCart);
 }
@@ -51,4 +66,8 @@ function* productInfoCart() {
   );
 }
 
-export { addToCart, productInfoCart };
+function* searchProducts() {
+  yield takeLatest(ProductSlice.actions.searchProducts, actionSearchProduct);
+}
+
+export { addToCart, productInfoCart, searchProducts };

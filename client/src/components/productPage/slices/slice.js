@@ -7,6 +7,7 @@ const initialState = {
   selectedProductId: "",
   navigate: null,
   fetchProductInfo: false,
+  searchText: "",
 };
 
 export const ProductSlice = createSlice({
@@ -41,6 +42,10 @@ export const ProductSlice = createSlice({
     },
     resetProductInfo: (state, action) => {
       state.fetchProductInfo = false;
+    },
+    searchProducts: (state, action) => {
+      state.isLoading = true;
+      state.searchText = action.payload;
     },
   },
 });

@@ -17,11 +17,9 @@ export default function FilterCard({ products }) {
 
   return (
     <div style={{ textAlign: "left" }}>
-      <FormGroup>
-        {categories?.children?.map((cat) => {
-          return <RecursiveCheckBox data={cat} products={products} />;
-        })}
-      </FormGroup>
+      {categories?.children?.map((cat) => {
+        return <RecursiveCheckBox data={cat} products={products} />;
+      })}
     </div>
   );
 }
