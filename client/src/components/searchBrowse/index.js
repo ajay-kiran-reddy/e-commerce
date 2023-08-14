@@ -49,11 +49,11 @@ export default function SearchBrowse() {
   }, [home.checkedCategories]);
 
   return (
-    <Grid container spacing={0}>
+    <Grid container spacing={0} style={{ marginTop: "1rem" }}>
       <Grid item xs={12} md={2}>
         <FilterCard products={products} />
       </Grid>
-      <Grid item xs={12} md={8} style={{ marginTop: "1rem" }}>
+      <Grid item xs={12} md={8}>
         <Grid container spacing={3}>
           {products.length > 0 ? (
             products.map((product) => {

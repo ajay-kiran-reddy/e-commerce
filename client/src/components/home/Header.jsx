@@ -334,6 +334,8 @@ function Header() {
     if (e.key === "Enter") {
       console.log(searchText, "[SEARCH TEXT]");
       dispatch(ProductSlice.actions.searchProducts(searchText));
+      navigate(ROUTING_CONSTANTS.ROUTE_TO_SEARCH);
+      setSearchText("");
     }
   };
 

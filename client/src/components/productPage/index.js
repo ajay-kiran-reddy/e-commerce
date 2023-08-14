@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import AdminProductsSlice, { AdminProducts } from "../admin/slices/slice";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
@@ -9,6 +9,7 @@ import { Grid } from "@mui/material";
 import AddToCart from "./AddToCart";
 import ProductDetails from "./ProductDetails";
 import CustomLoader from "../shared/Loader";
+import { Cart } from "../cart/slices/slice";
 
 export default function ProductPage() {
   const { productId } = useParams();
@@ -17,6 +18,10 @@ export default function ProductPage() {
   const [productInfo, setProductInfo] = useState();
   const dispatch = useDispatch();
   const [hideFeatures, setHideFeatures] = useState(false);
+  const cartState = useSelector(Cart);
+  const [subCatObj, setSubCatObj] = useState({});
+  const [catObject, setCatObject] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!state?.products.length > 0) {
@@ -33,30 +38,69 @@ export default function ProductPage() {
     if (productInfo) {
       setActiveImage(productInfo?.images[0]);
     }
+    getCategoryByParentId(productInfo?.category?.parentId);
   }, [productInfo]);
+
+  const getCategoryByParentId = (parentId) => {
+    console.log(parentId, "[parentId]");
+    state?.categories.forEach((cat) => {
+      cat?.children.forEach((child) => {
+        if (child._id === parentId) {
+          setSubCatObj(child);
+          getParentCategoryById(child._id);
+        }
+      });
+    });
+  };
+
+  const getParentCategoryById = (id) => {
+    state?.categories.forEach((cat) => {
+      cat.children.forEach((child) => {
+        if (child._id === id) {
+          setCatObject(cat);
+        }
+      });
+    });
+  };
+
+  const handleBreadCrumbRouting = (route) => {
+    navigate(route);
+  };
 
   return (
     <div style={{ margin: "1rem" }}>
-      <CustomLoader show={state.isLoading} />
+      <CustomLoader show={state.isLoading || cartState.isLoading} />
       <div role="presentation">
         <Breadcrumbs aria-label="breadcrumb">
-          <Link underline="hover" color="inherit" href="/">
-            Electronics
-          </Link>
           <Link
+            style={{ cursor: "pointer" }}
             underline="hover"
             color="inherit"
-            href="/material-ui/getting-started/installation/"
+            onClick={() =>
+              handleBreadCrumbRouting(`/browse/${catObject?.name}`)
+            }
           >
-            Mobiles
+            {catObject?.name}
+          </Link>
+          <Link
+            style={{ cursor: "pointer" }}
+            underline="hover"
+            color="inherit"
+            onClick={() =>
+              handleBreadCrumbRouting(`/browse/${catObject?.name}`)
+            }
+          >
+            {subCatObj?.name}
           </Link>
           <Link
             underline="hover"
             color="text.primary"
-            href="/material-ui/react-breadcrumbs/"
+            onClick={() =>
+              handleBreadCrumbRouting(`/browse/${catObject?.name}`)
+            }
             aria-current="page"
           >
-            One Plus
+            {productInfo?.category?.name}
           </Link>
         </Breadcrumbs>
 

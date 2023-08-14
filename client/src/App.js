@@ -22,6 +22,7 @@ import SuccessCheckout from "./components/checkout/SuccessCheckout";
 import FailureCheckout from "./components/checkout/FailureCheckout";
 import Orders from "./components/orders";
 import SearchBrowse from "./components/searchBrowse";
+import Search from "./components/searchBrowse/Search";
 
 function App() {
   const dispatch = useDispatch();
@@ -106,6 +107,11 @@ function App() {
             exact
             path={ROUTING_CONSTANTS.ROUTE_TO_BROWSE}
             element={<SearchBrowse />}
+          />
+          <Route
+            exact
+            path={ROUTING_CONSTANTS.ROUTE_TO_SEARCH}
+            element={<Search />}
           />
         </Routes>
       </BrowserRouter>

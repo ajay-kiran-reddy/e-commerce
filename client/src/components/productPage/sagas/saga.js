@@ -49,6 +49,7 @@ function* actionSearchProduct() {
     const state = yield select(ProductState);
     const data = yield call(searchForProducts, state?.searchText);
     yield put(updateApiResponse(getSuccessApiResponse(data)));
+    yield put(ProductSlice.actions.storeSearchedProducts(data.products));
   } catch (e) {
     yield put(updateApiResponse(getFailureApiResponse(e)));
     yield put(ProductSlice.actions.updateLoadingState(false));

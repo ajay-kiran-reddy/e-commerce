@@ -11,7 +11,7 @@ const CHECKOUT_SUCCESS = "/checkout/success";
 const CHECKOUT_FAILURE = "/checkout/failure";
 const ROUTE_TO_ORDERS = "/orders";
 const ROUTE_TO_BROWSE = "/browse/:productName";
-
+const ROUTE_TO_SEARCH = "/searchProducts";
 export {
   DEFAULT_ROUTE,
   HOME_ROUTE,
@@ -25,4 +25,5 @@ export {
   CHECKOUT_FAILURE,
   ROUTE_TO_ORDERS,
   ROUTE_TO_BROWSE,
+  ROUTE_TO_SEARCH,
 };
