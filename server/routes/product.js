@@ -98,8 +98,15 @@ router.get("/", async (req, res) => {
 
 router.get("/searchProducts/:id", async (req, res) => {
   console.log(req.params.id, "[ID]");
-  Product.find({ $text: { $search: req.params.id } })
-    .then((response) => res.status(200).json({ products: response }))
+  Product.find({ $text: { $search: req.params.id, $caseSensitive: false } })
+    .then((response) =>
+      res
+        .status(200)
+        .json({
+          products: response,
+          message: "Fetched the results successfully",
+        })
+    )
     .catch((error) => res.status(200).json({ error }));
 });
 
