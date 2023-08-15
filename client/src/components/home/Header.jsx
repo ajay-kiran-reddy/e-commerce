@@ -175,9 +175,11 @@ function Header() {
 
   const handleCloseNavMenu = (page) => {
     setAnchorElNav(null);
-    dispatch(updateCurrentRef(page));
-    navigate(`/browse/${page.name}`);
-    localStorage.setItem("activeCategory", JSON.stringify(page));
+    if (page?.name) {
+      dispatch(updateCurrentRef(page));
+      navigate(`/browse/${page?.name}`);
+      localStorage.setItem("activeCategory", JSON.stringify(page));
+    }
   };
 
   const handleCloseUserMenu = () => {
@@ -506,7 +508,6 @@ function Header() {
                     </IconButton>
                   </Tooltip>
                   <Menu
-                    sx={{ mt: "45px" }}
                     id="menu-appbar"
                     anchorEl={anchorElUser}
                     anchorOrigin={{

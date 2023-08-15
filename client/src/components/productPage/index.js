@@ -105,7 +105,7 @@ export default function ProductPage() {
         </Breadcrumbs>
 
         <Grid container spacing={2}>
-          <Grid item xs={1}>
+          <Grid item xs={3} md={1}>
             <div style={{ textAlign: "left" }}>
               {productInfo?.images.map((image) => {
                 return (
@@ -136,7 +136,7 @@ export default function ProductPage() {
           </Grid>
 
           {/** Maginifying the selected image */}
-          <Grid item xs={4}>
+          <Grid item xs={8} md={4}>
             <div
               onMouseEnter={() => setHideFeatures(true)}
               onMouseLeave={() => setHideFeatures(false)}
@@ -161,11 +161,11 @@ export default function ProductPage() {
           </Grid>
 
           {/** Product Details  */}
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
             {!hideFeatures && <ProductDetails productInfo={productInfo} />}
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={12} md={3}>
             <AddToCart productInfo={productInfo} />
           </Grid>
         </Grid>

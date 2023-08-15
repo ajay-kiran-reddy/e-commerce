@@ -19,7 +19,7 @@ import AddShoppingCart from "@mui/icons-material/AddShoppingCart";
 import { useDispatch } from "react-redux";
 import { ProductSlice } from "../productPage/slices/slice";
 import { APP_ACTION_COLORS } from "../admin/dashboard/constants/DashboardConstants";
-
+import "../../index.css";
 const useStyles = makeStyles({
   root: {
     minHeight: "350px",
@@ -70,6 +70,7 @@ export default function ProductCard({ product }) {
       onMouseOver={() => setShowAddToCart(true)}
       onMouseOut={() => setShowAddToCart(false)}
       onClick={routeToProductPage}
+      className="zoom"
     >
       <Grid container className={classes.root}>
         <Grid item xs={2} md={12}></Grid>

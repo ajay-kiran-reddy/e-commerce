@@ -116,7 +116,7 @@ export default function CartPage() {
         <>
           <Grid item xs={1}></Grid>
 
-          <Grid item xs={7} className={classes.root}>
+          <Grid item xs={11} md={7} className={classes.root}>
             <Paper elevation={3} className={classes.paper}>
               <Typography className={classes.title}>Shopping Cart</Typography>
               <Divider className={classes.divider} />
@@ -146,7 +146,7 @@ export default function CartPage() {
                             onClick={() => handleProductClick(product?.product)}
                           ></div>
                         </Grid>
-                        <Grid item xs={8}>
+                        <Grid item xs={12} md={8}>
                           <Typography style={{ fontSize: "20px" }} gutterBottom>
                             {product?.product?.name}
                           </Typography>
@@ -192,7 +192,6 @@ export default function CartPage() {
                             style={{
                               position: "absolute",
                               bottom: "10px",
-                              left: 200,
                             }}
                           >
                             <Button
@@ -219,7 +218,7 @@ export default function CartPage() {
               </Grid>
             </Paper>
           </Grid>
-          <Grid item xs={3} style={{ marginLeft: "2rem" }}>
+          <Grid item xs={12} md={3} style={{ marginLeft: "2rem" }}>
             <Paper elevation={3}>
               <Typography className={classes.subTotal}>
                 Order Summary

@@ -19,7 +19,11 @@ function Home() {
             container
             spacing={3}
             key={category._id}
-            style={{ paddingLeft: "1rem", marginTop: "0.5rem" }}
+            style={{
+              paddingLeft: "1rem",
+              marginTop: "0.5rem",
+              paddingRight: "1rem",
+            }}
           >
             <Grid item xs={12}>
               <Typography variant="h6" gutterBottom color="primary">
@@ -38,7 +42,7 @@ function Home() {
               .slice(0, 6)
               .map((product) => {
                 return (
-                  <Grid item xs={12} md={4} lg={2}>
+                  <Grid item xs={12} sm={6} md={4} lg={2}>
                     <ProductCard product={product} />
                   </Grid>
                 );

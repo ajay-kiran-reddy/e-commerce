@@ -31,10 +31,15 @@ export default function Orders() {
                   style={{ padding: "1rem", marginBottom: "1rem" }}
                 >
                   <Grid container>
-                    <Grid item xs={6} style={{ textAlign: "left" }}>
+                    <Grid item xs={12} md={6} style={{ textAlign: "left" }}>
                       <Typography
                         gutterBottom
-                        style={{ fontWeight: 500, fontSize: 20 }}
+                        style={{
+                          fontWeight: 500,
+                          fontSize: 20,
+                          textOverflow: "ellipsis",
+                          overflow: "hidden",
+                        }}
                       >
                         Order Id : {order._id}
                       </Typography>
@@ -57,7 +62,7 @@ export default function Orders() {
                         Estimated Delivery: {formatDate(order.createdAt)}
                       </Typography>
                     </Grid>
-                    <Grid item xs={6} style={{ textAlign: "right" }}>
+                    <Grid item xs={12} md={6} style={{ textAlign: "right" }}>
                       <Typography
                         variant="caption"
                         gutterBottom
@@ -85,7 +90,8 @@ export default function Orders() {
                           >
                             <Grid
                               item
-                              xs={2}
+                              xs={12}
+                              md={2}
                               style={{
                                 backgroundColor: "#F9F9F9",
                                 borderRadius: "1rem",
@@ -101,7 +107,7 @@ export default function Orders() {
                                 width="100px"
                               />
                             </Grid>
-                            <Grid item xs={8}>
+                            <Grid item xs={12} md={8}>
                               <Typography variant="subtitle1" gutterBottom>
                                 {product?.product?.name}
                               </Typography>
@@ -114,7 +120,7 @@ export default function Orders() {
                                 Color:- {product?.product?.color}
                               </Typography>
                             </Grid>
-                            <Grid item xs={2}>
+                            <Grid item xs={12} md={2}>
                               {formatCurrencyToIndianRupees(
                                 product?.product?.price
                               )}
@@ -129,7 +135,7 @@ export default function Orders() {
                     {/** ORDER SUMMARY */}
                     <Grid
                       item
-                      xs={6}
+                      xs={12}
                       md={4}
                       style={{ marginTop: "3rem", textAlign: "left" }}
                     >
