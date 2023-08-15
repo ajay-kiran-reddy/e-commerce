@@ -1,6 +1,6 @@
 Hi, Welcome to AV E commerce site
 
-This site is tradition e coomerce site where you can view/place orders.
+This site is traditional e commerce site where you can view/place orders.
 
 Our site is live and hosted here . https://av-ecommerce-client.onrender.com/
 
