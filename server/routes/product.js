@@ -97,13 +97,18 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/searchProducts/:id", async (req, res) => {
-  console.log("hello");
   console.log(req.params.id, "[ID]");
 
-  Product.find({
-    name: req.params.id,
-  })
-
+  Product.find({ $text: { $search: req.params.id, $caseSensitive: false } })
+    .createIndex(
+      { city: 1 },
+      {
+        collation: {
+          locale: "en",
+          strength: 2,
+        },
+      }
+    )
     .then((response) =>
       res.status(200).json({
         products: response,
