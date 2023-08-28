@@ -103,10 +103,7 @@ router.get("/searchProducts/:id", async (req, res) => {
   Product.find({
     name: req.params.id,
   })
-    .collation({
-      locale: "en",
-      strength: 2,
-    })
+
     .then((response) =>
       res.status(200).json({
         products: response,
