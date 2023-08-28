@@ -4,6 +4,7 @@ const Order = require("../models/order");
 
 exports.getUserOrders = (req, res) => {
   Order.find({ userId: req.user._id })
+    .sort({ createdAt: -1 })
     .populate("userId")
     .populate("products.product")
     .then((orders) => {
@@ -60,7 +61,7 @@ exports.deleteOrder = (req, res) => {
 };
 
 exports.getAllOrders = (req, res) => {
-  Order.aggregate([{ $sort: { $createdAt: 1 } }])
+  Order.find()
     .populate("userId", "userName _id")
     .populate("products.product", "name thumbnail _id")
     .then((orders) => res.status(200).json({ orders }))
