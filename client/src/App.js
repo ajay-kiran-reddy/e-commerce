@@ -8,7 +8,7 @@ import {
   homeState,
   updateApiResponse,
 } from "./components/home/slices/slice";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { RESET_API_RESPONSE } from "./constants/GlobalConstants";
 import { Alert, Snackbar } from "@mui/material";
 import Header from "./components/home/Header";
@@ -23,6 +23,7 @@ import FailureCheckout from "./components/checkout/FailureCheckout";
 import Orders from "./components/orders";
 import SearchBrowse from "./components/searchBrowse";
 import Search from "./components/searchBrowse/Search";
+import { isMobileView } from "./utils/globalUtils";
 
 function App() {
   const dispatch = useDispatch();
@@ -35,8 +36,6 @@ function App() {
   useEffect(() => {
     dispatch(HomeSlice.actions.fetchUserInfo());
   }, []);
-
-  console.log("");
 
   return (
     <div className="App">

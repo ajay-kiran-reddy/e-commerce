@@ -12,6 +12,7 @@ import React, { useState } from "react";
 import {
   calculateDiscountPercentage,
   formatCurrencyToIndianRupees,
+  isMobileView,
 } from "../../utils/globalUtils";
 import { makeStyles } from "@mui/styles";
 import { useNavigate } from "react-router";
@@ -20,9 +21,10 @@ import { useDispatch } from "react-redux";
 import { ProductSlice } from "../productPage/slices/slice";
 import { APP_ACTION_COLORS } from "../admin/dashboard/constants/DashboardConstants";
 import "../../index.css";
+
 const useStyles = makeStyles({
   root: {
-    minHeight: "350px",
+    minHeight: isMobileView() ? "150px" : "350px",
     position: "relative",
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
@@ -36,6 +38,8 @@ const useStyles = makeStyles({
     marginRight: "10%",
     fontSize: 14,
     marginTop: "1rem",
+    textOverflow: "ellipsis",
+    overflow: "hidden",
   },
   addToCartContainer: {
     position: "absolute",
@@ -78,8 +82,8 @@ export default function ProductCard({ product }) {
           <div
             style={{
               backgroundImage: `url(${product.thumbnail})`,
-              width: "200px",
-              height: "200px",
+              width: isMobileView() ? "120px" : "200px",
+              height: isMobileView() ? "120px" : "200px",
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               border: "none",
@@ -94,6 +98,7 @@ export default function ProductCard({ product }) {
           {formatCurrencyToIndianRupees(product.mrp, null, true)}
 
           <Chip
+            size="small"
             label={calculateDiscountPercentage(product) + "% off"}
             style={{
               color: "white",

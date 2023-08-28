@@ -2,8 +2,9 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { isMobileView } from "../../utils/globalUtils";
 
-const height = 500;
+const height = isMobileView() ? 200 : 500;
 function CarouselLoader() {
   const images = [
     "https://res.cloudinary.com/ajaui/image/upload/v1690771162/e8aea330-10cd-4778-91ab-da9678161ec11690739860849-PB-Banner_Wishlist-Now_umdl9i.webp",

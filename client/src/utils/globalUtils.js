@@ -76,6 +76,10 @@ const isSessionExpired = () => {
   return expiredTime < currentTime;
 };
 
+const isMobileView = () => {
+  const width = window.innerWidth;
+  return width < 768;
+};
 export {
   isUserAuthenticated,
   isAdminUser,
@@ -85,4 +89,5 @@ export {
   validatePassword,
   isSessionExpired,
   calculateDiscountPercentage,
+  isMobileView,
 };

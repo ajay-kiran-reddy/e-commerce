@@ -9,7 +9,7 @@ export default function EmptyProductsScreen({ name }) {
         color="primary"
         style={{ fontSize: "5rem" }}
       />
-      <Typography variant="h3" gutterBottom style={{ color: "grey" }}>
+      <Typography variant="h5" gutterBottom style={{ color: "grey" }}>
         Sorry , no {name} found
       </Typography>
     </Paper>

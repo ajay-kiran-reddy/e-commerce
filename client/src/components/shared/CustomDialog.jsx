@@ -85,7 +85,7 @@ export default function CustomDialog(props) {
         <DialogContent dividers>{content}</DialogContent>
         <DialogActions style={{ textAlign: "left" }}>
           <Grid container spacing={3}>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <Typography
                 color="primary"
                 variant="caption"
@@ -96,7 +96,7 @@ export default function CustomDialog(props) {
                 {helperText}
               </Typography>
             </Grid>
-            <Grid item xs={6} style={{ textAlign: "right" }}>
+            <Grid item xs={12} md={6} style={{ textAlign: "right" }}>
               {secondaryButtonLabel && (
                 <Button
                   style={{ marginRight: "1rem" }}
@@ -108,6 +108,7 @@ export default function CustomDialog(props) {
                 </Button>
               )}
               <Button
+                style={{ textAlign: "right" }}
                 variant="contained"
                 onClick={() => handleClose("primary")}
                 disabled={disablePrimary}

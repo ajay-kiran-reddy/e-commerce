@@ -1,4 +1,4 @@
-import { Grid, IconButton, Typography } from "@mui/material";
+import { Chip, Grid, IconButton, Typography } from "@mui/material";
 import React from "react";
 import { useSelector } from "react-redux";
 import { AdminProducts } from "../admin/slices/slice";
@@ -26,10 +26,13 @@ function Home() {
             }}
           >
             <Grid item xs={12}>
-              <Typography variant="h6" gutterBottom color="primary">
-                Best Of {category.name}
-              </Typography>
+              <Chip
+                label={`Best Of ${category.name}`}
+                color="primary"
+                style={{ fontSize: "1rem", fontWeight: 600 }}
+              />
             </Grid>
+
             {/** Find category children id where it matches with product parent id */}
             {adminState?.products
               .filter(
@@ -42,7 +45,7 @@ function Home() {
               .slice(0, 6)
               .map((product) => {
                 return (
-                  <Grid item xs={12} sm={6} md={4} lg={2}>
+                  <Grid item xs={6} md={4} lg={2}>
                     <ProductCard product={product} />
                   </Grid>
                 );

@@ -29,6 +29,7 @@ import AlertTitle from "@mui/material/AlertTitle";
 import { ProductSlice, ProductState } from "../productPage/slices/slice";
 import CustomChip from "../shared/CustomChip";
 import { APP_ACTION_COLORS } from "../admin/dashboard/constants/DashboardConstants";
+import { isMobileView } from "../../utils/globalUtils";
 
 const useStyles = makeStyles({
   root: {
@@ -135,8 +136,8 @@ export default function CartPage() {
                           <div
                             style={{
                               backgroundImage: `url(${product?.product?.thumbnail})`,
-                              width: "200px",
-                              height: "200px",
+                              width: isMobileView() ? "120px" : "200px",
+                              height: isMobileView() ? "120px" : "200px",
                               backgroundSize: "contain",
                               backgroundRepeat: "no-repeat",
                               border: "none",
@@ -147,7 +148,12 @@ export default function CartPage() {
                           ></div>
                         </Grid>
                         <Grid item xs={12} md={8}>
-                          <Typography style={{ fontSize: "20px" }} gutterBottom>
+                          <Typography
+                            style={{
+                              fontSize: "1rem",
+                            }}
+                            gutterBottom
+                          >
                             {product?.product?.name}
                           </Typography>
 
@@ -161,6 +167,7 @@ export default function CartPage() {
                             true
                           )}
                           <Chip
+                            size="small"
                             label={
                               calculateDiscountPercentage(product?.product) +
                               "% off"
@@ -191,7 +198,8 @@ export default function CartPage() {
                             aria-label="outlined button group"
                             style={{
                               position: "absolute",
-                              bottom: "10px",
+                              bottom: "5px",
+                              right: "0",
                             }}
                           >
                             <Button

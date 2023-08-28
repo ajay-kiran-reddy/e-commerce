@@ -97,8 +97,16 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/searchProducts/:id", async (req, res) => {
+  console.log("hello");
   console.log(req.params.id, "[ID]");
-  Product.find({ $text: { $search: req.params.id, $caseSensitive: true } })
+
+  Product.find({
+    name: req.params.id,
+  })
+    .collation({
+      locale: "en",
+      strength: 2,
+    })
     .then((response) =>
       res.status(200).json({
         products: response,

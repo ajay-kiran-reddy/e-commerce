@@ -200,7 +200,7 @@ export default function Orders() {
                     {/** DELIVERY SECTION */}
                     <Grid
                       item
-                      xs={6}
+                      xs={12}
                       md={4}
                       style={{ marginTop: "3rem", textAlign: "left" }}
                     >
