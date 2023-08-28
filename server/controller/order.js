@@ -60,7 +60,7 @@ exports.deleteOrder = (req, res) => {
 };
 
 exports.getAllOrders = (req, res) => {
-  Order.find()
+  Order.aggregate([{ $sort: { $createdAt: 1 } }])
     .populate("userId", "userName _id")
     .populate("products.product", "name thumbnail _id")
     .then((orders) => res.status(200).json({ orders }))
