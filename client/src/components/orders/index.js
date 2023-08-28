@@ -248,7 +248,7 @@ export default function Orders() {
       <CustomLoader show={state.isLoading} />
       <Grid container style={{ marginTop: "5rem" }}>
         <Grid item xs={2}></Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12} md={8}>
           <CustomCard title={` Orders :-`} content={<Content />} />
         </Grid>
         <Grid item xs={2}></Grid>
