@@ -17,6 +17,27 @@ router.post("/signup", (req, res) => {
 
   bcrypt.hash(password, saltRounds, function (err, hash) {
     User.findOne({ email }).then((user) => {
+      const toEmailBody = {
+        from: "ajaykiranreddy999@gmail.com",
+        to: req?.body?.email,
+        subject: "Registration Successful - On board to AV Ecommerce",
+        html: `<p>Hi ${req?.body?.userName},
+              Thanks for joining AV Ecommerce.
+              We are really curious why you signed up for av-stores.
+              Your feedback will really help us improve our products, as we always aim to deliver exactly what our customers want.
+              Share your thoughts by replying to this email.
+              We’ll also share our tips and tricks on how we use av-stores.
+              Thanks!`,
+      };
+
+      const adminEmailBody = {
+        from: "ajaykiranreddy999@gmail.com",
+        to: "ajaykiranreddy999@gmail.com",
+        subject: "Password reset for e-commerce",
+        html: `<p>Hey admin, we have a new user ${req.body.userName} signup in to our site av-stores. <br/>
+           Please have a look.</p>`,
+      };
+
       if (user) {
         res.status(500).json({
           message:
@@ -29,7 +50,36 @@ router.post("/signup", (req, res) => {
           .save()
           .then((user) =>
             res.status(200).json({ message: "User created successfully", user })
-          )
+          );
+        transporter.sendMail(toEmailBody, (error, info) => {
+          if (error) {
+            res.status(500).json({
+              message: "Failed to create user",
+              error: err,
+            });
+          }
+          // const fetchedUser = { ...user, password: randomPassword };
+          // console.log(fetchedUser, "[fetchedUser]");
+          res.status(200).json({
+            message: "",
+            mailInfo: info?.messageId,
+          });
+        });
+        transporter
+          .sendMail(adminEmailBody, (error, info) => {
+            if (error) {
+              res.status(500).json({
+                message: "Failed to create user",
+                error: err,
+              });
+            }
+            // const fetchedUser = { ...user, password: randomPassword };
+            // console.log(fetchedUser, "[fetchedUser]");
+            res.status(200).json({
+              message: "",
+              mailInfo: info?.messageId,
+            });
+          })
           .catch((err) => {
             res.status(500).json({
               message: "Failed to create user",
