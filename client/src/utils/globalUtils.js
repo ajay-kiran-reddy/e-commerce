@@ -73,7 +73,9 @@ const isSessionExpired = () => {
   const appState = store.getState();
   const expiredTime = appState?.home?.userInfo?.jwtToken?.expiredAt;
   const currentTime = new Date().getTime();
-  return expiredTime < currentTime;
+  if (!expiredTime) {
+    return true;
+  } else return expiredTime < currentTime;
 };
 
 const isMobileView = () => {
