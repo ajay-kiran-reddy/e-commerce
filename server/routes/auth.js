@@ -27,7 +27,7 @@ router.post("/signup", (req, res) => {
               Your feedback will really help us improve our products, as we always aim to deliver exactly what our customers want.<br/>
               Share your thoughts by replying to this email.<br/>
               We’ll also share our tips and tricks on how we use av-stores.<br/>
-              Thanks!`,
+              Thanks!</p>`,
       };
 
       const adminEmailBody = {
