@@ -23,18 +23,18 @@ router.post("/signup", (req, res) => {
         subject: "Registration Successful - On board to AV Ecommerce",
         html: `<p>Hi ${req?.body?.userName},
               Thanks for joining AV Ecommerce.
-              We are really curious why you signed up for av-stores.
-              Your feedback will really help us improve our products, as we always aim to deliver exactly what our customers want.
-              Share your thoughts by replying to this email.
-              We’ll also share our tips and tricks on how we use av-stores.
+              We are really curious why you signed up for av-stores.<br/>
+              Your feedback will really help us improve our products, as we always aim to deliver exactly what our customers want.<br/>
+              Share your thoughts by replying to this email.<br/>
+              We’ll also share our tips and tricks on how we use av-stores.<br/>
               Thanks!`,
       };
 
       const adminEmailBody = {
         from: "ajaykiranreddy999@gmail.com",
         to: "ajaykiranreddy999@gmail.com",
-        subject: "Password reset for e-commerce",
-        html: `<p>Hey admin, we have a new user ${req.body.userName} signup in to our site av-stores. <br/>
+        subject: "New user onboard notification",
+        html: `<p>Hey admin, we have a new user <b>${req.body.userName}</b> signed up in to our site av-stores. <br/>
            Please have a look.</p>`,
       };
 
