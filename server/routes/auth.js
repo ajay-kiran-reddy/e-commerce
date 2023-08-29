@@ -21,7 +21,7 @@ router.post("/signup", (req, res) => {
         res.status(500).json({
           message:
             "User already exists. Please login with user name and password",
-          error,
+          err,
         });
       } else {
         const user = new User({ ...req.body, password: hash });

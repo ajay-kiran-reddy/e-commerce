@@ -193,6 +193,7 @@ function Header() {
          * dispatch sign up actions
          */
         dispatch(HomeSlice.actions.storeSignUpData(formData));
+        setShowSignUp(false);
       } else {
         /**
          * dispatch sign in actions
