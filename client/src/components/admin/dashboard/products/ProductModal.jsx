@@ -105,6 +105,7 @@ const Content = ({
      * This effect will fetches all categories, sub categories and sub sub categories available in consolidate into one list
      */
     const categoryList = [];
+    console.log(adminState?.categories, "[adminState?.categories]");
     adminState?.categories.forEach((cat) => {
       if (cat?.children.length > 0) {
         cat?.children.forEach((subCat) => {
@@ -119,16 +120,16 @@ const Content = ({
                   name: `${subSubCat.name} - ${subCat.name}`,
                 });
             });
+          } else {
+            categoryList.push({
+              ...subCat,
+              name: `${subCat.name} - ${subCat.name}`,
+            });
           }
           // const isCategoryExist = categoryList.find(
           //   (data) => data._id === subCat._id
           // );
           /*  !isCategoryExist && categoryList.push(subCat); */
-        });
-      } else {
-        categoryList.push({
-          ...cat,
-          name: `${cat.name} - ${cat.name}`,
         });
       }
       // const isCategoryExist = categoryList.find((data) => data._id === cat._id);
