@@ -125,6 +125,11 @@ const Content = ({
           // );
           /*  !isCategoryExist && categoryList.push(subCat); */
         });
+      } else {
+        categoryList.push({
+          ...cat,
+          name: `${cat.name} - ${cat.name}`,
+        });
       }
       // const isCategoryExist = categoryList.find((data) => data._id === cat._id);
       /* !isCategoryExist && categoryList.push(cat); */
