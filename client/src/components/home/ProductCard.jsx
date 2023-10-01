@@ -1,138 +1,86 @@
-import {
-  Button,
-  Chip,
-  Fade,
-  Grid,
-  Paper,
-  Slide,
-  Typography,
-  Zoom,
-} from "@mui/material";
-import React, { useState } from "react";
-import {
-  calculateDiscountPercentage,
-  formatCurrencyToIndianRupees,
-  isMobileView,
-} from "../../utils/globalUtils";
-import { makeStyles } from "@mui/styles";
-import { useNavigate } from "react-router";
-import AddShoppingCart from "@mui/icons-material/AddShoppingCart";
-import { useDispatch } from "react-redux";
-import { ProductSlice } from "../productPage/slices/slice";
-import { APP_ACTION_COLORS } from "../admin/dashboard/constants/DashboardConstants";
-import "../../index.css";
+import { Chip, Grid, IconButton, Skeleton, Typography } from "@mui/material";
+import React from "react";
+import { useSelector } from "react-redux";
+import { AdminProducts } from "../admin/slices/slice";
+import CustomLoader from "../shared/Loader";
+import CarouselLoader from "./Carousel";
+import ProductCard from "./ProductCard";
 
-const useStyles = makeStyles({
-  root: {
-    minHeight: isMobileView() ? "150px" : "350px",
-    position: "relative",
-    textOverflow: "ellipsis",
-    whiteSpace: "nowrap",
-    overflow: "hidden",
-  },
-  cardHovered: {
-    transform: "scale3d(3.05, 3.05, 3)",
-  },
-  productName: {
-    marginLeft: "10%",
-    marginRight: "10%",
-    fontSize: 14,
-    marginTop: "1rem",
-    textOverflow: "ellipsis",
-    overflow: "hidden",
-  },
-  addToCartContainer: {
-    position: "absolute",
-    bottom: "10px",
-    width: "100%",
-    transition: "width 2s height 4s",
-  },
-});
-
-export default function ProductCard({ product }) {
-  const classes = useStyles();
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-  const [showAddToCart, setShowAddToCart] = useState(false);
-
-  const routeToProductPage = () => {
-    navigate(`/products/${product._id}`);
-  };
-
-  const getBackGroundColor = (discount) => {
-    if (discount <= 10) {
-      return APP_ACTION_COLORS.blue;
-    } else if (discount > 10 && discount <= 40) {
-      return APP_ACTION_COLORS.green;
-    } else return APP_ACTION_COLORS.pink;
-  };
+function Home() {
+  const adminState = useSelector(AdminProducts);
 
   return (
-    <Paper
-      elevation={2}
-      style={{ cursor: "pointer" }}
-      onMouseOver={() => setShowAddToCart(true)}
-      onMouseOut={() => setShowAddToCart(false)}
-      onClick={routeToProductPage}
-      className="zoom"
-    >
-      <Grid container className={classes.root}>
-        <Grid item xs={2} md={12}></Grid>
-        <Grid item xs={6} md={12}>
-          <div
-            style={{
-              backgroundImage: `url(${product.thumbnail})`,
-              width: isMobileView() ? "120px" : "200px",
-              height: isMobileView() ? "120px" : "200px",
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-              border: "none",
-            }}
-          ></div>
+    <div>
+      <CarouselLoader />
+      <CustomLoader show={adminState.isLoading} />
 
-          <Typography className={classes.productName}>
-            {product.name}
-          </Typography>
-
-          {formatCurrencyToIndianRupees(product.price)}
-          {formatCurrencyToIndianRupees(product.mrp, null, true)}
-
-          <Chip
-            size="small"
-            label={calculateDiscountPercentage(product) + "% off"}
-            style={{
-              color: "white",
-              backgroundColor: getBackGroundColor(
-                calculateDiscountPercentage(product)
-              ),
-              position: "absolute",
-              top: "10px",
-              right: "10px",
-            }}
-          />
-
-          <Zoom
-            style={{ transitionDelay: showAddToCart ? "200ms" : "0ms" }}
-            in={showAddToCart}
-            mountOnEnter
-            unmountOnExit
-          >
-            <div className={classes.addToCartContainer}>
-              <Button
-                startIcon={<AddShoppingCart />}
-                variant="contained"
-                onClick={(event) => {
-                  dispatch(ProductSlice.actions.addToCart(product));
-                  event.stopPropagation();
-                }}
-              >
-                Add To Cart
-              </Button>
-            </div>
-          </Zoom>
+      {adminState.isLoading ? (
+        <Grid
+          container
+          spacing={3}
+          style={{
+            paddingLeft: "1rem",
+            marginTop: "0.5rem",
+            paddingRight: "1rem",
+          }}
+        >
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item) => {
+            return (
+              <Grid item xs={12} md={4} lg={2}>
+                <Skeleton
+                  animation="wave"
+                  height={200}
+                  width="90%"
+                  style={{ marginBottom: 6 }}
+                />
+              </Grid>
+            );
+          })}
         </Grid>
-        <Grid item xs={2} md={12}></Grid>
-      </Grid>
-    </Paper>
+      ) : (
+        adminState.categories.map((category) => {
+          return (
+            <Grid
+              container
+              spacing={3}
+              key={category._id}
+              style={{
+                paddingLeft: "1rem",
+                marginTop: "0.5rem",
+                paddingRight: "1rem",
+              }}
+            >
+              <Grid item xs={12}>
+                <Chip
+                  label={`Best Of ${category.name}`}
+                  color="primary"
+                  style={{ fontSize: "1rem", fontWeight: 600 }}
+                />
+              </Grid>
+
+              {/** Find category children id where it matches with product parent id */}
+              {adminState?.products
+                .filter(
+                  (product) =>
+                    product.category.parentId ===
+                    category.children?.find(
+                      (cat) => cat._id === product.category.parentId
+                    )?._id
+                )
+                .slice(0, 6)
+                .map((product) => {
+                  return (
+                    <Grid item xs={6} md={4} lg={2}>
+                      <ProductCard product={product} />
+                    </Grid>
+                  );
+                })}
+            </Grid>
+          );
+        })
+      )}
+    </div>
   );
 }
+
+export default Home;
