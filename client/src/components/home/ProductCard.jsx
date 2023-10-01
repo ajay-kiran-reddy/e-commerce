@@ -29,7 +29,6 @@ const useStyles = makeStyles({
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
     overflow: "hidden",
-    // "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
   },
   productName: {
     marginLeft: "10%",
