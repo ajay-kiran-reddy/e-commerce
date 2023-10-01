@@ -30,6 +30,9 @@ const useStyles = makeStyles({
     whiteSpace: "nowrap",
     overflow: "hidden",
   },
+  cardHovered: {
+    transform: "scale3d(3.05, 3.05, 3)",
+  },
   productName: {
     marginLeft: "10%",
     marginRight: "10%",
