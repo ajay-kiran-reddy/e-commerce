@@ -29,9 +29,7 @@ const useStyles = makeStyles({
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
     overflow: "hidden",
-  },
-  cardHovered: {
-    transform: "scale3d(3.05, 3.05, 3)",
+    // "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
   },
   productName: {
     marginLeft: "10%",
@@ -70,7 +68,7 @@ export default function ProductCard({ product }) {
   return (
     <Paper
       elevation={2}
-      style={{ cursor: "pointer" }}
+      style={{ cursor: "pointer", borderRadius: "0.5rem", backgroundColor: "" }}
       onMouseOver={() => setShowAddToCart(true)}
       onMouseOut={() => setShowAddToCart(false)}
       onClick={routeToProductPage}

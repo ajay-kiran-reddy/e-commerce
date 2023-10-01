@@ -13,12 +13,11 @@ code {
 }
 
 .zoom {
-  transition: transform 1250ms; /* Animation */
-  transition-delay: 250ms;
+  border-radius: 1rem;
 }
 
 .zoom:hover {
-  transform: scale(
-    1.1
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
+  transition: transform 500ms; /* Animation */
+  transition-delay: 50ms; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
