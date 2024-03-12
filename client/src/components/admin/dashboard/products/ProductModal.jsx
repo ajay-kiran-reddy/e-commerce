@@ -10,6 +10,7 @@ import {
   Select,
   Slide,
   TextField,
+  TextareaAutosize,
   Tooltip,
   Typography,
 } from "@mui/material";
@@ -27,7 +28,6 @@ import {
 import DownloadDoneIcon from "@mui/icons-material/DownloadDone";
 import AddIcon from "@mui/icons-material/Add";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
-import TextareaAutosize from "@mui/base/TextareaAutosize";
 import ImageIcon from "@mui/icons-material/Image";
 import { makeStyles } from "@mui/styles";
 import CustomChip from "../../../shared/CustomChip";

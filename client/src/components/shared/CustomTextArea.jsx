@@ -1,7 +1,7 @@
 import * as React from "react";
-import TextareaAutosize from "@mui/base/TextareaAutosize";
 import { styled } from "@mui/system";
 import { useEffect } from "react";
+import { TextareaAutosize } from "@mui/material";
 
 const blue = {
   100: "#DAECFF",

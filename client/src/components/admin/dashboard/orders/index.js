@@ -39,7 +39,7 @@ export default function Orders() {
     {
       field: "userId",
       fieldLabel: "Order by",
-      render: (row) => row.userId.userName,
+      render: (row) => row?.userId?.userName,
       align: "left",
     },
 
