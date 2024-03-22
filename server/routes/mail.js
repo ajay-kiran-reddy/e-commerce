@@ -42,6 +42,7 @@ router.post("/forgotPassword", (req, res) => {
 
         transporter.sendMail(emailBody, (error, info) => {
           if (error) {
+            console.log(error,'[error]')
             res.status(500).json({
               message: "Failed to reset password",
               error: err,
