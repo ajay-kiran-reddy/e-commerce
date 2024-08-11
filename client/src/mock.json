@@ -1,0 +1,3248 @@
+{
+  "products": [
+    {
+      "_id": "64a3ef7a147bbcaaf740d73e",
+      "name": "OnePlus Nord CE 2 Lite 5G (Black Dusk, 128 GB)  (6 GB RAM)",
+      "description": "Camera: 108 MP Main Camera with EIS; 2MP Depth-Assist Lens and 2MP Macro Lens; Front (Selfie) Camera: 16MP.\nRear Camera Mode: Hi-res 108MP mode, 3x Lossles Zoom, Photo, Video, Nightscape, Expert, Panoramic, Portrait, Macro, Time-lapse, Slow-motion, Long exposure, Dual-view video, Text Scanner, 1080p/720p@30fps, Video zoom: 1080P@30fps, 720P@30fps, Slow motion: 720P@120fps, Time-Lapse: 1080P@30fps, Steady Video EIS support.\nDisplay: 6.72 Inches; 120 Hz Adaptive refresh rate; FHD+(1080×2400), Colors: 16.7 Million colors, 391 ppi, Aspect Ratio: 20:9, Brightness: 550 nits (typical), 680 nits (HBM).\nOperating System: Oxygen OS based on Android 13.1 .\nProcessor: Qualcomm Snapdragon 695 5G .\nBattery & Charging: 5000 mAh with 67W SUPERVOOC Endurance Edition",
+      "category": {
+        "_id": "64a2dead6e771ba9db69eece",
+        "name": "One Plus",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 19999,
+      "color": "lime",
+      "size": ["s"],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1688470522/pebiwnpdygxvjqm45loq.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688470522/gzgk79zqljqyatgf6bzv.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688470522/g2rdt2nkick5a0mdzfe0.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688470523/zbbs67hn4leut4uvlryl.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688470522/hbhutmujwtvcgm4ewjsz.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688470523/mpzhvnhfzavdmhabjlyj.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688470523/yiakzkdixopeprzxnfse.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688470523/kd7pdwzsaowo9tof2jvv.jpg"
+      ],
+      "createdAt": "2023-07-04T10:07:54.526Z",
+      "updatedAt": "2024-03-12T04:13:00.792Z",
+      "__v": 0,
+      "additionalInfo": [
+        {
+          "feature": "Storage",
+          "value": "256 GB"
+        },
+        {
+          "feature": "Ram",
+          "value": "6GB"
+        },
+        {
+          "feature": "Model Name",
+          "value": "OnePlus Nord CE 3 Lite 5G"
+        },
+        {
+          "feature": "Operating System",
+          "value": "OxygenOS"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1688470522/g2rdt2nkick5a0mdzfe0.jpg",
+      "mrp": 26000
+    },
+    {
+      "_id": "64a4010f147bbcaaf740d793",
+      "name": "Samsung Galaxy S20 FE 5G (Cloud Lavender, 8GB RAM, 128GB Storage) with No Cost EMI & Additional Exchange Offers",
+      "description": "5G Ready powered by Qualcomm Snapdragon 865 Octa-Core processor, 8GB RAM, 128GB internal memory expandable up to 1TB, Android 11.0 operating system and dual SIM.\nTriple Rear Camera Setup - 12MP (Dual Pixel) OIS F1.8 Wide Rear Camera + 8MP OIS Tele Camera + 12MP Ultra Wide | 30X Space Zoom, Single Take & Night Mode | 32MP F2.2 Front Punch Hole Camera .\n6.5-inch(16.40 centimeters) Infinity-O Super AMOLED Display with 120Hz Refresh rate, 1080 x 2400 (FHD+) Resolution \" .\n4500 mAh battery (Non -removable) with Super Fast Charging, FAst Wireless Charging & Finger Print sensor || IP68 Rated, MicroSD Card Slot (Expandable upto 1 TB), Dual Nano Sim, Hybrid Sim Slot, 5G+5G Dual stand by.\nDisclaimer: N28 band for Stand alone 5G network is not compatible",
+      "category": {
+        "_id": "64a2deb96e771ba9db69eed1",
+        "name": "Samsung",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 27999,
+      "color": "pink",
+      "size": ["l"],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1688469684/a9lnhfkso0095yrz2hm8.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688469684/tqzaa9npbz8uakhfzsdg.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688469684/lerb3u5zeseipx5yrw4b.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688469684/qltoiltqzdiendl5bbam.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688469684/fxd0lxtdmjwba7clzun1.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1688469685/euh2eyfytafgabeeora8.jpg"
+      ],
+      "createdAt": "2023-07-04T11:22:55.418Z",
+      "updatedAt": "2024-06-11T01:52:22.427Z",
+      "__v": 0,
+      "additionalInfo": [
+        {
+          "feature": "Storage",
+          "value": "64 GB"
+        },
+        {
+          "feature": "RAM",
+          "value": "8 GB"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1688469685/euh2eyfytafgabeeora8.jpg",
+      "mrp": 35000
+    },
+    {
+      "_id": "64bf89de4afc40f04bc31a62",
+      "name": "Apple iPhone 14 Pro Max (256 GB) - Gold",
+      "description": "17.00 cm (6.7-inch) Super Retina XDR display featuring Always-On and ProMotion\nDynamic Island, a magical new way to interact with iPhone",
+      "category": {
+        "_id": "64a3b85f147bbcaaf740d607",
+        "name": "Apple",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 137999,
+      "color": "yellow",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690274263/krgaqj19bm4vaznnqhbf.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690274263/znrshu0nxxzpohkz1i1d.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690274263/z9vmexfbrlkxff3n9sts.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690274263/hxhj1sj3i9kspz4b7jwv.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690274264/fnji0euzeoqldinu6tjb.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690274263/ws8tmhfjuz1ltk5tj8nt.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Apple"
+        },
+        {
+          "feature": "Model Name",
+          "value": "iPhone"
+        },
+        {
+          "feature": "Network Service Provider",
+          "value": "Unlocked for All Carriers"
+        },
+        {
+          "feature": "Operating System",
+          "value": "iOS"
+        },
+        {
+          "feature": "Cellular Technology",
+          "value": "5G"
+        }
+      ],
+      "createdAt": "2023-07-25T08:37:50.233Z",
+      "updatedAt": "2024-06-11T01:51:16.140Z",
+      "__v": 0,
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690274263/hxhj1sj3i9kspz4b7jwv.jpg",
+      "mrp": 159000
+    },
+    {
+      "_id": "64c78e86dfaafc9f18e44823",
+      "name": "Park Avenue Men Formal Shirt",
+      "description": "Care Instructions: Machine Wash\nFit Type: Slim Fit\nColor: White\nMaterial: 100% Cotton\nFit type: slim fit\nBusiness Wear\nCare instruction: Machine wash",
+      "category": {
+        "_id": "64a3c614147bbcaaf740d65e",
+        "name": "Formal Shirts",
+        "parentId": "64a3b4a4147bbcaaf740d5c8"
+      },
+      "price": 739,
+      "color": "white",
+      "size": ["l"],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690799652/spg16bvi1e32djhxfoct.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690799652/mmaflbgw5xjydygvbwqs.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690799652/hrwcbrqkcmyyjlydhef7.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690799652/phjgn3aofpxeeiw7h9ja.jpg"
+      ],
+      "additionalInfo": [],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690799652/spg16bvi1e32djhxfoct.jpg",
+      "mrp": 1799,
+      "createdAt": "2023-07-31T10:35:50.351Z",
+      "updatedAt": "2023-07-31T10:35:50.351Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c79264dfaafc9f18e44888",
+      "name": "Bee M Pee Designer Womens sarees fo",
+      "description": "Care Instructions: Hand Wash Only\nFit Type: Regular\nSaree Fabric:-Chiffon Brasso, Blouse Fabric :-Chiffon Brasso\nColor : This Amazing Saree have Soft Finished Parrot Green colour which make you look awesome and star of Party.\nOccasions :- This Saree is Specially design for wedding, Party and Festive Season of indian women's wear.\nLength :- Saree Length is 5.5 Meter and Blouse Length is is 0.80 Meter.\nProduct color may slightly vary due to photographic lighting sources on your monitor settings or device setting and lighting used in mode.\n",
+      "category": {
+        "_id": "64a3e0ba147bbcaaf740d684",
+        "name": "Sarees and Sarees Essentials",
+        "parentId": "64a3b4b2147bbcaaf740d5cb"
+      },
+      "price": 725,
+      "color": "green",
+      "size": ["l"],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690800727/y8lzr3is2flnnei1xsq2.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690800728/suavr3kpsjh4ye96tain.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690800727/ryogufiths9yyoqmdtmq.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690800727/cyaprte4q7isnvmdlqzq.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690800728/aikvmqdzucxydyhhpml8.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690800727/vrud31iuqwv9uk0zmqe7.jpg"
+      ],
+      "additionalInfo": [],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690800728/suavr3kpsjh4ye96tain.jpg",
+      "mrp": 1999,
+      "createdAt": "2023-07-31T10:52:20.951Z",
+      "updatedAt": "2023-07-31T10:52:20.951Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c79488dfaafc9f18e44892",
+      "name": "Tarshika Women's Satin Saree With Velvet Blouse with Sequence",
+      "description": "Care Instructions: Machine Wash\nFit Type: Regular\nProduct Material ( Fabric ) : Saree - Satin : soft fabric , Unstitched Blouse Piece -Sequence : soft fabric\nSaree Length-5.20 Mtr,Blouse Lenghth-0.80 Mtr\nWomen's Satin Saree With Velvet Blouse with Sequence\nOcassion - Party Wear || Daily Wear || Festive Wear || Office Wear || Evening Wear",
+      "category": {
+        "_id": "64a3e0ba147bbcaaf740d684",
+        "name": "Sarees and Sarees Essentials",
+        "parentId": "64a3b4b2147bbcaaf740d5cb"
+      },
+      "price": 725,
+      "color": "teal",
+      "size": ["l"],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801268/ydu2je8n8wjrvls9ts0u.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801268/noksmi1gemrx0m0aghea.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801268/x6xsoj9boj2v9qcbtzg0.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801268/lt2nz0xongp5u94ojsks.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801268/pe8si65j2igswyuillmx.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801268/y7mm5gurhg0qcy8jk4n1.jpg"
+      ],
+      "additionalInfo": [],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690801268/lt2nz0xongp5u94ojsks.jpg",
+      "mrp": 1999,
+      "createdAt": "2023-07-31T11:01:28.011Z",
+      "updatedAt": "2023-08-01T12:07:58.679Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c7955edfaafc9f18e4489c",
+      "name": "Peter England Men Shirt",
+      "description": "Care Instructions: Machine Wash\nFit Type: Regular Fit\nSlim Fit\n60% Cotton and 40% Polyester\nTextured\nFormal\nFull Sleeves\nRegular Collar",
+      "category": {
+        "_id": "64a3c614147bbcaaf740d65e",
+        "name": "Formal Shirts",
+        "parentId": "64a3b4a4147bbcaaf740d5c8"
+      },
+      "price": 879,
+      "color": "orange",
+      "size": ["l"],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801487/b9z6nox7mxpxerhxvam9.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801487/kcwguvcsgfzjrmzc3rjy.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801487/xcmcgpn8cmeykapfpvdw.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801488/fllzij0pzazhmuv9qtcw.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801488/xx9hva5kw3v7sbk4ebbu.jpg"
+      ],
+      "additionalInfo": [],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690801487/xcmcgpn8cmeykapfpvdw.jpg",
+      "mrp": 1599,
+      "createdAt": "2023-07-31T11:05:02.416Z",
+      "updatedAt": "2023-07-31T11:05:02.416Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c795ffdfaafc9f18e448a6",
+      "name": "Amazon Brand - Symbol Men's Regular Fit Formal Shirt",
+      "description": "Care Instructions: Machine Wash\nSoft & Breathable Cotton fabric\nRegular collar long sleeve shirt\nSingle pocket at chest\nSolid color\nPair it up with formal trousers for a sharp formal look\nRefer to size chart to pick your right size",
+      "category": {
+        "_id": "64a3c614147bbcaaf740d65e",
+        "name": "Formal Shirts",
+        "parentId": "64a3b4a4147bbcaaf740d5c8"
+      },
+      "price": 599,
+      "color": "lightBlue",
+      "size": ["l"],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801649/webkscotcpe9jozzwypq.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801650/z9i0hbnfxbxqygbg87xe.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801650/hdus8egs97r1fetl9ia0.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801650/xpwon3kc41vuvbevl2d2.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801654/cwnctwqmu5hx6brsaqfa.jpg"
+      ],
+      "additionalInfo": [],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690801650/xpwon3kc41vuvbevl2d2.jpg",
+      "mrp": 1299,
+      "createdAt": "2023-07-31T11:07:43.922Z",
+      "updatedAt": "2023-07-31T11:07:43.922Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c79755dfaafc9f18e448c2",
+      "name": "Campus Sutra Men's Blue & White Ombre Colour-Blocked Dri-Fit Half Sleeve Regular Fit T-Shirt for Casual Wear",
+      "description": "Care Instructions: Machine Wash\n💯FIT TYPE: This T-shirt has a regular fit. Quality craftsmanship is at the forefront. Using a range of high-quality fabrics, there is a seamlessly crafted collection for laid-back style.\n👌HIGH-QUALITY FABRIC: This T-shirt is fabricated with top-grade and durable material. Made of fabric that holds its shape throughout the day, lets you have no restriction and feel relaxed.\n🧥SLEEVE TYPE: Short Sleeve. Designed to offer an energetic look, the T-shirt combines the warmth of comfortable and casual feel. Offering an elevated look, it showcases a perfect fit.\n😎LAID-BACK ENSEMBLE: Spruce up your look with this curated collection of T-shirt from Campus Sutra. When you're in need of a laid-back ensemble, rock this t-shirt with trackpants and sneakers.\n📃CARE INSTRUCTIONS: Machine wash. Wash & dry inside out. Wash separately. Don't soak for a long time. Do not bleach. Tumble dry normal cycle. Medium heat iron or line dry in reverse medium heat iron.\n",
+      "category": {
+        "_id": "64a3c5fc147bbcaaf740d658",
+        "name": "T Shirts",
+        "parentId": "64a3b4a4147bbcaaf740d5c8"
+      },
+      "price": 499,
+      "color": "lightBlue",
+      "size": ["l"],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801992/lkm9osgu6lpev5qf57in.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801992/yf7j4arwu3pczdnkszji.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801992/mm8buqoliyoizhk8ievw.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801993/llvav86iqc4yavn5l1jt.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690801992/vod2sjj0zevncshjjgnv.jpg"
+      ],
+      "additionalInfo": [],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690801992/mm8buqoliyoizhk8ievw.jpg",
+      "mrp": 999,
+      "createdAt": "2023-07-31T11:13:25.214Z",
+      "updatedAt": "2023-07-31T11:13:25.214Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c79910dfaafc9f18e448cf",
+      "name": "Dell 15 Laptop, Intel Core i5-1135G7/8GB/1TB+256GB SSD/15.6\"(39.62cm)FHD",
+      "description": "Processor: Intel Core i5-1135G7 11th Generation (up to 4.20 GHz) 8MB, 4 Cores // RAM & Storage: 8 GB, 1 x 8 GB, DDR4, 2666 MHz, (2 DIMM Slots, Expandable upto 16GB) & 1TB HDD + 256GB SSD\nSoftware: Win 11 Home + Office H&S 2021, 15 Months McAfee antivirus subscription, Dell Mobile Connect, My Dell, Dell Power Manager, McAfee, Support Assist, Dell ComfortView\nGraphics & Keyboard: Integrated Onboard Graphics & Backlit Keyboard + Fingerprint Reader // Display: 15.6\" FHD WVA AG Narrow Border\nPorts: 2x USB 3.2 Gen1 ,1x USB 2.0, HDMI 1.4, SD Card reader, Audio jack, One Flip-down RJ 45 10/100/1000 Mbps, 1 M.2 2230/2280 slot for solid-state drive/Intel Optane",
+      "category": {
+        "_id": "64a3b9c5147bbcaaf740d622",
+        "name": "Dell",
+        "parentId": "64a3b3f3147bbcaaf740d5bf"
+      },
+      "price": 59999,
+      "color": "blueGrey",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802404/dptp3rogwjyzghz6mf3l.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802404/icwbgqvscwnoi7r0kujn.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802404/lnpqlfajr5wyqfhzuqxa.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802404/mafg3gyq6mxirbjhr7bi.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802404/b1dvef4109esfjx5kgb5.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802404/z5nvgx13ql92s2tkz7sl.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Dell"
+        },
+        {
+          "feature": "Model Name",
+          "value": "Vostro 3510"
+        },
+        {
+          "feature": "Screen Size",
+          "value": "15.6"
+        },
+        {
+          "feature": "Colour",
+          "value": "Black"
+        },
+        {
+          "feature": "Hard Disk Size",
+          "value": "1 TB"
+        },
+        {
+          "feature": "CPU Model",
+          "value": "Core i5"
+        },
+        {
+          "feature": "RAM Memory Installed Size",
+          "value": "8GB"
+        },
+        {
+          "feature": "Operating System",
+          "value": "Windows 11 Home"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "Fingerprint Reader, Backlit Keyboard"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690802404/z5nvgx13ql92s2tkz7sl.jpg",
+      "mrp": 86999,
+      "createdAt": "2023-07-31T11:20:48.776Z",
+      "updatedAt": "2023-07-31T11:21:23.026Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c79aaddfaafc9f18e448e2",
+      "name": "JBL Go 2, Wireless Portable Bluetooth Speaker with Mic, Signature Sound, Vibrant Color Options with IPX7 Waterproof & AUX (Red)",
+      "description": "5 Hours of Playtime under optimum audio settings\nWireless Bluetooth Streaming\nIPX7 Waterproof design\nBuilt-in Noise-cancelling Speakerphone\nAudio cable input\nWhat’s in the box: 1 x JBL GO 2, 1 x Micro USB cable for charging, 1 x Safety Sheet, 1 x Quick Start Guide, 1 x Warranty Card",
+      "category": {
+        "_id": "64a2dec56e771ba9db69eed4",
+        "name": "JBL",
+        "parentId": "64a2de9f6e771ba9db69eecb"
+      },
+      "price": 1999,
+      "color": "red",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802846/fpaasdtld5xdztj4nquv.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802847/ocx1gmbok9b3to2bljmf.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802848/ngl6q4egeoikumibm4ot.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802847/hhydkaqzficymy3efjqr.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802848/rzbb7ejjqa2qlegkqaoi.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690802849/eb3mmoabkt6tqhoyuajg.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "JBL"
+        },
+        {
+          "feature": "Model Name",
+          "value": "GO 2"
+        },
+        {
+          "feature": "Speaker Type",
+          "value": "Bookshelf"
+        },
+        {
+          "feature": "Connectivity Technology",
+          "value": "Bluetooth, Auxiliary, wireless"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "Waterproof, Built-in Microphone"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690802849/eb3mmoabkt6tqhoyuajg.jpg",
+      "mrp": 2599,
+      "createdAt": "2023-07-31T11:27:41.936Z",
+      "updatedAt": "2023-07-31T11:27:41.936Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c91feaa0518177e1ba3890",
+      "name": "Samsung Galaxy Z Flip5 5G (Lavender, 8GB RAM, 256GB Storage)",
+      "description": "Style and function that fits in your pocket. It's a pocket-sized statement piece. Small but mighty when folded, this phone is compact enough to fit in your palm, but leaves a big impression with sleek, hazy colors that match your vibe.\nOur toughest Samsung Galaxy foldables ever. The world’s first water-resistant foldable smartphones have never been so strong. These scratch-defying devices are our toughest ever with exclusive Corning Gorilla Glass Victus2 on the outside and the super durable Ultra Thin Glass on the inside. And the hinge is protected by Armor Aluminum — our toughest aluminum frame.\nCameras that capture life with new perspective. Take advantage of this camera phone’s agile angles. Quick Shot lets you shoot a selfie right from the Cover Screen, even allowing a ratio change to show you the full frame before you shoot. Or unfold and take position with FlexCam holding up the camera so you can get a hands-free group shot or selfie at mind-blowing perspectives.\nFaster charging speed. Longer battery life. An upgraded 4nm processor works with the long-lasting 3700mAh (typical) battery to power through the hours. When it's low, plug in for Super Fast Charging, or bypass the cord with Fast Wireless Charging 2.0 With all that power to spare, you can even share a charge with your friend or your earbuds with Wireless PowerShare.",
+      "category": {
+        "_id": "64a2deb96e771ba9db69eed1",
+        "name": "Samsung",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 99999,
+      "color": "purple",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902493/xhgdm5sl4hohyr2qk1gz.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902493/qbxp2fjdzd3az8awmabp.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902493/sdpo9pu9hrxkubgnmesz.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902493/t7llli1awtplqxrqksgt.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902493/nyp07vbcsebkbemljesl.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902493/dx85c4kn3w19lofzii9j.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Samsung"
+        },
+        {
+          "feature": "Model Name",
+          "value": "Samsung Galaxy Flip5 5G"
+        },
+        {
+          "feature": "Network Service Provider",
+          "value": "Unlocked for All Carriers"
+        },
+        {
+          "feature": "Operating System",
+          "value": "Android 13.0"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690902493/dx85c4kn3w19lofzii9j.jpg",
+      "mrp": 102999,
+      "createdAt": "2023-08-01T15:08:26.659Z",
+      "updatedAt": "2023-08-01T15:08:26.659Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c921a1a0518177e1ba389a",
+      "name": "realme 11 Pro+ 5G (Sunrise Beige, 12GB RAM, 256GB Storage)",
+      "description": "*[RAM, ROM AND Explandabe Memory] :- 12 GB RAM | 256 GB ROM | Not Expandable (Memory Card Slot Not Available)\n*[Display] :- Curved Vision Display, The realme Pro 5G smartphone has a 120 Hz curved vision display that ensures immersive display. It comes with an array of features like 2160 Hz PWM dimming, TUV Rheinland certified eye protection features, 1260 Hz Turbocharged Touch Sampling, and 16x HyperPrecise Touch for a smooth and hassle-free usage. The 2.33 Chin, 61-degree Precision Curvature, and Doubly reinforced Glass gives an aesthetic look and perfectly fits in your hands.\n*[Processor] :- Powerful Processor, The Dimensity 7050 5G chipset of this smartphone delivers fast and smooth performance. The realme Pro 5G smartphone has 5G compatibility along with TUV SUD rating for 48-month system fluency, Dash Memory Engine, 6 nm technology process, and an AnTuTu score above 550,000 which makes it a feature-packed smartphone.\n*[Camera] :- 200 MP OIS SuperZoom camera, you to take picturesque photos. It has up to 4x lossless zoom technology and auto-zoom technology which allows you to capture zoomed in shots with ease and maximum clarity. The Super OIS, Super Nightscape, Moon Mode, 4x In-sensor Zoom, and a 32 MP selfie camera ensures that your photos are top-notch to create beautiful memories that last for a lifetime. The Samsung ISOCELL HP3 SuperZoom Sensor and SuperOIS enhances the overall camera performance.\n*[Fast Charging Technology] :- Courtesy to the 100 W SUPERVOOC charge with GaN, you can quickly charge your smartphone and get on with your day. It has up to 38 layers of charging protection, power efficiency, and quick charging that provides 100% charge in about 26 minutes.\n*[Massive Battery] :- 5000 mAh Battery, This smartphone features a massive battery of 5000 mAh which ensures that you have enough power to get on with the day. You can enjoy up to 29.09 hours of call time, 404.88 hours of standby time, 23.36 hours of music time, 18.86 hours of video time, and 8.29 hours of game time.\n*[Amazing Design] :- Aesthetic Design, This smartphone is designed by the former Gucci prints designer, Matteo Menotto featuring a Premium Lychee Vegan Leather, 3D Couture-level Seam, and 3D Woven Texture that makes it classy and stylish.\n*[Massive Storage] :- Massive Storage, This smartphone comes with a 256 GB of storage space which allows you to store all kinds of data seamlessly.\n*[Operating System & User Interface] :- Advanced Features, With the realme UI 4.0 Based on Android 13, you can enjoy some advanced features like Adaptive Sleep, Notification Hiding, Multi-screen Connect, and Glace to lower ring volume on the realme 11 Pro 5G smartphone.\n*[Other Display Features] :- Screen-to-Body Ratio: 93.6%, Color Saturation: DCI-P3 100%, Aspect Ratio: 20.1:9, Contrast Ratio: 5000000:1, Sunshine Screen, Brightness: 500 nits, Peak Brightness: 950 nits, Refresh Ratio: 60 Hz/ 90 Hz/ 120 Hz, 360 Hz Touch Sampling Rate, Dimming Mode: ?90nit: PWM2160HZ, >90nit: DC",
+      "category": {
+        "_id": "64a3b842147bbcaaf740d604",
+        "name": "Realme",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 29550,
+      "color": "yellow",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902912/ovhun6qhya3pplmehnek.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902912/ndys2ykyuo4ptqtosuru.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902912/paqg9noh8guvmmynwoeu.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902912/fe6twnqa52mbtwmivzdl.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902912/inazhoozwvivit0ofdeq.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902912/heloltdcwfrr5gv5iaxp.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902913/u4pm4bllu6mozp8lio2a.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902913/cfpxintsv7nb1xfn47mu.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690902913/vfcxplka5hb40tq3bkpy.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "realme"
+        },
+        {
+          "feature": "Model Name",
+          "value": "realme 11 Pro+"
+        },
+        {
+          "feature": "Network Service Provider",
+          "value": "Unlocked for All Carriers"
+        },
+        {
+          "feature": "Operating System",
+          "value": "Android 13 | realme UI 4.1"
+        },
+        {
+          "feature": "Cellular Technology",
+          "value": "5G, 4G, 4G VOLTE, 3G, 2G, GSM, WCDMA"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690902913/u4pm4bllu6mozp8lio2a.jpg",
+      "mrp": 32999,
+      "createdAt": "2023-08-01T15:15:45.176Z",
+      "updatedAt": "2023-08-05T07:47:30.151Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c923c6a0518177e1ba38ad",
+      "name": "realme narzo 50A Prime (Flash Black, 4GB RAM+64GB Storage) Full High Definition+ Display |50MP AI Triple Camera| Charger Included",
+      "description": "Display - 16.7 cm (6.6 inch) 2408*1080 FHD+ Resolution | 90.7% Screen to body Ratio | 16.7 M Screen Colors | 600nits Peak Brightness\n5000 mAh Massive Battery which brings you all day Power | Ultra Saving Mode\nPowerful Unisoc T612 processor | Boasts superb performance with an AnTuTu Benchmark Score of 214, 150 | 12 nm Process with Octa-core CPU\n50MP AI Triple Rear Camera (f/1.8 Aperture, B&W Lens f/2.8 Aperture, Macro Lens f/2.8 Aperture)| 8MP Front Camera\n4 GB RAM | 64 GB ROM",
+      "category": {
+        "_id": "64a3b842147bbcaaf740d604",
+        "name": "Realme",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 10499,
+      "color": "grey",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690903367/mrabavrej2gtxkj8itir.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690903367/wllm3ilbcvluig5pktug.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690903368/dsvc9bskoks9bvt2p6bn.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690903367/ok45zupb2s7jlt5wqeut.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690903368/resiftucnrmactqqc8b8.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690903368/mpkybrmysxgusl9hi67l.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "realme"
+        },
+        {
+          "feature": "Model Name",
+          "value": "Narzo 50A Prime"
+        },
+        {
+          "feature": "Network Service Provider",
+          "value": "Unlocked for All Carriers"
+        },
+        {
+          "feature": "Cellular Technology",
+          "value": "LTE"
+        },
+        {
+          "feature": "Operating System",
+          "value": "Android 11.0"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690903367/wllm3ilbcvluig5pktug.jpg",
+      "mrp": 13499,
+      "createdAt": "2023-08-01T15:24:54.602Z",
+      "updatedAt": "2023-08-01T15:24:54.602Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c92640a0518177e1ba38b4",
+      "name": "realme narzo 60 Pro (Mars Orange,12GB+1TB) Ultra Smooth 120 Hz Super Amoled Curved Display | 100 MP OIS Camera",
+      "description": "Immerse yourself in a captivating visual experience with our state-of-the-art 120 Hz curved display. The curved design enhances your viewing pleasure, providing an expansive and lifelike display for all your multimedia needs.\nCapture stunning, professional-grade photos with our industry-leading 100 MP camera. Equipped with Optical Image Stabilization (OIS) technology, this camera ensures crystal-clear, blur-free images even in challenging lighting conditions. Every detail and moment will be beautifully preserved, allowing you to relive your memories with unmatched clarity.\nExperience the epitome of sophistication with our premium leather back design. Crafted with the utmost attention to detail, the leather finish adds a touch of elegance and class to your device. The soft and luxurious feel of the leather enhances your grip, ensuring a comfortable and stylish experience every time you hold your phone.\nEnjoy lightning-fast multitasking and seamless app switching with the unmatched power of 12GB + 12GB dynamic RAM. Experience smooth performance even while running intensive applications and games. With a generous 1TB ROM, you'll have ample storage space to store all your favourite apps, photos, videos, and files without worrying about running out of space.",
+      "category": {
+        "_id": "64a3b842147bbcaaf740d604",
+        "name": "Realme",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 29999,
+      "color": "orange",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904120/bgjbv13hh4sftrdkefka.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904120/jehbfusie8mw7hbnw5o5.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904120/ykfoddo4geumzog53fjo.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904121/bwnphujyheru4nojs0jt.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904121/mv3tbcuhhygxreqmpt5q.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "realme"
+        },
+        {
+          "feature": "Model Name",
+          "value": "realme narzo 60 Pro"
+        },
+        {
+          "feature": "Network Service Provider",
+          "value": "Unlocked for All Carriers"
+        },
+        {
+          "feature": "Operating System",
+          "value": "Android 13.0"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690904120/jehbfusie8mw7hbnw5o5.jpg",
+      "mrp": 32999,
+      "createdAt": "2023-08-01T15:35:28.728Z",
+      "updatedAt": "2023-08-01T15:35:28.728Z",
+      "__v": 0
+    },
+    {
+      "_id": "64c92782a0518177e1ba38b9",
+      "name": "Apple iPhone 12 (64GB) - (Product) RED",
+      "description": "6.1-inch (15.5 cm diagonal) Super Retina XDR display\nCeramic Shield, tougher than any smartphone glass\nA14 Bionic chip, the fastest chip ever in a smartphone\nAdvanced dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Deep Fusion, Smart HDR 3, 4K Dolby Vision HDR recording\n12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording\nIndustry-leading IP68 water resistance\nSupports MagSafe accessories for easy attach and faster wireless charging\niOS with redesigned widgets on the Home screen, all-new App Library, App Clips and more",
+      "category": {
+        "_id": "64a3b85f147bbcaaf740d607",
+        "name": "Apple",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 53999,
+      "color": "red",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904429/r5nvloy4ob75an6aln63.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904429/ofrajr9h3jemcamrynvi.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904429/z2adn8jqmdrk4vnopdjy.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904429/bh5mc6hiveg71renvkke.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904429/ejsbqhpi1drjvlqw9xly.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1690904430/bkylskp5p56m2o2csgjr.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Apple"
+        },
+        {
+          "feature": "Model Name",
+          "value": "iPhone 12 64GB (PRODUCT)RED"
+        },
+        {
+          "feature": "Operating System",
+          "value": "iOS 14"
+        },
+        {
+          "feature": "Cellular Technology",
+          "value": "5G"
+        },
+        {
+          "feature": "Memory Storage Capacity",
+          "value": "64 GB"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1690904429/z2adn8jqmdrk4vnopdjy.jpg",
+      "mrp": 70900,
+      "createdAt": "2023-08-01T15:40:50.546Z",
+      "updatedAt": "2023-08-01T15:40:50.546Z",
+      "__v": 0
+    },
+    {
+      "_id": "64cc5c6f446e3e1038f4df2c",
+      "name": "OnePlus 11 5G (Eternal Green, 16GB RAM, 256GB Storage)",
+      "description": "Camera: 50MP Main Camera with Sony IMX890 (OIS supported), 48MP Ultrawide Camera with Sony IMX581 (FOV: 115 degree) and 32MP Telephoto lens with Sony IMX709 (2X Optical Zoom); 16MP Front (Selfie) Camera with EIS support\nCamera Modes: Photo, Video, Night, PRO, PANO, Portrait, TIME-LAPSE, SLO-MO, Text scanner, Movie, Long Exposure, Dual-view video, TILT-SHIFT, XPAN, Scan, STICKER, and AI ID photo\nDisplay: 6.7 Inches; 120 Hz AMOLED QHD Display with Corning Gorilla Glass Victus; Resolution: 3216 X 1440 pixels; HDR 10+, sRGB, 10-bit Color Depth, PWM + DC dimming\nOperating System: OxygenOS based on Android 13\nProcessor: Snapdragon 8 Gen 2 Mobile Platform\n16GB LPDDR5X RAM, 256GB UFS4.0 Storage\nBattery & Charging: 5000 mAh with 100W SUPERVOOC\nIn-Display Fingerprint Sensor",
+      "category": {
+        "_id": "64a2dead6e771ba9db69eece",
+        "name": "One Plus",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 61999,
+      "color": "teal",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114478/wigdsvcpa6dkdlke1ywr.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114478/qnxjs1k14n5nev0nfvs5.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114478/nwan77tdkietdsattklv.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114478/gxrfrndgya2zszlxkray.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114478/fhvypwcu4c760wk0xo7g.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114479/vsmzizkftj46iuzbdui7.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114479/y9ru7iawfpgumjjravw2.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "OnePlus"
+        },
+        {
+          "feature": "Model Name",
+          "value": "OnePlus 11 5G"
+        },
+        {
+          "feature": "Network Service Provider",
+          "value": "Unlocked for All Carriers"
+        },
+        {
+          "feature": "Operating System",
+          "value": "OxygenOS"
+        },
+        {
+          "feature": "Cellular Technology",
+          "value": "5G"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1691114478/fhvypwcu4c760wk0xo7g.jpg",
+      "mrp": 63999,
+      "createdAt": "2023-08-04T02:03:27.462Z",
+      "updatedAt": "2023-08-04T02:03:27.462Z",
+      "__v": 0
+    },
+    {
+      "_id": "64cc5cf6446e3e1038f4df31",
+      "name": "OnePlus 11R 5G (Galactic Silver, 16GB RAM, 256GB Storage)",
+      "description": "Camera: Sensor: 50MP Main Camera with Sony IMX890 (OIS supported), 8MP Ultrawide Camera (FOV: 120 degree) and Macro Lens; 16MP Front (Selfie) Camera with EIS support\nCamera Modes: Nightscape, Ultra HDR, Smart Scene Recognition, Portrait Mode, Pro Mode, Panorama, Tilt-Shift mode, Long Exposure, Dual-View Video, Retouch, Movie Mode, Raw file, Filters, Super Stable, Video Nightscape, Video HDR, Video Portrait, Focus Tracking, Timelapse, Macro mode\nDisplay: 6.7 Inches; 120 Hz Super Fluid AMOLED; Resolution: 2772 X 1240 pixels ,450 ppi, 20.1:9, 10-bit Color Depth, HDR10+\nOperating System: OxygenOS based on Android 13\nProcessor: Snapdragon 8+ Gen 1 Mobile Platform\n16GB LPDDR5X RAM, 256GB UFS3.1 STORAGE\nBattery & Charging: 5000 mAh with 100W SUPERVOOC\nIn-Display Fingerprint Sensor\n",
+      "category": {
+        "_id": "64a2dead6e771ba9db69eece",
+        "name": "One Plus",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 44998,
+      "color": "lightBlue",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114625/ipox5akq8rosgliptnqc.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114626/uw3wkoxty6bpwdoosfxw.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114626/cuvyv62daolayb0ywgui.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114626/iamlvwskgddp110digm9.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114626/r87i5ykdazwijv9lvscp.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114626/kyeyo5e2xcdqqwdipwtt.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "OnePlus"
+        },
+        {
+          "feature": "Model Name",
+          "value": "OnePlus 11R"
+        },
+        {
+          "feature": "Network Service Provider",
+          "value": "Unlocked for All Carriers"
+        },
+        {
+          "feature": "Operating System",
+          "value": "OxygenOS"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1691114626/cuvyv62daolayb0ywgui.jpg",
+      "mrp": 46998,
+      "createdAt": "2023-08-04T02:05:42.699Z",
+      "updatedAt": "2023-08-04T02:05:42.699Z",
+      "__v": 0
+    },
+    {
+      "_id": "64cc5daa446e3e1038f4df36",
+      "name": "OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)",
+      "description": "Camera: 64MP Main Camera with EIS; 2MP Depth Lens and 2MP Macro Lens; Front (Selfie) Camera: 16MP Sony IMX471\nCamera Features: AI scene enhancement, Dual-View Video, HDR, Night Portrait, Panorama Mode, Retouch Filters, 1080p video at 30 fps, SLO-MO: 720p video at 120 fps, TIME-LAPSE: 1080p video at 30 fps, Video editor, Face unlock, Screen flash, HDR, NIGHT, PORTRAIT, TIME-LAPSE, Retouch, Filters\nDisplay: 6.59 Inches; 120 Hz Refresh Rate; Support sRGB, Display P3; Resolution: 2412 x 1080 pixels 402ppi; Aspect Ratio: 20:9\nDisplay Features: Dark mode\nOperating System: Oxygen OS based on Android 12\nProcessor: Qualcomm Snapdragon 695 5G\nBattery & Charging: 5000 mAh with 33W SuperVOOC\n",
+      "category": {
+        "_id": "64a2dead6e771ba9db69eece",
+        "name": "One Plus",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 17999,
+      "color": "lightBlue",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114795/npcqoofmuyl58oj8fr10.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114795/alswsvyvlnr12cekggx4.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114795/z16u6gsnkckq7vxtl8m3.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114795/bghcxlunv17ayg92bsol.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114795/nwstasvs3rnypclwoz3d.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691114795/t1ofwhpc17pbg7wqd3tt.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand\t",
+          "value": "OnePlus"
+        },
+        {
+          "feature": "Model Name",
+          "value": "OnePlus Nord CE 2 Lite 5G"
+        },
+        {
+          "feature": "Network Service Provider",
+          "value": "Unlocked for All Carriers"
+        },
+        {
+          "feature": "Operating System",
+          "value": "OxygenOS"
+        },
+        {
+          "feature": "Cellular Technology",
+          "value": "5G, 4G LTE"
+        }
+      ],
+      "mrp": 19999,
+      "createdAt": "2023-08-04T02:08:42.661Z",
+      "updatedAt": "2023-08-04T02:08:59.573Z",
+      "__v": 0,
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1691114795/alswsvyvlnr12cekggx4.jpg"
+    },
+    {
+      "_id": "64d503ddc509c0199edd59dc",
+      "name": "Apple iPhone 14  (256GB) - Blue",
+      "description": "6.1-inch (15.5 cm diagonal) Super Retina XDR display\nCeramic Shield, tougher than any smartphone glass\nA14 Bionic chip, the fastest chip ever in a smartphone\nAdvanced dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Deep Fusion, Smart HDR 3, 4K Dolby Vision HDR recording\n12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording\nIndustry-leading IP68 water resistance\nSupports MagSafe accessories for easy attach and faster wireless charging\niOS with redesigned widgets on the Home screen, all-new App Library, App Clips and more",
+      "category": {
+        "_id": "64a3b85f147bbcaaf740d607",
+        "name": "Apple",
+        "parentId": "64a2de8c6e771ba9db69eec8"
+      },
+      "price": 66999,
+      "color": "cornflower",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1691681636/p33csrbl14yrczkgnxvg.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691681638/sww2qt39dq78my88x0a4.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691681633/qiw2jb5ez05o2ciafm7h.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691681638/ui8ukuhw1gqkjzokfhi5.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691681638/oz9lrdiv5ozncpwzsckw.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1691681636/c5xe1vlzmgo4bj62iqe5.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Apple"
+        },
+        {
+          "feature": "Model Name",
+          "value": "I phone 14"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1691681633/qiw2jb5ez05o2ciafm7h.jpg",
+      "mrp": 80900,
+      "createdAt": "2023-08-10T15:35:57.926Z",
+      "updatedAt": "2023-08-10T15:36:55.455Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516e4869522ba153aa1787a",
+      "name": "Daikin 1.5 Ton 3 Star Inverter Split AC (Copper, PM 2.5 Filter, FTKY50UV, White)",
+      "description": "Split AC with rotary compressor for energy efficiency; PM 2.5 filter to ensure healthy air.\nCapacity 1.5 Ton: Suitable for medium sized rooms (111 sq.ft to 150 sq.ft)\n3 Star: Energy efficiency\nWarranty: 1 Years on Product, 5 Years on PCB, 10 Years on Compressor\nCopper Condenser Coil: Better cooling and requires low maintenance\nKey Features: Stabilizer inside operation; Coanda airflow; Power chill; Anti-corrosion treatment; Noise Level: IDU - 33 (db)\nSpecial Features: PM 2.5 Filter; Econo mode; Self Diagnosis; Dry Mode function\nRefrigerant Gas: R32 - Environmental Friendly - No Ozone Depletion Potential\nItem Dimensions & Weight : IDU - 88.5 cm X 29.8 cm X 22.9 cm (w x h x d), Outdoor : 84.5cm X 59.5 cm X 30 cm (w x h x d), IDU : 11.5 Kg, Outdoor : 30 Kg\nIndoor Unit, Outdoor Unit, Remote Control, Warranty Card & Standard Installation Kit.",
+      "category": {
+        "_id": "64a3e4a7147bbcaaf740d6e1",
+        "name": "Voltas",
+        "parentId": "64a3b539147bbcaaf740d5da"
+      },
+      "price": 36740,
+      "color": "cornflower",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1695998973/plx6ooz90toz07ohofdt.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695998974/roklecltmos2djnivl4x.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695998974/xtuaoqcw85w8oziutqke.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695998974/tt0cn0djqnuyarr07bek.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695998974/wjx3jcgvqfpcpywdfut1.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695998974/aymkpsilzlgbrowhoecy.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Daikin"
+        },
+        {
+          "feature": "Capacity",
+          "value": "1.5 Tons"
+        },
+        {
+          "feature": "Cooling Power",
+          "value": "5 Kilowatts"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "Inverter Compressor, Remote Controlled, PM 2.5 Filter, Fast Cooling"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "22.9D x 88.5W x 29.8H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1695998974/xtuaoqcw85w8oziutqke.jpg",
+      "mrp": 58400,
+      "createdAt": "2023-09-29T14:51:50.578Z",
+      "updatedAt": "2023-09-29T14:51:50.578Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516e53b9522ba153aa17883",
+      "name": "Hitachi Split Ac - 1.5 Ton Kiyora 5200Fx I Fresh Inverter - R32 - RSRG518FFEO (Gold)",
+      "description": "Split AC with Inverter compressor: Variable speed compressor which adjusts power depending on heat load.\nThis Hitachi 5 Star AC is of 1.5TR Capacity and perfect for cooling room size of 150-180 Sq.Ft. The Compressor is of inverter technology\nEnergy Rating : 5 Star - Best in class efficiency | Annual Energy Consumption: 780.60 Units Per Year| ISEER Value: 5.20 The star rating is as per BEE guidelines\nCopper Condenser Coil: Better cooling and requires low maintenance / Eco Friendly gas / Manufacturer Warranty: 1 Year Comprehensive on Product |10 years on Compressor| 5 years on PCB/ Controller.\nAuto Mode, Cool Mode, Fan Mode, Dry Mode (better humidity control), LCD Remote Control, Auto Fan Speed, Auto Restart, Green Refrigerant, 43 Quality Test features are available.Super Silent fan speed & at a distance of 1 m. }",
+      "category": {
+        "_id": "64a3e508147bbcaaf740d6f0",
+        "name": "Hitachi",
+        "parentId": "64a3b539147bbcaaf740d5da"
+      },
+      "price": 41490,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999156/lvapqcvqnmya3zlmvmah.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999156/dlkvgsbwffn14xd395wt.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999156/opjzyiehcafosz3yuca1.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999156/ifedprqar9nbjf1rfole.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999156/qypykwscjhpus9pijkts.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999156/sb1lunnlvxbzggixqo9s.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Hitachi"
+        },
+        {
+          "feature": "Capacity",
+          "value": "1.5 Tons"
+        },
+        {
+          "feature": "Cooling Power",
+          "value": "17897 Kilowatts"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "Inverter Compressor, High Density Filter, Anti Bacterial Filter, Dehumidifier, Fast Cooling"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "54.1D x 174.7W x 84.2H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1695999156/qypykwscjhpus9pijkts.jpg",
+      "mrp": 71900,
+      "createdAt": "2023-09-29T14:54:51.464Z",
+      "updatedAt": "2023-09-29T14:54:51.464Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516e5c49522ba153aa17888",
+      "name": "LG 1.5 Ton 5 Star VIRAAT, DUAL Inverter Split AC (Copper, Super Convertible 5-in-1 Cooling, HD Filter with Anti-Virus Protection, 2023 Model, RS-Q19BNZE, White)",
+      "description": "Split AC with DUAL Inverter Compressor: Variable speed compressor which adjusts power depending on heat load |With Super Convertible 5-in-1 optimizes usage of energy without compromising on the comfort quotient\nCapacity: 1.5 Ton Suitable for medium sized rooms (151 to 180 sq ft.); Air Circulation: 653/1236 (In/Out) CFM & Ambient Temperature: 52 degree Celsius with 2 way air swing\nEnergy Rating: 5 Star - Best in class efficiency | Annual Energy Consumption: 685.26 Units per Year| ISEER Value: 5.20* (Please Refer Energy Label on Product Page or Contact Brand for More Details)\nManufacturer Warranty: 1 Year on product, 5 Years on PCB and 10 Years on Compressor with Gas Charging (T&C)\nCopper With Ocean Black Protection: Prevents From Rust & Corrosion; Increase Durability ; Uninterrupted Cooling",
+      "category": {
+        "_id": "64a3e4f8147bbcaaf740d6ed",
+        "name": "LG",
+        "parentId": "64a3b539147bbcaaf740d5da"
+      },
+      "price": 43490,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999309/e9qo1n6fdq0eqguawj8d.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999308/x58hhhltdgapsd3t80qo.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999309/ltaaasemqrkl9cztnyj4.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999309/whlpstasekiseh1ummqi.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999309/axftcnacp2bpsajjonxm.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999309/eju5hr7yiq7b7ulzx0ur.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "LG"
+        },
+        {
+          "feature": "Capacity",
+          "value": "1.5 Tons"
+        },
+        {
+          "feature": "Cooling Power",
+          "value": "4600 British Thermal Units"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "Inverter Compressor, Remote Controlled, Dust Filter, Auto Clean, Fast Cooling"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "21D x 99.8W x 34.5H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1695999309/e9qo1n6fdq0eqguawj8d.jpg",
+      "mrp": 85990,
+      "createdAt": "2023-09-29T14:57:08.673Z",
+      "updatedAt": "2023-09-29T14:57:08.673Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516e6379522ba153aa1788d",
+      "name": "Panasonic 1.5 Ton 5 Star Wi-Fi Inverter Smart Split AC (Copper Condenser, 7 in 1 Convertible with additional AI Mode, 4 Way Swing, PM 0.1 Air Purification Filter, CS/CU-NU18YKY5W,2023 Model, White)",
+      "description": "7 in 1 Convertible Modes with additional AI Mode (converti7): It smartly detects the room's temperature, forecast the cooling capacity and change the fan speed to provide optimal cooling through inbuilt sensors and artificial intelligence. Save energy with adjustment of cooling performance by selecting modes ranging from 40% to 90%, Full capacity and High capacity.\nCapacity: 1.5 Ton - Suitable for small sized rooms (121 sq ft to 180 sq ft). Energy Star Rating: 5 Star | Annual Power Consumption: 774.19 kWh | ISEER: 5.10. The star rating is as per new BEE guidelines. 636 (Indoor) CFM Air Circulation & Ambient Temperature: 52 degree Celsius.\nManufacturer Warranty: 1 Year Comprehensive | 4 years on PCB |9 years on Compressor| 5 years on Outdoor Unit\nSmart AC: Seamlessly adjust temperature, monitor status and change modes right from the AI enabled Miraie Mobile App. Seamless hands-free operation and Voice Control with Alexa and Hey Google.\nCopper Condenser Coil: Better cooling and requires low maintenance. Healthy Cooling: Equipped with the PM 0.1 Filter to provide dust free, clean air by removing the PM 0.1 particles in the air. 100% Copper Tubing: Helps in better heat exchange and enhances cooling. It also enhances durability of the product via Anti Corrosion Shield Blu Technology\nWi-Fi Split AC with Twin Cool Inverter compressor: Variable Speed Inverter Compressor which adjusts power depending on heat load. Refrigerant gas: R32 - Environmental friendly.\n4 Way Horizontal and Vertical Swing ensures consistent cooling across the space.Experience convenience by setting hourly temperature and customised sleep profiles. Equipped with Powerful and Dry Mode for different cooling needs and automatic humidity control. Lowest Noise Operation and Low gas detection.\n",
+      "category": {
+        "_id": "64a3e4db147bbcaaf740d6ea",
+        "name": "Panasonic",
+        "parentId": "64a3b539147bbcaaf740d5da"
+      },
+      "price": 44490,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999441/h4xvzdqvhiezhydyvevf.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999441/henlk79tfgho6h1cop3p.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999442/vjpjm7yfcidpjzfzr415.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999442/pcob4ditr0huyqnl9vmh.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999442/x3fyglhjqmhc1awhleim.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999442/hgnqodgzcukxdii7ptx0.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Panasonic"
+        },
+        {
+          "feature": "Capacity",
+          "value": "1.5 Tons"
+        },
+        {
+          "feature": "Cooling Power",
+          "value": "17400 British Thermal Units"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "Smart AC- Wi-fi enabled, MirAie App enabled, work with Alexa and Hey Google, 7 in1 Convertible with additional AI Mode, PM 0.1 Filter for air purification, Voice Control with Alexa and Hey Google, 4 Way Swing & Hidden Display"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "23.5D x 107W x 29H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1695999441/h4xvzdqvhiezhydyvevf.jpg",
+      "mrp": 63400,
+      "createdAt": "2023-09-29T14:59:03.990Z",
+      "updatedAt": "2023-09-29T14:59:03.990Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516e7009522ba153aa17892",
+      "name": "Samsung 1.5 Ton 5 Star Wi-fi Enabled, Wind-Free Technology Inverter Split AC (Copper, Convertible 5-in-1 Cooling Mode, Anti-Bacteria, 2023 Model AR18CYNANWK White)",
+      "description": "Wifi Enabled Split AC with inverter compressor: Variable speed compressor which adjusts power depending on heat load. Powered with 23000 microholes, you can enjoy powerful and gentle cooling. With Convertible 5in1 modes, you can change according to your mood and requirement. Enabled with WiFi, you can also control the AC with voice and also from the comfort of your mobile device, anywhere and everywhere\nCapacity (1.5Ton): Suitable for medium sized rooms (111 to 150 sq ft)\nEnergy Rating: 5 Star BEE Rating with Power Saving Mode | ISEER rating of 5.16 W/W (better than industry benchmarks | Electricity Consumption : 749.48 Units Per Year\nWarranty: 1 Year Standard Warranty on Product, 1 Year Warranty on PCB, 10 Years Warranty on Digital Inverter Compressor\nCopper Condenser Coil: Better cooling and requires low maintenance\nKey Features: Convertible 5in1, 4 way swing, 3 Step Auto Clean, Easy to Clean Filter, Copper Anti-Bacterial Filter, Coated Copper tubes\nSpecial Features: Windfree Cooling, Welcome Cooling, Windfree Good Sleep, Durafin Ultra, Triple Protection Plus, Digital Inverter Technology\nRefrigerant Gas: R32 - Environmental Friendly - No Ozone Depletion Potential. The air conditioner uses the next generation R32 refrigerant, which helps conserve the ozone layer and has a low impact on global warming\nIndoor Unit Dimensions (mm) WxHxD): 1055 X 299 X 215 mm | Outdoor Unit Dimensions (mm) WxHxD): 880 X 638 X 310 mm | Indoor Weight 13.5 | Outdoor Weight 42.3\nIncluded In The Box: 1 Indoor Unit, 1 Outdoor Unit, Copper Pipe (3 meter standard) 1 unit , 1 Remote, 1 Manuals , 2 Batteries }",
+      "category": {
+        "_id": "64a3e4ce147bbcaaf740d6e7",
+        "name": "SAMSUNG",
+        "parentId": "64a3b539147bbcaaf740d5da"
+      },
+      "price": 49990,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999619/zxhc5mngfzf3t4otcgic.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999619/ntfmqdrdsbqoyxcxt78h.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999620/qav5icfzhz5hhz5figgs.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999621/wi2jeb2g3h1ozjglprni.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999620/eib6px7i3oyzrfqam725.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999621/soli2av8i0jtweyg7a9q.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Samsung"
+        },
+        {
+          "feature": "Capacity",
+          "value": "1.5 Tons"
+        },
+        {
+          "feature": "Cooling Power",
+          "value": "5.8 Kilowatts"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "4-in-1 Care Filter, Copper Anti-bacterial Filter, Auto Clean (Self Cleaning)"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "21.5D x 105.5W x 29.9H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1695999619/zxhc5mngfzf3t4otcgic.jpg",
+      "mrp": 84990,
+      "createdAt": "2023-09-29T15:02:24.021Z",
+      "updatedAt": "2023-09-29T15:02:24.021Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516e7809522ba153aa17897",
+      "name": "Voltas 1.5 Ton 3 Star, Inverter Split AC(Copper, 4-in-1 Adjustable Mode, Anti-dust Filter, 2023 Model, 183V Vectra Prism, White)",
+      "description": "Split AC with inverter compressor: Variable speed compressor which adjusts power depending on heat load. Convertible / adjustable with 4 cooling modes through remote control to operate in different tonnages for different cooling needs (20% to 120% capacity)\nCapacity: 1.5 Ton Suitable for medium sized rooms (111 to 150 sq.ft) & Ambient Temperature: 52 degree Celsius\nEnergy Rating: 3 Star. Annual Energy Consumption: 4800 units. ISEER Value: 3.81\nWarranty : 1 Year Comprehensive Warranty on the Product and 10 Years on Compressor\nCopper Condenser Coil: Better cooling and requires low maintenance, Prevents from rust & corrosion; Increase durability; Uninterrupted cooling\nKey Features: Stabilizer free operation within 110 - 285 voltage range; Digital Temperature Display ; Noise Level: IDU - 47 (db)\nSpecial Features: Anti Dust, Antimicrobial Protection, Anti-Corrosive Coating, LED Display, Self Diagnosis, Sleep Mode, Turbo, Adjustable Cooling\nRefrigerant Gas: R32 - Environmental Friendly - No Ozone Depletion Potential\nItem Dimensions & Weight : IDU - 84 cm x 29 cm x 21 cm (w x h x d), Outdoor : 83.5 cm x 55.5cm x 29.5 cm (w x h x d), IDU : 11.5 Kg, Outdoor : 30.2 Kg\nIncluded In The Box: 1 Indoor Unit, 1 Outdoor Unit, 1 Interconnecting Cable of 3m (Indoor to Outdoor), 1 Set(2nos) Interconnecting Pipe(Copper) of 3m for Indoor to Outdoor Connection, 1 Owners Manual, 4 Outdoor Vibration Pad, 1 Remote, 2 AAA Remote Battery, 1 Indoor Mounting Plate, Plastic Sleeve+Screw for Indoor Mounting Plate }",
+      "category": {
+        "_id": "64a3e4a7147bbcaaf740d6e1",
+        "name": "Voltas",
+        "parentId": "64a3b539147bbcaaf740d5da"
+      },
+      "price": 32490,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999756/ymvrrnfgbjejvxdkc1fp.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999757/vnbeueladhjfxh5pdsla.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999757/mra20c9s4wxrdtlyk9rb.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999756/lugrggcbijhwjwycqm8c.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999756/vi2wxcmlayqsy8tycxwy.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999756/cihaysyvnrc7carm6tfq.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Voltas"
+        },
+        {
+          "feature": "Capacity",
+          "value": "1.5 Tons"
+        },
+        {
+          "feature": "Cooling Power",
+          "value": "1.62 Kilowatts"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "Remote Controlled, Dust Filter"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "21D x 84W x 29H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1695999756/ymvrrnfgbjejvxdkc1fp.jpg",
+      "mrp": 64990,
+      "createdAt": "2023-09-29T15:04:32.764Z",
+      "updatedAt": "2023-09-29T15:04:32.764Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516e8169522ba153aa1789c",
+      "name": "HASTHIP® 5Pcs Gardening Tools for Garden Home Patio, Heavy Duty Aluminum Tools Set with Gardening Transplanting Spade, Cultivator, Pruner, Trowel and Gardening Gloves, Durable Gardening Accessories",
+      "description": "5-PIECE GARDEN TOOL KIT: The garden tools for home gardening set is made of cast Aluminium heads and Ergonomic Handles. It comes with 5 pieces set that include Trowel, Cultivator, pruners and Gardening gloves.\nWIDE USAGE: The gardening kit for adults is made to make gardening easy ad you can get the real experience of gardening with right tool in your hand. This tool can be used for digging soil or planting and transplanting saplings.\nSAFE AND EASIER: The metal parts of this tool are coated for protection from rust and handle of this tool is specially designed for better grip. It also comes with gloves for protecting your hand and making gardening much safer and easier now.\nIDEAL GARDEN TOOL KIT: It is an ideal garden tools kit to keep your little garden in order and helps your families enjoy the beautiful scenery and enjoy the pleasure of working.\nDURABLE AND ALUMINIUM: The tools for gardening at home is made of Aluminium and the ergonomic handle makes it easy to use and creates lots of pleasure. The shovel is made of high quality and is made for lasting long and heavy duty.",
+      "category": {
+        "_id": "64a3e53b147bbcaaf740d6f3",
+        "name": "Gardening",
+        "parentId": "64a3b55a147bbcaaf740d5dd"
+      },
+      "price": 1599,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999905/lvactijf1rdonvibgc1l.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999905/an8ytbnvur23gjurvtfw.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999904/ea2pzfvgcgznj05fvb3s.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999905/a7dqvmnat3luq63xy0qt.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999905/v8ihai7gfbl6jwichpj8.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1695999906/cdbldaffiiwd03mhgwqf.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "HASTHIP"
+        },
+        {
+          "feature": "Colour",
+          "value": "Black and Yellow"
+        },
+        {
+          "feature": "Material",
+          "value": "aluminum"
+        },
+        {
+          "feature": "Item Dimensions LxWxH",
+          "value": "32 x 8.5 x 7 Centimeters"
+        },
+        {
+          "feature": "Item Weight",
+          "value": "698.5 Grams"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1695999906/cdbldaffiiwd03mhgwqf.jpg",
+      "mrp": 2631,
+      "createdAt": "2023-09-29T15:07:02.192Z",
+      "updatedAt": "2023-09-29T15:07:02.192Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516e8b89522ba153aa178a1",
+      "name": "Pigeon by Stovekraft Cruise 1800 watt Induction Cooktop (Black)",
+      "description": "Pigeon Cruise Induction Cooktop Comes with 7 segments LED display for power and temperature. This Induction Stove comes with high-grade electrical that protects against short circuits. It's superior top plate cans with-stand very high temperatures, making it very durable;Smart timer for hands free cooking , Cord length : 1.3 meter. Worktop Material:Carbon Steel, Preset timer - auto switch off , Soft push button, Temperature Control: Manual\nInduction Stove comes with 93-percent energy saving technology;Safety Standards: Cruise Induction Stove will start working only when the Induction base Cookware is kept on the top\nIncluded: 1 - Pigeon Cruise Induction Stove and User Manual;Power Input: 220 V and Power Consumption: 1800 Watt\nWarranty Description: 1 Year On Product",
+      "category": {
+        "_id": "64a3e5d0147bbcaaf740d6fc",
+        "name": "Induction Cooktop",
+        "parentId": "64a3b55a147bbcaaf740d5dd"
+      },
+      "price": 1599,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000052/piuctf55hwbqiqtnigqa.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000048/m9jndfrvhdjsp3ukle3g.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000048/qbgqxwv9moof5qg1wesz.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000046/jg8j4vaic5efzvhlmapk.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000046/dkowoeyuhzjkehkbmucq.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000047/cony7zelkusk5zbrrld6.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Pigeon"
+        },
+        {
+          "feature": "Heating Elements",
+          "value": "1"
+        },
+        {
+          "feature": "Colour",
+          "value": "Black"
+        },
+        {
+          "feature": "Power Source",
+          "value": "Electric"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696000046/dkowoeyuhzjkehkbmucq.jpg",
+      "mrp": 3193,
+      "createdAt": "2023-09-29T15:09:44.771Z",
+      "updatedAt": "2023-09-29T15:09:44.771Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516e92d9522ba153aa178a6",
+      "name": "Crompton InstaGlide 1000-Watts Dry Iron with American Heritage Coating (Black)",
+      "description": "PRODUCT: Crompton's dry iron with American Heritage Soleplate Coating for higher durability and longer life\nTECHNICAL SPECIFICATIONS: Wattage 1000 W; Voltage 220-240V ; Dimensions 250 X 115 X 170 (L X W X H) mm\nSAFETY: ISI Certified with power heating element for heavy duty use and overheat safety shut-off features\nCONVENIENT AND EASY TO USE: 360⁰ swivel cord for easy cord movement and 6 pre-set fabric settings with variable temperature control\nDESIGN: Matte black finished base and bronze lining, and a larger soleplate area with curved edges to ensure quick ironing",
+      "category": {
+        "_id": "64a3e566147bbcaaf740d6f6",
+        "name": "Dry iron boxes",
+        "parentId": "64a3b55a147bbcaaf740d5dd"
+      },
+      "price": 598,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000200/z7ks2ondhybv4dpetrau.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000200/iraq09szpztxgb86a0jy.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000200/hcurfdtrbmgjdll0z2pa.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000199/npzmhvzv48gxsedgorzg.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000199/rjsqpu6zneogaoictrcf.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000199/pqzspcyvlus99hiwbas9.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Crompton"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "Heavy, Temperature Control"
+        },
+        {
+          "feature": "Colour",
+          "value": "Black"
+        },
+        {
+          "feature": "Item Dimensions LxWxH",
+          "value": "25 x 115 x 17 Millimeters"
+        },
+        {
+          "feature": "Recommended Uses For Product",
+          "value": "Dry Ironing of Clothes"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696000200/z7ks2ondhybv4dpetrau.jpg",
+      "mrp": 1000,
+      "createdAt": "2023-09-29T15:11:41.811Z",
+      "updatedAt": "2023-09-29T15:11:41.811Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516e9a89522ba153aa178ab",
+      "name": "Maharaja Whiteline Plastic Odacio Plus 550-Watt Juicer Mixer Grinder With 3 Jars (Black/Silver), 550 Watt",
+      "description": "Powerful 550W motor: for faster grinding and juicing. Locking System : Normal Lock\n30 mins continuous grinding & juicing\n100% Food grade safe\nVersatile (3jars): 1.5l blender jar, 0.7l grinding jar, 0.4l chutney jar\nDetachable anti-drip spout to prevent spillage of juice\nDurable stainless steel juicer mesh\nPusher for effective juicing\nWarranty: 2 year warranty provided by the manufacturer from the date of purchase\nIncludes: 1N MAIN JMG UNIT,1N LIQUIDIZER JAR (1.5L) WITH LID , 1N STAINLESS STEEL JAR(700ml) WITH LID, 1N JUICER SPOUT COVER, 1N PUSHER, 1N USER MANUAL WITH WARRANTY CARD",
+      "category": {
+        "_id": "64a3e592147bbcaaf740d6f9",
+        "name": "Juicer Mixer Grinder",
+        "parentId": "64a3b55a147bbcaaf740d5dd"
+      },
+      "price": 3150,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000329/uyy4xde6eyrdlpjqu5co.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000329/samj2tzrz316upqlduby.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000328/o1irgtyrgspxsr8smfzr.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000329/jqazbm65eokqjme9q0xi.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000329/smfd8zyawdokayituxce.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000329/rgojzbjszswnkkwxalrj.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Maharaja Whiteline"
+        },
+        {
+          "feature": "Colour",
+          "value": "Black"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "Powerful Motor, Fresh Juice in Seconds, Premium Looks, High Quality Material, Overheat Protection"
+        },
+        {
+          "feature": "Capacity",
+          "value": "1.5 litres"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "19.6D x 27.8W x 31.6H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696000329/uyy4xde6eyrdlpjqu5co.jpg",
+      "mrp": 5500,
+      "createdAt": "2023-09-29T15:13:44.801Z",
+      "updatedAt": "2023-09-29T15:13:44.801Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516ea429522ba153aa178b0",
+      "name": "Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)",
+      "description": "Direct Cool Refrigerator: Economical and stylish\nDirect- Cool Refrigerator with Capacity: 180 litres, suitable for a small family\nEnergy Efficiency: 2 star, Annual energy consumption: 186 Kilowatt Hours (Please refer energy label on product page or contact brand for more details)\nManufacturer Warranty: 10 Years Compressor Warranty, 1 Year Comprehensive Warranty\n20L Largest Vegetable Tray: Largest vegetable tray in its segment with 20 litres of storage space\nShelf type: Strong wired shelves that ensures durability and withstands large vessels and bowls\n2.25L Bottle Shelf: Now store that extra large 2.25 L bottle of water or cola with ease.\nRefrigerant: R600A Refrigerant ensures zero harm to the environment making it a sustainable product\nIncluded in the box: 1 Refrigerator, Warranty Card and Manual\nRecess Handle: This aesthetically designed refrigerator door is equipped with a recess handle.",
+      "category": {
+        "_id": "64a3e453147bbcaaf740d6d8",
+        "name": "Godrej",
+        "parentId": "64a3b507147bbcaaf740d5d7"
+      },
+      "price": 12640,
+      "color": "DarkBlue",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000442/fldbf9kkdv23pwcerlj1.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000442/q7qbzze1wuoiyph9rfoy.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000440/hn0bur1yfom5kauzlaa8.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000441/ljofbtwuspi5yx3oowjr.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000441/hjehvg3yo3mkub7ixr9s.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Product Dimensions",
+          "value": " 64.5D x 57.6W x 118H Centimeters"
+        },
+        {
+          "feature": "Brand",
+          "value": "Godrej"
+        },
+        {
+          "feature": "Capacity",
+          "value": "180 litres"
+        },
+        {
+          "feature": "Configuration",
+          "value": " Freezer-on-Top"
+        },
+        {
+          "feature": "Energy Star",
+          "value": "2 Star"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696000442/q7qbzze1wuoiyph9rfoy.jpg",
+      "mrp": 18000,
+      "createdAt": "2023-09-29T15:16:18.742Z",
+      "updatedAt": "2023-09-29T15:16:18.742Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516ead99522ba153aa178b5",
+      "name": "Haier 190 L 5 Star Direct Cool Single Door Refrigerator (2023 Model, HED-205DS-P, Dazzle Steel)",
+      "description": "Direct-cool Refrigerator: Economical and Stylish with External Bar Handle.\nCapacity 190 Litres: Suitable for families with 2 to 3 members or bachelors | Freezer Capacity: 14 Ltr , Fresh Food Capacity: 176 Ltr\nEnergy Rating: 5 Stars - Best-in-class Energy Efficiency\nManufacturer Warranty: 1 year on product, 10 years on compressor.\nNon Inverter Technology\nStorage or Interior description : Fresh food capacity : 176 Ltr | Freezer capacity : 14 Ltr |drawers : 1, shelves : 3| Shelf Type : Toughened Glass |Large vegitable box | Anti-bacterial gasket | Base stand with Drawer for additional space for non-refrigerated food items\nSpecial Features: Stabilizer free operation, Vegetable Box, 3 Toughened Glass Shelves, Connect Home Inverter, Anti-bacterial gasket\n1 Hour Icing Technology: Get ice within just an hour with 1 Hour Icing Technology (HIT) in this direct cool refrigerator.\nItem Dimensions: 62.8x54.1x121.8(LxWxH) | Weight : 35Kg\nIncluded in the box: 1 Refrigerator Unit, Egg Tray, Ice Tray, User Manual, Warranty Card, Keys",
+      "category": {
+        "_id": "64a3e447147bbcaaf740d6d5",
+        "name": "Haier",
+        "parentId": "64a3b507147bbcaaf740d5d7"
+      },
+      "price": 16090,
+      "color": "blueGrey",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000593/bpljlhbijwykxd78x9un.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000593/jl5s3sxtnrhsenz2gyih.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000594/hsj7h545gb8srqozqnmx.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000594/xekgp4nnkjirxiqmzvcf.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000592/mo4nfdmg6ewyj9azuiif.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Product Dimensions",
+          "value": "62.8D x 54.1W x 121.8H Centimeters"
+        },
+        {
+          "feature": "Brand",
+          "value": "Haier"
+        },
+        {
+          "feature": "Capacity",
+          "value": "190 litres"
+        },
+        {
+          "feature": "Configuration",
+          "value": "Freezer-on-Top"
+        },
+        {
+          "feature": "Energy Star",
+          "value": "5 Star"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696000593/bpljlhbijwykxd78x9un.jpg",
+      "mrp": 23000,
+      "createdAt": "2023-09-29T15:18:49.109Z",
+      "updatedAt": "2023-09-29T15:18:49.109Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516eb569522ba153aa178ba",
+      "name": "Hisense 564 L Inverter Frost-Free Side-by-Side Door Refrigerator with Water Dispenser (RS564N4SSNW, Silver Stainless Steel Finish)",
+      "description": "The star rating changes are as per BEE guidelines on or before 1st Jan 2023\nSide by Side Frost-Free Refrigerators: Premium Refrigerators with auto-defrost function to prevent ice build-up\nCapacity 564 litres: Suitable for families with 5 or more members | Freezer capacity: 217 ltrs, Fresh food capacity: 347 ltrs, with water dispenser\nManufacturer Warranty: 1 year on product; 10 years on compressor\nDigital Inverter Compressor – Energy efficient, silent operation & more durable\nShelf type: Spill proof toughened adjustable glass shelves",
+      "category": {
+        "_id": "64a3e477147bbcaaf740d6de",
+        "name": "Hisense",
+        "parentId": "64a3b507147bbcaaf740d5d7"
+      },
+      "price": 47990,
+      "color": "darkBlueGrey",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000743/o58vhfmwsec2abrr1es3.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000743/luqlhx9kzybxo5u24g46.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000744/so12qmfumgpmd9gc4hfi.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000744/osnqap1hu6yvgceolemb.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000743/g1eyjgnlmuzvcjkwfkgz.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Product Dimensions",
+          "value": "64.3D x 91W x 178.6H Centimeters"
+        },
+        {
+          "feature": "Brand",
+          "value": "Hisense"
+        },
+        {
+          "feature": "Capacity",
+          "value": "564 litres"
+        },
+        {
+          "feature": "Configuration",
+          "value": "Side-by-Side"
+        },
+        {
+          "feature": "Colour",
+          "value": "Silver"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696000743/luqlhx9kzybxo5u24g46.jpg",
+      "mrp": 79990,
+      "createdAt": "2023-09-29T15:20:54.503Z",
+      "updatedAt": "2023-09-29T15:20:54.503Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516ebce9522ba153aa178bf",
+      "name": "LG 185 L 4 Star Inverter Direct-Cool Single Door Refrigerator (GL-D199OSEY, Scarlet Euphoria, Base stand with drawer)",
+      "description": "Direct Cool Refrigerator: Economical and stylish Single Door Refrigerators for fast cooling that can last longer\nCapacity 185 litres: Suitable for families with 2 to 3 members/ Couples / Bachelors | Freezer capacity: 16 L, Fresh food capacity: 169 L\nEnergy Rating: 4 Star - High energy efficiency\nManufacturer warranty: 1 year on product, 10 years on compressor T&C\nSmart inverter compressor: Unmatched performance, great savings and super silent operation\nStorage or Interior description: Shelf Type- Toughened Glass with Frame / adjustable shelves; No. of shelves: 02, Vegetable box capacity- 9.6 L; Door Basket No (Full Size / Half Size) (Nos.: RL / RH): 2+3\nIncluded in the box: 1 Refrigerator Unit, User Manual, Warranty Card\nSpecial Features: Base stand with Drawer for additional space for non-refrigerated food items; Works Without Stabilizer: (90~310V); Chiller- Transparent (Big TFR); Anti Rat Bite Type (Sleeve)\nItem Dimensions: 53.3x63.8x124.2 (CM) (W X D X H)|32 Kg (Net Weight)\nTray Ice(No. / Rows): 1/2; Tinge: Aqua Clear; Transparent Freezer Door; Tray Egg: Integrated With Door Basket; Handle Type: Bar handle",
+      "category": {
+        "_id": "64a3e439147bbcaaf740d6d2",
+        "name": "LG",
+        "parentId": "64a3b507147bbcaaf740d5d7"
+      },
+      "price": 16490,
+      "color": "red",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000869/udpz9t4av356ytart26i.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000869/e4tihr2vsyzyubk9bctt.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000868/pvuoyizq4n406hk2kkgf.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000868/kzzhg7tqfoqhdl229yee.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000868/m5mef6wmwcnocjndspvq.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000869/xdl01j9y0lb8euhiuvdz.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Product Dimensions",
+          "value": "63.8D x 53.7W x 124.2H Centimeters"
+        },
+        {
+          "feature": "Brand",
+          "value": "LG"
+        },
+        {
+          "feature": "Capacity",
+          "value": "185 litres"
+        },
+        {
+          "feature": "Configuration",
+          "value": "Freezer-on-Top"
+        },
+        {
+          "feature": "Energy Star",
+          "value": "4 Star"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696000869/udpz9t4av356ytart26i.jpg",
+      "mrp": 21099,
+      "createdAt": "2023-09-29T15:22:54.269Z",
+      "updatedAt": "2023-09-29T15:22:54.269Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516ec6a9522ba153aa178c4",
+      "name": "Samsung 183 L 2 Star Digital Inverter Direct-Cool Single Door Refrigerator (RR20C2412GS/NL, Gray Silver, 2023 Model)",
+      "description": "Direct Cool Refrigerator: Stylish Single Door Refrigerator with Modern Gray Silver pattern. Enjoy powerful cooling that can last longer\nCapacity 183 liters: Suitable for families with 2 to 3 members\nEnergy Rating : 2 Star Energy Efficiency\nManufacturer Warranty : The product comes with a 1 year comprehensive warranty and a 20 years warranty on the digital inverter compressor\nDigital Inverter Compressor provides greater energy efficiency, less noise and long-lasting performance while consuming 50% less power, backed up by 20 year warranty\nInterior Description : Fresh Food Capacity : 165 Ltr | Freezer Capacity : 18 Ltr | Total no. of compartments : 1 | Shelves : 2 | Vegetable Drawers : 1 | Shelf Type : Toughened Glass Shelves | Anti Bacterial Gasket | Base stand with Drawer for additional space for non-refrigerated food items\nSpecial Features : Fresh room | Grande Door Design | Stabilizer Free Operation (100v - 300v) | Smart Connect Inverter (Automatic) | Up to 15 Days of Fresh Food | Bar Handle | Lock & Key\nAdditional Features : Easy Clean Back | Veg Box | Big Bottle Guard (Deep Door Guard) | Clear View Lamp\nItem Dimensions : (WxHxD)(mm): 53.6x122x66.5 cm | Net Weight 30 kg\nIncluded in the box : 1 Refrigerator unit, User Manual, Warranty Card, Egg Tray, Ice Tray",
+      "category": {
+        "_id": "64a3e41a147bbcaaf740d6cc",
+        "name": "SAMSUNG",
+        "parentId": "64a3b507147bbcaaf740d5d7"
+      },
+      "price": 13790,
+      "color": "grey",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000987/avuuyknvrvztdpig2858.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000989/k6fc0ympvf5e5edwfa5n.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000988/csbh0bk8nc8lzrpf4mce.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000987/fgfjdb4xee7fgsccptub.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000987/nkfqvunzcdblgywitaga.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696000988/bqvlzyeeplcsq55k35v7.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Product Dimensions",
+          "value": "66.5D x 53.6W x 122H Centimeters"
+        },
+        {
+          "feature": "Brand",
+          "value": "Samsung"
+        },
+        {
+          "feature": "Capacity",
+          "value": "183 litres"
+        },
+        {
+          "feature": "Configuration",
+          "value": "Freezer-on-Top"
+        },
+        {
+          "feature": "Colour",
+          "value": " Inverter Grey"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696000987/avuuyknvrvztdpig2858.jpg",
+      "mrp": 17999,
+      "createdAt": "2023-09-29T15:25:30.661Z",
+      "updatedAt": "2023-09-29T15:25:30.661Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516ecec9522ba153aa178c9",
+      "name": "Voltas Beko, A Tata Product 472 L SBS Refrigerator with Pro-Smart Inverter Compressor (RSB495XPE, New 2023, INOX)",
+      "description": "Pro Smart Inverter Compressor\nExternal Bar Handle\nExternal Electronic Temprature Control and Display\nDual LED Illumination\nTwist Ice tray",
+      "category": {
+        "_id": "64a3e467147bbcaaf740d6db",
+        "name": "Voltas",
+        "parentId": "64a3b507147bbcaaf740d5d7"
+      },
+      "price": 52000,
+      "color": "grey",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001150/xg59dgccgxmsamwmaa9v.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001150/t5rnxkzrsmntvushjuls.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001149/opdb8y8mop3w8geydemp.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001149/pfjjzkj6kewuqrbppvgk.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001149/zz5v0zlk4oojepbwy0lm.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001150/svl5gjyo2qdvanhdcgql.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Product Dimensions",
+          "value": "59.5D x 90.5W x 177H Centimeters"
+        },
+        {
+          "feature": "Brand",
+          "value": "Voltas Beko"
+        },
+        {
+          "feature": "Capacity",
+          "value": "472 litres"
+        },
+        {
+          "feature": "Configuration",
+          "value": "Side-by-Side"
+        },
+        {
+          "feature": "Energy Star",
+          "value": "2 Star"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696001150/xg59dgccgxmsamwmaa9v.jpg",
+      "mrp": 79990,
+      "createdAt": "2023-09-29T15:27:40.020Z",
+      "updatedAt": "2023-09-29T15:27:40.020Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516ed8a9522ba153aa178ce",
+      "name": "Whirlpool 330 L Frost-Free Triple-Door Refrigerator (FP 343D PROTTON ROY, Steel Onyx)",
+      "description": "Frost Free Refrigerator : Auto defrost function to prevent ice-build up\nCapacity 330 litres: Suitable for families with 3 to 4 members\nEnergy Rating : Uses Less Energy Than a CFL\nManufacturer warranty: 1 year on product, 10 years on compressor\nInverter Compressor – Energy efficient, silent operation & more durable\nShelf type: Toughened glass shelves\nIncluded in the box: ‎‎‎Refrigerator, User manual, Warranty card\nSpecial Features : Moisture retention technology,Zeolite technology,Air booster,Microblock technology,customized cooling technology,Ice twister",
+      "category": {
+        "_id": "64a3e428147bbcaaf740d6cf",
+        "name": "Whirlpool",
+        "parentId": "64a3b507147bbcaaf740d5d7"
+      },
+      "price": 35145,
+      "color": "darkBlueGrey",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001276/dsvdyvhxzbcfi3k6leyx.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001279/dj7vr7mkrspsnez3iuxg.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001276/dbyhxrqveojy4sabp1r3.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001277/hh2epggoimsj3k3tcfhv.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001277/dvgg4nbtd9bp0s0qhv0c.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Product Dimensions",
+          "value": "60D x 68W x 179H Centimeters"
+        },
+        {
+          "feature": "Brand",
+          "value": "Whirlpool"
+        },
+        {
+          "feature": "Capacity",
+          "value": "330 litres"
+        },
+        {
+          "feature": "Configuration",
+          "value": "Full-Sized Freezer-on-Top"
+        },
+        {
+          "feature": "Energy Star",
+          "value": "No Rating"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696001276/dsvdyvhxzbcfi3k6leyx.jpg",
+      "mrp": 47550,
+      "createdAt": "2023-09-29T15:30:18.504Z",
+      "updatedAt": "2023-09-29T15:30:18.504Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516ee309522ba153aa178d3",
+      "name": "Hisense 126 cm (50 inches) Bezelless Series 4K Ultra HD Smart LED Google TV 50A6H (Black)",
+      "description": "Resolution : 4K Ultra HD (3840x2160) | Refresh Rate : 60 Hertz\nConnectivity: 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices | Dual-band Wi-Fi | Bluetooth 5.1\nSound : 20 Watts Output | Dolby Atmos | Dolby Digital\nSmart TV features: Google TV| Google Assistant | Chromecast, Miracast, DLNA | Auto Low Latency Mode for VRR | Supported Apps : Netflix, Youtube, Prime Video, Hotstar, SonyLiv, Hungama, JioCinema, Zee5, Eros Now\nDisplay :10 bit Panel | Bezel-less Floating Display Design | ALLM | Decoding of Dolby Vision, HDR10, HLG | 1 billion colors | MEMC\n",
+      "category": {
+        "_id": "64a3e30f147bbcaaf740d6ae",
+        "name": "Hisense",
+        "parentId": "64a3b4ed147bbcaaf740d5d1"
+      },
+      "price": 43500,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001435/aihbz8mct2p7jpv7ixwo.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001435/i6mfakhjem6zhckw6r93.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001435/ejtrefbnzqyj2u6wvsjw.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001436/xergqynwiry8ys68rurl.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001435/tku5ofonmkjlvhjzer0m.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Screen Size",
+          "value": "50 Inches"
+        },
+        {
+          "feature": "Brand",
+          "value": "Hisense"
+        },
+        {
+          "feature": "Supported Internet Services",
+          "value": "Netflix, Prime Video, Zee5, Oxygen Play, Eros Now, JioCinema, SonyLiv, Youtube, Hungama, Hotstar"
+        },
+        {
+          "feature": "Display Technology",
+          "value": "LED"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "27.4D x 111.7W x 64.6H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696001435/tku5ofonmkjlvhjzer0m.jpg",
+      "mrp": 62900,
+      "createdAt": "2023-09-29T15:33:04.715Z",
+      "updatedAt": "2023-09-29T15:33:04.715Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516eebb9522ba153aa178d8",
+      "name": "iFFALCON 108 cm (43 inches) 4K Ultra HD Smart LED Google TV iFF43U62 (Black)",
+      "description": "Resolution: 4K Ultra HD (3840 x 2160) | Refresh Rate: 60 Hertz\nConnectivity: 3 HDMI Ports to connect set top box, Blu Ray players, gaming console | 1 USB Ports to connect hard drives and other USB devices | 1 Headphone output\nSound: 24 Watts Output | Dolby Audio\nSmart TV Features: 4K Google TV |In-Built Wi-Fi 2.4Ghz/5GHz| Screen Mirroring | 2GB RAM | 16 GB ROM | 64-bit Quad Core Processor | In-Built Apps: Netflix, Prime Video, Disney+Hotstar\nDisplay: A+ Grade Panel | 178 Degree Wide Viewing Angle | AI Picture Engine 2.0 | Dolby Audio | HDR 10 | 4K Upscaling | Dynamic Color Enhancement | Micro Dimming Technology |Edgeless Design\nWarranty Information: 1 Year warranty provided by the manufacturer from date of purchase\n",
+      "category": {
+        "_id": "64a3e2e5147bbcaaf740d6a8",
+        "name": "iFFalcon",
+        "parentId": "64a3b4ed147bbcaaf740d5d1"
+      },
+      "price": 23999,
+      "color": "grey",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001598/t6r8kagoibgth2qjbixe.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001599/uxxwzhxmmakhkk5dbj7w.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001598/xwhg2qngcd0zinjhb1if.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001598/zu7aqyxab8oqf7kb1fjj.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001598/dfatm5w9unvvnpllpkiy.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001599/y2v70drp2iigbdcqwcvx.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Screen Size",
+          "value": "43 Inches"
+        },
+        {
+          "feature": "Brand",
+          "value": "iFFALCON"
+        },
+        {
+          "feature": "Supported Internet Services",
+          "value": "Netflix, Zee5, Google services applications, Google playstore, Prime video, Hotstar, Sun NXT, YouTubeNetflix, Zee5, Google services applications, Google playstore, Prime video, Hotstar, Sun NXT, YouTube"
+        },
+        {
+          "feature": "Display Technology:",
+          "value": "LED"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "18.5D x 95.7W x 61H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696001598/xwhg2qngcd0zinjhb1if.jpg",
+      "mrp": 49900,
+      "createdAt": "2023-09-29T15:35:23.275Z",
+      "updatedAt": "2023-09-29T15:35:23.275Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516ef599522ba153aa178dd",
+      "name": "LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray)",
+      "description": "Resolution: HD Ready (1366x768) | Refresh Rate: 60 hertz\nConnectivity: 2 HDMI ports to connect set top box, Blu Ray players, gaming console | 1 USB ports to connect hard drives and other USB devices\nSound output: 10 Watts Output I 2 Speakers | DTS Virtual:X | Sound Type : Down FiringSmart\nTV Features: Web OS Smart TV | Wi-Fi | Home Dashboard | Screen Mirroring | Mini TV Browser | Multi-Tasking | Office 365, Set WXHXD (with Stand ) mm - 739 x 472 x 168Display: Active HDR | Display Type: Flat | BackLight Module: Slim LED\nWarranty Information: 1 Year LG India Comprehensive Warranty and additional 1 year Warranty is applicable on panel/module from the date of purchase (Offer Valid till 31st August 2022)\nInstallation: For requesting installation/wall mounting/demo of this product once delivered, please directly call LG support on 1800 180 9999/1800 315 9999 and provide product's model name as well as seller's details mentioned on the invoiceEasy\nReturns: This product is eligible for replacement within 10 days of delivery in case of any product defects, damage or features not matching the description provided\nCountry of Origin: India\n",
+      "category": {
+        "_id": "64a3e2c4147bbcaaf740d6a2",
+        "name": "LG",
+        "parentId": "64a3b4ed147bbcaaf740d5d1"
+      },
+      "price": 13490,
+      "color": "blueGrey",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001737/gnw7dx5eli7m48cfq0zf.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001737/k22j80jpurpyktio0e3c.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001737/muf2xwtjsfx3gibxpqvl.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001738/tmbftrpqfp70uwkyee6v.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001737/g2doufegzugks9vc1iyw.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001737/rgi07gcd1xxvengzqdgx.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Screen Size",
+          "value": "32 Inches"
+        },
+        {
+          "feature": "Brand",
+          "value": "LG"
+        },
+        {
+          "feature": "Supported Internet Services",
+          "value": "Netflix, Prime Video, Zee5, Eros Now, Voot, AltBalaji, Apple TV, YouTube, Disney+ Hotstar"
+        },
+        {
+          "feature": "Display Technology:",
+          "value": "LED"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "3.3D x 29.1W x 17.4H Centimeters"
+        },
+        {
+          "feature": "Resolution",
+          "value": "720p"
+        },
+        {
+          "feature": "Refresh Rate",
+          "value": "60 Hz"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696001737/g2doufegzugks9vc1iyw.jpg",
+      "mrp": 21990,
+      "createdAt": "2023-09-29T15:38:01.095Z",
+      "updatedAt": "2023-09-29T15:38:01.095Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516f0329522ba153aa178ea",
+      "name": "Mi 125 cm (50 inches) X Series 4K Ultra HD Smart Android LED TV L50M7-A2IN (Black)",
+      "description": "Resolution: 4K Ultra HD (3840 x 2160) | Refresh Rate: 60 hertz | 178° wide viewing angle\nConnectivity: Dual Band Wi-Fi (2.4 GHz/ 5 GHz) | 3 HDMI ports to connect latest gaming consoles, set top box, Blu-ray Players | 2 USB ports to connect hard drives and other USB devices | ALLM | eARC | Bluetooth 5.0 | Optical | Ethernet | 3.5mm earphone Jack\nSound: 30 Watts Output | Dolby Audio, DTS Virtual: X, DTS-HD\nSmart TV Features : Android TV 10 | PatchWall 4 with IMDb integration | Kids Mode with Parental Lock | 300+ Free Live Channels | Universal search | Language Universe (16+ Languages) | India's Top 10 | Miracast | Supported Apps: Prime Video | Netflix | Disney + Hotstar | YouTube | Apple TV | 10000+ apps from Play Store | Quad core A55 CPU processor | Chromecast built-in | Ok Google | Auto Low Latency Mode | 2GB RAM + 8GB Storage\nDisplay: 4K HDR | Metal Bezel-less Design | Dolby Vision | HDR10 | HLG | Reality Flow MEMC | Vivid Picture Engine | DCI-P3 94% Colour Gam\nWarranty Information: 1 year comprehensive warranty on product and 1 year additional on Panel provided by the brand from the date of purchase",
+      "category": {
+        "_id": "64a3e2f8147bbcaaf740d6ab",
+        "name": "Mi",
+        "parentId": "64a3b4ed147bbcaaf740d5d1"
+      },
+      "price": 30999,
+      "color": "lightBlue",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001942/dja4kqpwarbumw1vtd82.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001944/acunmeitk8tcljoq04pg.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001942/gkxuy1algxm2miypt3a2.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001942/ponzfzrpyjyxiszk2h1i.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001942/tqva0bt2hwlk9g0bbf7t.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696001943/eg8zmjn68lanpsqm19rh.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Screen Size",
+          "value": "50 Inches"
+        },
+        {
+          "feature": "Brand",
+          "value": "Mi"
+        },
+        {
+          "feature": "Supported Internet Services",
+          "value": "Netflix, Prime Video, 10000+ Apps from Play Store, Disney+ Hotstar"
+        },
+        {
+          "feature": "Display Technology",
+          "value": "LED"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "27.9D x 111.1W x 70.8H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696001943/eg8zmjn68lanpsqm19rh.jpg",
+      "mrp": 44999,
+      "createdAt": "2023-09-29T15:41:38.897Z",
+      "updatedAt": "2023-09-29T15:41:38.897Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516f0ad9522ba153aa178ef",
+      "name": "Samsung 108 cm (43 inches) Crystal 4K Neo Series Ultra HD Smart LED TV UA43AUE65AKXXL (Black)",
+      "description": "MADE IN INDIA\nYou'll also experience more lifelike colour expressions due to its sophisticated colour mapping technology.\nEnjoy 3D sound effect that drives multichannel audio to deliver a 360° cinematic audio experience\nEnjoy rich, accurate color and deeper contrast with crisp detail with dynamic tone mapping of colors\nEnjoy 3D sound effect that drives multichannel audio to deliver a 360° cinematic audio experience",
+      "category": {
+        "_id": "64a3e2d5147bbcaaf740d6a5",
+        "name": "Samsung",
+        "parentId": "64a3b4ed147bbcaaf740d5d1"
+      },
+      "price": 32990,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002111/bifcwsldvgbdnjhgcvmm.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002110/mgppebhcnyyyk28ogyri.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002110/ejhool8zb2azraa0uy5x.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002112/u6bgw7lszwwdj7vb65nz.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002113/umjfdqciyhmyvkkzcrsf.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002111/nkhwxp6tu8ofd2qfttak.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Screen Size",
+          "value": "43 Inches"
+        },
+        {
+          "feature": "Brand",
+          "value": "Samsung"
+        },
+        {
+          "feature": "Supported Internet Services",
+          "value": "Netflix, Prime Video, Zee5, Oxygen Play, Eros Now, JioCinema, SonyLiv, Youtube, Hungama, Hotstar"
+        },
+        {
+          "feature": "Display Technology:",
+          "value": "LED"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696002110/mgppebhcnyyyk28ogyri.jpg",
+      "mrp": 47900,
+      "createdAt": "2023-09-29T15:43:41.386Z",
+      "updatedAt": "2023-09-29T15:43:41.386Z",
+      "__v": 0
+    },
+    {
+      "_id": "6516f11f9522ba153aa178f4",
+      "name": "TOSHIBA 108 cm (43 inches) V Series Full HD Smart Android LED TV 43V35MP (Black)",
+      "description": "Resolution: Full HD (1920x1080) | Refresh Rate: 60 hertz | 178 Degree wide viewing angle | Bezel-less Design\nConnectivity: 2 HDMI ports to connect set top box, Blu-Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices | 3.5mm to connect your headphones | Bluetooth\nSound: 20 Watts Powerful Stereo Speakers | Dolby Audio | DTS Virtual: X for remarkable sound quality\nSmart TV Features : Certified Android TV 11 OS| Chromecast built-in | Miracast | Supported Apps: Prime Video | Netflix | Disney + Hotstar | YouTube | Apple TV | 5000+ apps from Play Store| Quad core processor | Dual band Wi-Fi | 1GB RAM + 8GB Storage\nDisplay: A+ Grade 10 bit LED panel | REGZA picture engine | Smooth Motion | High Contrast | Ultra bright screen for flawless picture quality even in bright rooms\nWarranty Information: 2 Year Comprehensive Warranty on product provided by Toshiba from date of purchase.",
+      "category": {
+        "_id": "64a3e323147bbcaaf740d6b1",
+        "name": "Toshibha",
+        "parentId": "64a3b4ed147bbcaaf740d5d1"
+      },
+      "price": 18999,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002235/twxflinxhvmgllz16o5w.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002235/zwkcnjvnhija613s8yaz.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002235/irxxnvuik3b5wlxycll3.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002236/gofsvrjvmkvmiisggbhs.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696002235/xkl0iaqut4nb2tdniqcv.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Screen Size",
+          "value": "43 Inches"
+        },
+        {
+          "feature": "Brand",
+          "value": "TOSHIBA"
+        },
+        {
+          "feature": "Supported Internet Services",
+          "value": " Netflix, Prime Video, Zee5, Oxygen Play, Eros Now, JioCinema, SonyLiv, Youtube, Hungama, Hotstar"
+        },
+        {
+          "feature": "Display Technology",
+          "value": "LED"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": " 8.8D x 96.5W x 56.3H Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696002235/irxxnvuik3b5wlxycll3.jpg",
+      "mrp": 34999,
+      "createdAt": "2023-09-29T15:45:35.083Z",
+      "updatedAt": "2023-09-29T15:45:35.083Z",
+      "__v": 0
+    },
+    {
+      "_id": "6518e86db2a80a22a2516f38",
+      "name": "STRATA FURNITURE Sheesham Wood Bunk Bed with 2 Drawer Storage Wooden Double Bed Furniture for Bedroom Home (Natural Finish)",
+      "description": "Bunk Bed Dimension: Lower Bed Length (81.6 inch), Width (65 inch), Height (70 inch). Mattress Size: Lower 78x60 Inch, Upper 78x36 Inch(Not Included)\nBunk Bed Material: Solid Sheesham Wood, Style: Contemporary, Color: Natural Finish\nThe Wooden Double Size Bunk Bed Furniture for Home has an ideal that can be placed easily in your bedroom. The Palang Bed furniture is made of Sheesham Wood which ensures durability of the Sheesham Wood Bed. Well-designed Bunk Beds to occupy exact space of your Modern Bedroom & enrich your Bedroom lifestyle.\nThis Twin Over Bed has two levels, with a ladder to easily access the top bed, Bed sizes and strength are suitable for parents to sleep-in with their children too.\nEasy DIY assembly. All tools and hardware provided in box. In case of any difficulty, kindly contact the seller and STRATA FURNITURE will provide free installation. In case carpenter service is not available at your pin code, kindly arrange a local carpenter on your side, and STRATA FURNITURE will bear the charges.",
+      "category": {
+        "_id": "6518fa64b2a80a22a2516ffb",
+        "name": "Bed",
+        "parentId": "64a3b627147bbcaaf740d5f1"
+      },
+      "price": 35999,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696130930/enxyfk4x3i2wj3l9rsrq.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696130930/qtesgzhqcnjbyujjskae.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696130930/g0kcbblizoy4un7oy84z.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696130930/ukmoxbfsj2ui2na9iylq.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696130930/dmeupnwf7lvzq70kzmvw.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "STRATA FURNITURE"
+        },
+        {
+          "feature": "Colour",
+          "value": " Natural Finish With 2 Drawers"
+        },
+        {
+          "feature": "Item Dimensions LxWxH",
+          "value": " 2.07 x 1.65 x 1.78 Meters"
+        },
+        {
+          "feature": "Room Type",
+          "value": "Living Room, Hall, Hotel"
+        },
+        {
+          "feature": "Theme",
+          "value": "Space"
+        },
+        {
+          "feature": "Cartoon Character",
+          "value": "Bear"
+        },
+        {
+          "feature": "Number of Pieces",
+          "value": "1"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696130930/qtesgzhqcnjbyujjskae.jpg",
+      "mrp": 46899,
+      "createdAt": "2023-10-01T03:33:01.970Z",
+      "updatedAt": "2023-10-01T04:50:45.683Z",
+      "__v": 0
+    },
+    {
+      "_id": "6518e934b2a80a22a2516f3d",
+      "name": "Artarium Car Dashboard Resin Bahubali Hanuman Idol Home Decor Item Hanuman Murti Statue for Gift (1 Piece)",
+      "description": "1. Premium material: The figurine is meticulously crafted from premium quality marble dust with resin, ensuring durability and a long-lasting finish.\n2. Aesthetically Pleasing: The exquisite craftsmanship and intricate detailing of the figurine make it a visual delight, adding a touch of elegance to your car's dashboard.\n3. Intricate Detailing: Every intricate detail, from Lord Hanuman's muscular form to his faithful gaze, is meticulously captured, showcasing the craftsmanship and devotion that went into creating this masterpiece.\n4. Compact Size: Designed specifically for car dashboards, this figurine is compact and lightweight, allowing easy placement without obstructing your view.",
+      "category": {
+        "_id": "6518fa88b2a80a22a2517001",
+        "name": "Home Decor",
+        "parentId": "64a3b668147bbcaaf740d5f7"
+      },
+      "price": 1499,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131202/gj3clsh8vzgxrsfrdxv0.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131202/ekl1lme3yb4eva7lmpjh.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131204/ljhdbzbwpk4gtr02ygdf.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131207/psv6i6sjxtayttuph5hk.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131206/n6kclb7xexiasnnl4tuu.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131204/idvjejgppgapdnx6kzqe.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Theme",
+          "value": "Hanuman"
+        },
+        {
+          "feature": "Brand",
+          "value": "Artarium"
+        },
+        {
+          "feature": "Colour",
+          "value": "Brown"
+        },
+        {
+          "feature": "Style",
+          "value": "Antique"
+        },
+        {
+          "feature": "Material",
+          "value": "Resin"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696131206/n6kclb7xexiasnnl4tuu.jpg",
+      "mrp": 2999,
+      "createdAt": "2023-10-01T03:36:20.819Z",
+      "updatedAt": "2023-10-01T04:51:10.193Z",
+      "__v": 0
+    },
+    {
+      "_id": "6518e9e9b2a80a22a2516f42",
+      "name": "VK Furniture Solid Sheesham Wood Wooden Four Seater Dining Table with 4 Chairs with Cushion for Dining Room Home Restaurant Dining Table 4 Seater (Warm Chestnut Finish) | Wooden Dining Set 4 Seater | Dining Table Set with 4 Chairs | Wooden Four Seater Dining Table | W 30 X D 45 X H 30",
+      "description": "Product Dimension:-Table- Length(45 Inches), Width(30 Inches), Height( 30 Inches) Chairs- Length(17 Inches) Width(17 Inches), Height(34 Inches)\nProduct Material :- Sheesham Wood\nWe Provide The Best Quality Products. Every Product Goes Through A Tough Quality Check To Ensure That We Can Serve Our Best Way. Only Made In India Products.\nThe Product Requires Basic Self Assembly At Customers End And Comes With Self Assembly Instructions Along With Necessary Accessories.\nNote:- (i) If the customer cancels the order after the product has been shipped, a one way shipping fee will be charged. (ii) If the customer returns the product even after having the correct color and size, they will be charged one side shipping charges.\n",
+      "category": {
+        "_id": "6518fa54b2a80a22a2516ff8",
+        "name": "Dining Table",
+        "parentId": "64a3b605147bbcaaf740d5ee"
+      },
+      "price": 14724,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131395/pcsiwmdav7vrihfn712o.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131395/zlreemnufh7ctm8mfbxj.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131396/ky4zhtoiz1pno8r4h02u.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131397/bktth18pgmaevmssune0.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131396/onggiqqnwjztmzoobewo.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131396/y5eftciidmxkexztkfvo.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Colour",
+          "value": "Warm Chestnut Finish"
+        },
+        {
+          "feature": "Brand",
+          "value": "VK Furniture"
+        },
+        {
+          "feature": "Room Type",
+          "value": " Office, Living Room, Home, Dining Room"
+        },
+        {
+          "feature": "Size",
+          "value": "4 Seater"
+        },
+        {
+          "feature": "Item Dimensions LxWxH",
+          "value": "114.3 x 76.2 x 76.2 Centimeters"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696131396/onggiqqnwjztmzoobewo.jpg",
+      "mrp": 20557,
+      "createdAt": "2023-10-01T03:39:21.634Z",
+      "updatedAt": "2023-10-01T04:51:24.437Z",
+      "__v": 0
+    },
+    {
+      "_id": "6518eaa7b2a80a22a2516f47",
+      "name": "FUNTERIOR Bucks 5 Seater Sofa Bed Fabric Light Brown Sofa Set",
+      "description": "Overall Dimension :- 1) Length 80 Inches 2) Width 34 Inches 3) Height 33 Inches/ Customization Avialable On Color, Size & Material.<br>\nProduct Material :- 1)Frame Material - Salwood 2) Cloth Material - Upper Quality Fabric (100% Polyester) 3) Foam Density - 40 Density Foam 4)Color - Light Brown 5)Assembly - Not Required<br>\nWe Are The Manufacturer Of Sofas.We Also Provide Customization According To Your Need. You Will Provide The Detail Of Customization Within 24Hour After Placeing Order .<br>\nProduct Are Shipped In Heavy Box Packing At Your Doorstep We Provide Services All Over India; Product Are Shipped In Heavy Box Packing At Your Doorstep We Provide Services All Over India<br>\nArm Style: Pillow-Top; Special Features: Adjustable Headrest; Form Factor: Settee; Seating Capacity: 5.0; Item Shape: L-Shape; Item Weight: 0.0; Style Name: Modern\n",
+      "category": {
+        "_id": "6518fa35b2a80a22a2516ff2",
+        "name": "Sofas",
+        "parentId": "64a3b5f2147bbcaaf740d5eb"
+      },
+      "price": 53999,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131578/tzgkneixblqfbytssqdz.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131578/fasmyc9hoqkhhhoesseu.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131578/irhry9fd02zbqtipirb3.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131579/zhelagwjxrc4ifmb6l2d.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131579/vhvmxq6tnh0vomesdgk5.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131579/tqanz6d3isut7onob1ku.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "FUNTERIOR"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "0.86D x 2.03W x 0.84H Meters"
+        },
+        {
+          "feature": "Type",
+          "value": "Sleeper"
+        },
+        {
+          "feature": "Colour",
+          "value": "LightBrown"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "Adjustable Headrest"
+        },
+        {
+          "feature": "Room Type",
+          "value": "Living Room"
+        },
+        {
+          "feature": "Size",
+          "value": "N1"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696131579/zhelagwjxrc4ifmb6l2d.jpg",
+      "mrp": 82999,
+      "createdAt": "2023-10-01T03:42:31.018Z",
+      "updatedAt": "2023-10-01T04:51:36.487Z",
+      "__v": 0
+    },
+    {
+      "_id": "6518eb36b2a80a22a2516f4c",
+      "name": "RIZIK STORE™ Iron Frame Handmade Square 20\"x20\" Coffee/Nesting Table/Side Table/Center Table with wodden MDF Top for Living Room/Drawing Room Gold (Set of 2) (White & Black)",
+      "description": "Size: 20x20x18 inch (L), 18x18x16 inch (M). Proudly Made in India. 100% Handmade\nNesting coffee table: the surfaces of the two tables are made of solid artificial marble, which is delicate and smooth with strong heat resistance. It can withstand coffee or tea. All you have to do is wipe the tea table with a damp cloth and mild detergent. The circular design, with no corners, avoids unnecessary bumping and injuries.\nSquare coffee table: the legs are made of heavy iron frames, and the Gold powder coating is rust-proof and corrosion-resistant, which provides good support for the coffee table and can bear up to 100 kg of load.\nTea table set for storage: even if it is designed for fashion, it will not lose its practicality. Whether it is green plants, snacks, or drinks … all of these can be displayed on the spacious table. In addition, the open bottom space provides a comfortable place for your legs to rest and is also very suitable for your little pets to sit or play.\nOur cute cocktail table set has a spacious surface, suitable for daily use, and can hold different types of items such as books, toys, snacks. It is the perfect space saving solution for small apartments or large homes. Plenty of space to keep your home and room neat and tidy.\nMulti-purpose: This Square-shaped coffee set is elegant in shape. They can be used together to make your home look brand new. It can also be used alone. One can serve as a coffee table to meet your daily hospitality needs, and the other can serve as a side table to display your photos, vases, and other decorations.",
+      "category": {
+        "_id": "6518fa47b2a80a22a2516ff5",
+        "name": "Table",
+        "parentId": "64a3b5f2147bbcaaf740d5eb"
+      },
+      "price": 4999,
+      "color": "",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131763/nk8wakukxeib2mnsfirp.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131763/jbqxfhngynn9izodhcee.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131764/wzzpmerqnpgfsik0opn9.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131764/h2rqlvyxsxqqqyme0yh1.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131765/b8cfstgwgej3lc0wtdxq.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131765/kbzoicmgipc0mfh7c7wv.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Product Dimensions",
+          "value": "50D x 50W x 45H Centimeters"
+        },
+        {
+          "feature": "Colour",
+          "value": " White & Black"
+        },
+        {
+          "feature": "Brand",
+          "value": "RIZIK STORE"
+        },
+        {
+          "feature": "Style",
+          "value": "Modern"
+        },
+        {
+          "feature": "Seating Capacity",
+          "value": "8.00"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696131765/b8cfstgwgej3lc0wtdxq.jpg",
+      "mrp": 6999,
+      "createdAt": "2023-10-01T03:44:54.976Z",
+      "updatedAt": "2023-10-01T04:51:46.940Z",
+      "__v": 0
+    },
+    {
+      "_id": "6518eca0b2a80a22a2516f51",
+      "name": "ukzer Engineered Wood Computer Desk with One Tier Shelves Laptop Study Table for Office Home Workstation Writing Modern Desk (ST-004/ White / 90 x 50 x 77 cm)",
+      "description": "Assembly Required: DIY Installation,\" it implies that you will need to personally install it or make arrangements for a carpenter to handle the installation. The product is supplied with all the required hardware and a comprehensive installation guide.",
+      "category": {
+        "_id": "6518fa71b2a80a22a2516ffe",
+        "name": "Work Station",
+        "parentId": "64a3b63f147bbcaaf740d5f4"
+      },
+      "price": 35900,
+      "color": "white",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131971/lir55iwpx2cdzpnzmndz.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131971/tdr9lgzxr9t5ftrdzzgn.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131971/zaocstsdohhlquyckwd6.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131972/ihhz7nsp5zmgmwaixc91.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131972/ypaweng0dfvrnbdp1xc8.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131974/obc4jnxaqkeccqxs7hp2.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131972/g4ilfi62bc9unas4vrjo.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131974/kyrhoj58yefehtgpgyfn.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131974/gmlwgytewskldhldsqg9.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696131974/zpkmmzdwdhsw5mqakgde.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Lukzer"
+        },
+        {
+          "feature": "Product Dimensions",
+          "value": "90D x 50W x 77H Centimeters"
+        },
+        {
+          "feature": "Colour",
+          "value": "White"
+        },
+        {
+          "feature": "Style",
+          "value": "Modern"
+        },
+        {
+          "feature": "Base Material",
+          "value": " Engineered Wood"
+        },
+        {
+          "feature": "Top Material Type",
+          "value": "Engineered Wood"
+        },
+        {
+          "feature": "Finish Type",
+          "value": "Wood"
+        },
+        {
+          "feature": "Special Feature",
+          "value": "scratch-resistant"
+        },
+        {
+          "feature": "Number of Drawers",
+          "value": "1"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696131974/gmlwgytewskldhldsqg9.jpg",
+      "mrp": 45500,
+      "createdAt": "2023-10-01T03:50:56.432Z",
+      "updatedAt": "2023-10-01T04:51:56.772Z",
+      "__v": 0
+    },
+    {
+      "_id": "6518edd3b2a80a22a2516f56",
+      "name": "OKAYA ClassIQ Booking for Ex-Showroom Price (with Portable Charger, Metallic Black)",
+      "description": "\nThe Okaya ClassIQ's excellent on-road visibility and brilliant dual LED headlights that illuminate the space in front of you give you the assurance to drive securely at night. Additionally, you can be certain of absolute safety and incredible stopping power thanks to the 90 mm front disc brakes that are a feature of this electric bike. Moreover, the 25.4 cm (10) alloy rims are exceedingly attractive, adding to the rides' extravagant nature. You could make a statement in this way without even trying. Additionally, you can park your vehicle without worrying about theft as the Okaya ClassIQ includes a motor lock that keeps the back wheel locked and immovable when the handle is unlocked and can only be opened with your remote.",
+      "category": {
+        "_id": "64a3e9e6147bbcaaf740d713",
+        "name": "OKAYA",
+        "parentId": "64a3e92f147bbcaaf740d70a"
+      },
+      "price": 74492,
+      "color": "green",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132308/a1ut3afnvcjbrbkgtx5y.webp",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132308/rqzol9sor6hdeudg34tz.webp",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132308/h8x5r2nxj0gdbefuw1my.webp",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132308/eh7vkigqaz1c13ueqpgh.webp",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132308/t3z24iezr4b9tz6rs9xh.webp",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132308/ct8hhii831rnz2ckt5bh.webp"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "OKAYA"
+        },
+        {
+          "feature": "Model Name",
+          "value": "ClassIQ"
+        },
+        {
+          "feature": "Brand Color",
+          "value": " Metallic Black"
+        },
+        {
+          "feature": "Type",
+          "value": "Electric Scooter"
+        },
+        {
+          "feature": "Color",
+          "value": "Black"
+        },
+        {
+          "feature": "Motor Type",
+          "value": " Brushless DC Hub Motor"
+        },
+        {
+          "feature": "Body Material",
+          "value": "Plastic"
+        },
+        {
+          "feature": "Wheel Material",
+          "value": "Steel"
+        },
+        {
+          "feature": "Number of Wheels",
+          "value": "2"
+        },
+        {
+          "feature": "Seating Capacity",
+          "value": "2"
+        },
+        {
+          "feature": "Console Features",
+          "value": " Battery Indicator, Speedometer, Tachometer, Trip/Odometer"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696132308/h8x5r2nxj0gdbefuw1my.webp",
+      "mrp": 90900,
+      "createdAt": "2023-10-01T03:56:03.607Z",
+      "updatedAt": "2023-10-01T03:56:03.607Z",
+      "__v": 0
+    },
+    {
+      "_id": "6518f025b2a80a22a2516f67",
+      "name": "Ather Faast F2F Booking for Ex-Showroom Price (with Portable Charger, White)",
+      "description": "The Ather Faast F2F gives you the confidence to drive safely at night thanks to its exceptional on-road visibility and dazzling twin LED headlights that brighten the area in front of you. The spring load rear suspension and telescopic fork front suspension of this electric bike also offer exceptional riding comfort and jerk-free journeys, especially on rough Indian roads. Additionally, you can effortlessly start and stop your vehicle using a remote control without needing your keys. You just need to push the key FOB button and scoot off.",
+      "category": {
+        "_id": "64a3e9fb147bbcaaf740d716",
+        "name": "ATHER",
+        "parentId": "64a3e92f147bbcaaf740d70a"
+      },
+      "price": 93999,
+      "color": "red",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132904/xooesc6qhjriispte14x.webp",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132904/b64qvf59xqcbt2dw1v3c.webp",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132903/z4ixo4piwuglfycgnq2k.webp",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132904/yq1ow3s9f3dsgwxojita.webp",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132904/ckyzoe8p3nkwzatttyxh.webp",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696132904/s6gofn7thqgth47jxcay.webp"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "Ather"
+        },
+        {
+          "feature": "Model Name",
+          "value": " Faast F2F"
+        },
+        {
+          "feature": "Model Year",
+          "value": "2023"
+        },
+        {
+          "feature": "Brand Color",
+          "value": "Red"
+        },
+        {
+          "feature": "Type",
+          "value": "Electric Scooter"
+        },
+        {
+          "feature": "Motor Type",
+          "value": " Brushless DC Hub Motor"
+        },
+        {
+          "feature": "Body Material",
+          "value": " ABS Fibre, Plastic"
+        },
+        {
+          "feature": "Wheel Material",
+          "value": "Steel"
+        },
+        {
+          "feature": "Number of Wheels",
+          "value": "2"
+        },
+        {
+          "feature": "Seating Capacity",
+          "value": "2"
+        },
+        {
+          "feature": "Transmission Type",
+          "value": "Automatic"
+        },
+        {
+          "feature": "Console Features",
+          "value": "High/Low Bean switch, indicator switch, horn switch, Digital speedometer, hazard light Switch, head light on/off switch, Reverse switch"
+        },
+        {
+          "feature": "Range",
+          "value": "80 km"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696132903/z4ixo4piwuglfycgnq2k.webp",
+      "mrp": 102900,
+      "createdAt": "2023-10-01T04:05:57.163Z",
+      "updatedAt": "2023-10-01T04:05:57.163Z",
+      "__v": 0
+    },
+    {
+      "_id": "6518f111b2a80a22a2516f6c",
+      "name": "VIDA Powered by Hero V1 Pro Booking for Ex-Showroom Price (with Portable Charger, Orange)",
+      "description": "\nVIDA V1 Pro Electric Scooter comes with promising security, safety, and connectivity features with a tech-first ecosystem for a robust experience. After 200,000 km and 25,000 hours of tests on 1006 prototypes, it's built for the real world. VIDA V1 pro boasts unrivalled performance, with a top speed of 85 kmph, a real-world range of up to 110 km on a single full charge, and an acceleration from 0-40 in 3.2 seconds. The scooter also comes with 2 removable batteries and a portable charger that allows you to charge anywhere, anytime at your convenience. The portable charger fits into the boot space and can be connected to any standard 5A socket. VIDA aims to create a dense network of fast-charging stations at every 4kms that allows you to book a lot before-hand.\nExperience the future of mobility, the future of change-makers with VIDA, Powered by Hero.",
+      "category": {
+        "_id": "64a3ea64147bbcaaf740d719",
+        "name": "VIDA",
+        "parentId": "64a3e92f147bbcaaf740d70a"
+      },
+      "price": 145000,
+      "color": "orange",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133178/gaio2kctx9mzqe6psqxc.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133178/fpcxdi1p1v0bimnrf1pa.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133179/rfgttj2fil1gxsf1gkwk.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133179/dbjvijbqrqzaixbld9yy.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133179/mxkzryqdslbqkkktzt5q.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133178/g5cry9sw7zo4oobo8jym.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Brand",
+          "value": "VIDA Powered by Hero"
+        },
+        {
+          "feature": "Model Name",
+          "value": " V1 Pro"
+        },
+        {
+          "feature": "Model Year",
+          "value": "2023"
+        },
+        {
+          "feature": "Brand Color",
+          "value": "Orange"
+        },
+        {
+          "feature": "Type",
+          "value": " Electric Scooter"
+        },
+        {
+          "feature": "Color",
+          "value": "Orange"
+        },
+        {
+          "feature": "Motor Type",
+          "value": " PMSM with Integrated Gearbox and Controller"
+        },
+        {
+          "feature": "Wheel Material",
+          "value": "Alloys"
+        },
+        {
+          "feature": "Number of Wheels",
+          "value": "2"
+        },
+        {
+          "feature": "Seating Capacity",
+          "value": "2"
+        },
+        {
+          "feature": "Transmission Type",
+          "value": "Automatic"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696133179/dbjvijbqrqzaixbld9yy.jpg",
+      "mrp": 164900,
+      "createdAt": "2023-10-01T04:09:53.726Z",
+      "updatedAt": "2023-10-01T04:09:53.726Z",
+      "__v": 0
+    },
+    {
+      "_id": "6518f20db2a80a22a2516f71",
+      "name": "Hero Xtreme 160R (Double Disc) Booking for Ex-Showroom Price  (Sports Red)",
+      "description": "Here is a modern streetfighter motorcycle tuned for city streets that goes 0-60 km/h in just 4.7 sec. The power accelerator you always wanted. The stylish headturner. Now go on, own the roads, like you always imagined.",
+      "category": {
+        "_id": "64a3eb60147bbcaaf740d734",
+        "name": "Hero",
+        "parentId": "64a3e9ac147bbcaaf740d710"
+      },
+      "price": 126536,
+      "color": "red",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133416/mtqmnktuxie0tcvtjoji.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133418/qyroqjrx4jcpc7216lz4.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133419/sg5eykpdpja0eudu8ius.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133418/yrgn18etfapxlpqi3siu.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1696133419/bro3scrurcp1bxfwo3k9.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": " Engine Technology",
+          "value": " Air cooled, 4 Stroke 2 Valve Single cylinder OHC"
+        },
+        {
+          "feature": "Number of Cylinders",
+          "value": "1"
+        },
+        {
+          "feature": "Transmission Type",
+          "value": " 5-speed"
+        },
+        {
+          "feature": "Displacement",
+          "value": "163 cc"
+        },
+        {
+          "feature": "Ignition System",
+          "value": " Self & Kick"
+        },
+        {
+          "feature": " Frame Type",
+          "value": "Diamond Frame"
+        },
+        {
+          "feature": " Tire Type",
+          "value": "Tubeless"
+        },
+        {
+          "feature": " Brake (Front)",
+          "value": "Disc"
+        },
+        {
+          "feature": " Fuel Tank Capacity",
+          "value": "12 L"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1696133418/qyroqjrx4jcpc7216lz4.jpg",
+      "mrp": 132000,
+      "createdAt": "2023-10-01T04:14:05.115Z",
+      "updatedAt": "2023-10-01T04:14:05.115Z",
+      "__v": 0
+    },
+    {
+      "_id": "65fd700e28d0c59bc798d0fe",
+      "name": "Ske Solid Popular Willow Cricket Bat for All Tennis Balls (Natural, Full Size), Wood, Multicolour (Cricket Bat with Cover)",
+      "description": "Used XTROKE to hit a Tennis ball, this cricket bat is expertly crafted using Popular willow to provide long-lasting performance on the pitch.\nXTROKE Made of handcrafted wood, this cricket bat is designed to be used with a tennis cricket ball only (not recommended for leather balls). The handle is reinforced with firmly wound string and a rubber sleeve for increased durability.\nThe cricket bat is easy to grip and hold, thanks to a high-quality rubber sleeve. Offering extra comfort when holding the bat, this handle allows for longer practice sessions time and time again.\nFor optimal performance, the cricket bat boasts a unique shape which delivers superb pick-up. As such, the bat feels lighter than it actually is, allowing for better control when swinging and hitting.\nWeighing in at only 1100 gm, this Cricket Bat is lightweight yet durable. The bat come in a full adult size, making it perfect for club usage or individual practice.",
+      "category": {
+        "_id": "65fceeece38d2bbf4489449b",
+        "name": "Bats",
+        "parentId": "65fceedfe38d2bbf44894498"
+      },
+      "price": 2200,
+      "color": "DarkBlue",
+      "size": [""],
+      "images": [
+        "http://res.cloudinary.com/ajaui/image/upload/v1711108165/hrapny45c9hjcdhiwtfh.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1711108165/mqitjmsimyehj4pcmq5k.jpg",
+        "http://res.cloudinary.com/ajaui/image/upload/v1711108165/qtgdxc9o3xdscs3le09m.jpg"
+      ],
+      "additionalInfo": [
+        {
+          "feature": "Size",
+          "value": "\tFull 15 Years Above"
+        },
+        {
+          "feature": "Sport",
+          "value": "Cricket"
+        },
+        {
+          "feature": "Brand",
+          "value": "CEAT"
+        },
+        {
+          "feature": "Material",
+          "value": "Wood"
+        }
+      ],
+      "thumbnail": "http://res.cloudinary.com/ajaui/image/upload/v1711108165/qtgdxc9o3xdscs3le09m.jpg",
+      "mrp": 2500,
+      "createdAt": "2024-03-22T11:48:30.096Z",
+      "updatedAt": "2024-03-22T11:49:53.752Z",
+      "__v": 0
+    }
+  ],
+  "categories": [
+    {
+      "_id": "64a2dd5e6e771ba9db69eeb7",
+      "name": "Electronics",
+      "description": "This category consists of all electronical items.",
+      "children": [
+        {
+          "_id": "64a2de8c6e771ba9db69eec8",
+          "name": "Mobiles",
+          "children": [
+            {
+              "_id": "64a2dead6e771ba9db69eece",
+              "name": "One Plus",
+              "children": []
+            },
+            {
+              "_id": "64a2deb96e771ba9db69eed1",
+              "name": "Samsung",
+              "children": []
+            },
+            {
+              "_id": "64a3b842147bbcaaf740d604",
+              "name": "Realme",
+              "children": []
+            },
+            {
+              "_id": "64a3b85f147bbcaaf740d607",
+              "name": "Apple",
+              "children": []
+            },
+            {
+              "_id": "64a3b86d147bbcaaf740d60a",
+              "name": "Oppo",
+              "children": []
+            },
+            {
+              "_id": "64a3b892147bbcaaf740d610",
+              "name": "Poco",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a2de9f6e771ba9db69eecb",
+          "name": "Bluetooth Speakers",
+          "children": [
+            {
+              "_id": "64a2dec56e771ba9db69eed4",
+              "name": "JBL",
+              "children": []
+            },
+            {
+              "_id": "64a3b915147bbcaaf740d613",
+              "name": "boAt",
+              "children": []
+            },
+            {
+              "_id": "64a3b93a147bbcaaf740d616",
+              "name": "Zebronics",
+              "children": []
+            },
+            {
+              "_id": "64a3b954147bbcaaf740d619",
+              "name": "Sony",
+              "children": []
+            },
+            {
+              "_id": "64a3b96d147bbcaaf740d61c",
+              "name": "Panasonic",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b3f3147bbcaaf740d5bf",
+          "name": "Laptops",
+          "children": [
+            {
+              "_id": "64a3b9ad147bbcaaf740d61f",
+              "name": "Lenovo",
+              "children": []
+            },
+            {
+              "_id": "64a3b9c5147bbcaaf740d622",
+              "name": "Dell",
+              "children": []
+            },
+            {
+              "_id": "64a3b9d0147bbcaaf740d625",
+              "name": "Apple Mac",
+              "children": []
+            },
+            {
+              "_id": "64a3b9d9147bbcaaf740d628",
+              "name": "HP",
+              "children": []
+            },
+            {
+              "_id": "64a3b9fd147bbcaaf740d62b",
+              "name": "ASUS",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b430147bbcaaf740d5c2",
+          "name": "Cameras",
+          "children": [
+            {
+              "_id": "64a3c430147bbcaaf740d635",
+              "name": "Canon",
+              "children": []
+            },
+            {
+              "_id": "64a3c48b147bbcaaf740d638",
+              "name": "Nikon",
+              "children": []
+            },
+            {
+              "_id": "64a3c499147bbcaaf740d63b",
+              "name": "GoPro",
+              "children": []
+            },
+            {
+              "_id": "64a3c4a7147bbcaaf740d63e",
+              "name": "Sony",
+              "children": []
+            },
+            {
+              "_id": "64a3c4b7147bbcaaf740d641",
+              "name": "FujiFilm",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b490147bbcaaf740d5c5",
+          "name": "Watches",
+          "children": [
+            {
+              "_id": "64a3c504147bbcaaf740d647",
+              "name": "Timex",
+              "children": []
+            },
+            {
+              "_id": "64a3c51c147bbcaaf740d64a",
+              "name": "Patek Philippe",
+              "children": []
+            },
+            {
+              "_id": "64a3c52b147bbcaaf740d64d",
+              "name": "Casio",
+              "children": []
+            },
+            {
+              "_id": "64a3c538147bbcaaf740d650",
+              "name": "Rolex",
+              "children": []
+            },
+            {
+              "_id": "64a3c54c147bbcaaf740d653",
+              "name": "Hublot",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "64a2dd696e771ba9db69eeba",
+      "name": "Clothes",
+      "children": [
+        {
+          "_id": "64a3b4a4147bbcaaf740d5c8",
+          "name": "Men",
+          "children": [
+            {
+              "_id": "64a3c5fc147bbcaaf740d658",
+              "name": "T Shirts",
+              "children": []
+            },
+            {
+              "_id": "64a3c609147bbcaaf740d65b",
+              "name": "Casual Shirts",
+              "children": []
+            },
+            {
+              "_id": "64a3c614147bbcaaf740d65e",
+              "name": "Formal Shirts",
+              "children": []
+            },
+            {
+              "_id": "64a3c623147bbcaaf740d661",
+              "name": "Cotton Jeans",
+              "children": []
+            },
+            {
+              "_id": "64a3c637147bbcaaf740d664",
+              "name": "Cotton Trousers",
+              "children": []
+            },
+            {
+              "_id": "64a3c642147bbcaaf740d667",
+              "name": "Jeans Trousers",
+              "children": []
+            },
+            {
+              "_id": "64a3e007147bbcaaf740d66f",
+              "name": "Top Inners",
+              "children": []
+            },
+            {
+              "_id": "64a3e013147bbcaaf740d672",
+              "name": "Lower Inners",
+              "children": []
+            },
+            {
+              "_id": "64a3e039147bbcaaf740d675",
+              "name": "Track Pants",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b4b2147bbcaaf740d5cb",
+          "name": "Women",
+          "children": [
+            {
+              "_id": "64a3e068147bbcaaf740d678",
+              "name": "Sleepwear",
+              "children": []
+            },
+            {
+              "_id": "64a3e079147bbcaaf740d67b",
+              "name": "Winterwear",
+              "children": []
+            },
+            {
+              "_id": "64a3e089147bbcaaf740d67e",
+              "name": "Dresses and Gowns",
+              "children": []
+            },
+            {
+              "_id": "64a3e0a0147bbcaaf740d681",
+              "name": "Kurtas and Ethnic sets",
+              "children": []
+            },
+            {
+              "_id": "64a3e0ba147bbcaaf740d684",
+              "name": "Sarees and Sarees Essentials",
+              "children": []
+            },
+            {
+              "_id": "64a3e0d1147bbcaaf740d687",
+              "name": "Lehenga Cholies",
+              "children": []
+            },
+            {
+              "_id": "64a3e0f3147bbcaaf740d68a",
+              "name": "Track Pants",
+              "children": []
+            },
+            {
+              "_id": "64a3e0fc147bbcaaf740d68d",
+              "name": "T Shirts",
+              "children": []
+            },
+            {
+              "_id": "64a3e117147bbcaaf740d690",
+              "name": "Jeans Trousers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b4c3147bbcaaf740d5ce",
+          "name": "Kids",
+          "children": [
+            {
+              "_id": "64a3e149147bbcaaf740d693",
+              "name": "Winterwear",
+              "children": []
+            },
+            {
+              "_id": "64a3e15e147bbcaaf740d696",
+              "name": "Topwear",
+              "children": []
+            },
+            {
+              "_id": "64a3e168147bbcaaf740d699",
+              "name": "Bottomwear",
+              "children": []
+            },
+            {
+              "_id": "64a3e1a6147bbcaaf740d69c",
+              "name": "Sarees and Sarees essentials",
+              "children": []
+            },
+            {
+              "_id": "64a3e1bb147bbcaaf740d69f",
+              "name": "Kurtas and Ethinic Sets",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "64a2ddc26e771ba9db69eebd",
+      "name": "Appliances",
+      "children": [
+        {
+          "_id": "64a3b4ed147bbcaaf740d5d1",
+          "name": "TV's",
+          "children": [
+            {
+              "_id": "64a3e2c4147bbcaaf740d6a2",
+              "name": "LG",
+              "children": []
+            },
+            {
+              "_id": "64a3e2d5147bbcaaf740d6a5",
+              "name": "Samsung",
+              "children": []
+            },
+            {
+              "_id": "64a3e2e5147bbcaaf740d6a8",
+              "name": "iFFalcon",
+              "children": []
+            },
+            {
+              "_id": "64a3e2f8147bbcaaf740d6ab",
+              "name": "Mi",
+              "children": []
+            },
+            {
+              "_id": "64a3e30f147bbcaaf740d6ae",
+              "name": "Hisense",
+              "children": []
+            },
+            {
+              "_id": "64a3e323147bbcaaf740d6b1",
+              "name": "Toshibha",
+              "children": []
+            },
+            {
+              "_id": "64a3e33a147bbcaaf740d6b4",
+              "name": "Thomson",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b4f8147bbcaaf740d5d4",
+          "name": "Washing Machines",
+          "children": [
+            {
+              "_id": "64a3e370147bbcaaf740d6b7",
+              "name": "LG",
+              "children": []
+            },
+            {
+              "_id": "64a3e379147bbcaaf740d6ba",
+              "name": "Samsung",
+              "children": []
+            },
+            {
+              "_id": "64a3e386147bbcaaf740d6bd",
+              "name": "IFB",
+              "children": []
+            },
+            {
+              "_id": "64a3e3a2147bbcaaf740d6c0",
+              "name": "Panasonic",
+              "children": []
+            },
+            {
+              "_id": "64a3e3b8147bbcaaf740d6c3",
+              "name": "BOSCH",
+              "children": []
+            },
+            {
+              "_id": "64a3e3c4147bbcaaf740d6c6",
+              "name": "Haier",
+              "children": []
+            },
+            {
+              "_id": "64a3e3e4147bbcaaf740d6c9",
+              "name": "Thomson",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b507147bbcaaf740d5d7",
+          "name": "Refrigerators",
+          "children": [
+            {
+              "_id": "64a3e41a147bbcaaf740d6cc",
+              "name": "SAMSUNG",
+              "children": []
+            },
+            {
+              "_id": "64a3e428147bbcaaf740d6cf",
+              "name": "Whirlpool",
+              "children": []
+            },
+            {
+              "_id": "64a3e439147bbcaaf740d6d2",
+              "name": "LG",
+              "children": []
+            },
+            {
+              "_id": "64a3e447147bbcaaf740d6d5",
+              "name": "Haier",
+              "children": []
+            },
+            {
+              "_id": "64a3e453147bbcaaf740d6d8",
+              "name": "Godrej",
+              "children": []
+            },
+            {
+              "_id": "64a3e467147bbcaaf740d6db",
+              "name": "Voltas",
+              "children": []
+            },
+            {
+              "_id": "64a3e477147bbcaaf740d6de",
+              "name": "Hisense",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b539147bbcaaf740d5da",
+          "name": "Air Conditionors",
+          "children": [
+            {
+              "_id": "64a3e4a7147bbcaaf740d6e1",
+              "name": "Voltas",
+              "children": []
+            },
+            {
+              "_id": "64a3e4bc147bbcaaf740d6e4",
+              "name": "Daikin",
+              "children": []
+            },
+            {
+              "_id": "64a3e4ce147bbcaaf740d6e7",
+              "name": "SAMSUNG",
+              "children": []
+            },
+            {
+              "_id": "64a3e4db147bbcaaf740d6ea",
+              "name": "Panasonic",
+              "children": []
+            },
+            {
+              "_id": "64a3e4f8147bbcaaf740d6ed",
+              "name": "LG",
+              "children": []
+            },
+            {
+              "_id": "64a3e508147bbcaaf740d6f0",
+              "name": "Hitachi",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b55a147bbcaaf740d5dd",
+          "name": "Home Appliances",
+          "children": [
+            {
+              "_id": "64a3e53b147bbcaaf740d6f3",
+              "name": "Gardening",
+              "description": "Tools",
+              "children": []
+            },
+            {
+              "_id": "64a3e566147bbcaaf740d6f6",
+              "name": "Dry iron boxes",
+              "children": []
+            },
+            {
+              "_id": "64a3e592147bbcaaf740d6f9",
+              "name": "Juicer Mixer Grinder",
+              "children": []
+            },
+            {
+              "_id": "64a3e5d0147bbcaaf740d6fc",
+              "name": "Induction Cooktop",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "64a2de086e771ba9db69eec0",
+      "name": "Two Wheelers",
+      "children": [
+        {
+          "_id": "64a3e92f147bbcaaf740d70a",
+          "name": "Electric Scooters",
+          "children": [
+            {
+              "_id": "64a3e9e6147bbcaaf740d713",
+              "name": "OKAYA",
+              "children": []
+            },
+            {
+              "_id": "64a3e9fb147bbcaaf740d716",
+              "name": "ATHER",
+              "children": []
+            },
+            {
+              "_id": "64a3ea64147bbcaaf740d719",
+              "name": "VIDA",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3e98d147bbcaaf740d70d",
+          "name": "Petrol Scooters",
+          "children": [
+            {
+              "_id": "64a3eaa3147bbcaaf740d71c",
+              "name": "Honda Activa",
+              "children": []
+            },
+            {
+              "_id": "64a3eab3147bbcaaf740d71f",
+              "name": "TVS Jupiter",
+              "children": []
+            },
+            {
+              "_id": "64a3eadb147bbcaaf740d722",
+              "name": "Yamaha Aerox",
+              "children": []
+            },
+            {
+              "_id": "64a3eaf0147bbcaaf740d725",
+              "name": "Ola S1",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3e9ac147bbcaaf740d710",
+          "name": "Bikes",
+          "children": [
+            {
+              "_id": "64a3eb1e147bbcaaf740d728",
+              "name": "KTM",
+              "children": []
+            },
+            {
+              "_id": "64a3eb2f147bbcaaf740d72b",
+              "name": "Harley-Davidson",
+              "children": []
+            },
+            {
+              "_id": "64a3eb3f147bbcaaf740d72e",
+              "name": "Yamaha",
+              "children": []
+            },
+            {
+              "_id": "64a3eb4d147bbcaaf740d731",
+              "name": "Royal Enfield",
+              "children": []
+            },
+            {
+              "_id": "64a3eb60147bbcaaf740d734",
+              "name": "Hero",
+              "children": []
+            },
+            {
+              "_id": "64a3eb77147bbcaaf740d737",
+              "name": "Bajaj ",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "64a2de836e771ba9db69eec5",
+      "name": "Home & Furniture",
+      "description": "This category consists of home and furniture related categories",
+      "children": [
+        {
+          "_id": "64a3b5f2147bbcaaf740d5eb",
+          "name": "Living Room Furniture",
+          "children": [
+            {
+              "_id": "6518fa35b2a80a22a2516ff2",
+              "name": "Sofas",
+              "children": []
+            },
+            {
+              "_id": "6518fa47b2a80a22a2516ff5",
+              "name": "Table",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b605147bbcaaf740d5ee",
+          "name": "Kithcen Furniture",
+          "children": [
+            {
+              "_id": "6518fa54b2a80a22a2516ff8",
+              "name": "Dining Table",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b627147bbcaaf740d5f1",
+          "name": "Bedroom Furniture",
+          "children": [
+            {
+              "_id": "6518fa64b2a80a22a2516ffb",
+              "name": "Bed",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b63f147bbcaaf740d5f4",
+          "name": "Workspace Furniture",
+          "children": [
+            {
+              "_id": "6518fa71b2a80a22a2516ffe",
+              "name": "Work Station",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "64a3b668147bbcaaf740d5f7",
+          "name": "Home Decor",
+          "children": [
+            {
+              "_id": "6518fa88b2a80a22a2517001",
+              "name": "Home Decor",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "65fceecbe38d2bbf44894495",
+      "name": "Sports",
+      "children": [
+        {
+          "_id": "65fceedfe38d2bbf44894498",
+          "name": "Cricket",
+          "children": [
+            {
+              "_id": "65fceeece38d2bbf4489449b",
+              "name": "Bats",
+              "description": "Cricket Bats",
+              "children": []
+            }
+          ]
+        },
+        {
+          "_id": "65fd70fe28d0c59bc798d1f4",
+          "name": "Footbal",
+          "children": [
+            {
+              "_id": "65fd711328d0c59bc798d1f7",
+              "name": "Foot ball shoes",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

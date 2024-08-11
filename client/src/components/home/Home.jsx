@@ -1,13 +1,23 @@
 import { Chip, Grid, IconButton, Skeleton, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { AdminProducts } from "../admin/slices/slice";
 import CustomLoader from "../shared/Loader";
 import CarouselLoader from "./Carousel";
 import ProductCard from "./ProductCard";
+import data from "../../mock.json";
 
 function Home() {
   const adminState = useSelector(AdminProducts);
+  const [products, setProducts] = useState(data.products);
+  const [categories, setCategories] = useState(data.categories);
+
+  useEffect(() => {
+    if (adminState.products.length > 0) {
+      setProducts(adminState.products);
+      setCategories(adminState.categories);
+    }
+  }, [adminState]);
 
   return (
     <div>
@@ -38,7 +48,7 @@ function Home() {
           })}
         </Grid>
       ) : (
-        adminState.categories.map((category) => {
+        categories.map((category) => {
           return (
             <Grid
               container
@@ -59,7 +69,7 @@ function Home() {
               </Grid>
 
               {/** Find category children id where it matches with product parent id */}
-              {adminState?.products
+              {products
                 .filter(
                   (product) =>
                     product.category.parentId ===
